@@ -37,54 +37,58 @@ const brandsRow = [
 
 const PartnerSection = () => {
   return (
-    <section className="relative w-full bg-main-bg sm:pt-16 pt-10 sm:px-6 px-4 overflow-hidden">
+    <section className="relative w-full overflow-hidden bg-main-bg pt-10 font-sans sm:pt-16">
       {/* BACKGROUND GLOW */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-20%] left-[-10%] w-200 h-200 rounded-full bg-[#042558] blur-[160px]" />
-        <div className="absolute bottom-[-10%] right-[-5%] w-150 h-150 rounded-full bg-[#042558] blur-[140px]" />
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute left-[-10%] top-[-20%] h-200 w-200 rounded-full bg-[#042558] blur-[160px]" />
+        <div className="absolute bottom-[-10%] right-[-5%] h-150 w-150 rounded-full bg-[#042558] blur-[140px]" />
       </div>
 
-      {/* HEADER */}
-      <div className="relative z-10 max-w-7xl mx-auto sm:px-6 px-4 sm:mb-20 mb-10 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="text-2xl md:text-4xl font-black text-white italic leading-[0.9] uppercase"
-        >
-          Full-Service
-          <span className="text-primary"> WEB Agency</span>
-        </motion.h2>
+      {/* MAIN CONTAINER */}
+      <div className="relative z-10 mx-auto w-full max-w-7xl sm:px-6 px-4">
+        {/* HEADER */}
+        <div className="mb-10 text-center sm:mb-20">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-2xl font-black italic uppercase leading-[0.9] text-white md:text-4xl"
+          >
+            Full-Service
+            <span className="text-primary"> WEB Agency</span>
+          </motion.h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          className="max-w-2xl mx-auto text-zinc-400 md:text-[16px] text-sm mt-6"
-        >
-          From startups we create{" "}
-          <span className="text-white font-medium">custom solutions</span> that
-          grow brands online.
-        </motion.p>
-      </div>
-
-      {/* MARQUEE ROW 1 */}
-      <div className="flex overflow-hidden gap-8">
-        <div className="flex min-w-full gap-8 animate-marquee">
-          {[...brandsRow, ...brandsRow].map((brand, i) => (
-            <LogoCard key={i} brand={brand} />
-          ))}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="mx-auto mt-6 max-w-2xl text-sm text-zinc-400 md:text-[16px]"
+          >
+            From startups we create{" "}
+            <span className="font-medium text-white">custom solutions</span>{" "}
+            that grow brands online.
+          </motion.p>
         </div>
-      </div>
 
-      {/* CTA */}
-      <div className="sm:mt-24 mt-10 text-center pb-20 border-b border-white/10">
-        <Link to="/casestudies">
-          <button className="relative sm:px-10 px-4 sm:py-5 py-2 bg-white border border-white text-black hover:text-white sm:font-bold font-medium uppercase sm:text-sm text-[12px] cursor-pointer tracking-widest overflow-hidden group">
-            <span className="relative z-10 tracking-tight">
-              Explore Our Services
-            </span>
-            <div className="absolute inset-0 bg-surface translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-          </button>
-        </Link>
+        {/* MARQUEE ROW 1 */}
+        <div className="flex overflow-hidden gap-8">
+          <div className="flex min-w-full gap-8 animate-marquee">
+            {[...brandsRow, ...brandsRow].map((brand, i) => (
+              <LogoCard key={i} brand={brand} />
+            ))}
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-10 border-b border-white/10 pb-20 text-center sm:mt-24">
+          <Link to="/casestudies">
+            <button className="group relative cursor-pointer overflow-hidden border border-white bg-white px-4 py-2 text-[12px] font-medium uppercase tracking-widest text-black hover:text-white transition sm:px-10 sm:py-5 sm:text-sm sm:font-bold">
+              <span className="relative z-10 tracking-tight">
+                Explore Our Services
+              </span>
+
+              <div className="absolute inset-0 translate-y-full bg-surface transition-transform duration-300 group-hover:translate-y-0" />
+            </button>
+          </Link>
+        </div>
       </div>
 
       {/* ANIMATION */}
@@ -123,14 +127,14 @@ const PartnerSection = () => {
 const LogoCard = ({ brand }) => (
   <div className="items-center gap-3 group">
     {/* GLASS CARD */}
-    <div className="relative flex items-center justify-center h-28 sm:w-60 w-30 bg-white/5 backdrop-blur-xl border border-white/10 overflow-hidden transition-all duration-500 hover:bg-white/10 hover:border-primary group p-4 rounded-2xl">
+    <div className="relative flex h-28 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl transition-all duration-500 hover:border-primary hover:bg-white/10 sm:w-60 w-30">
       {/* shine */}
-      <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+      <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
 
       <img
         src={brand.url}
         alt={brand.name}
-        className="max-h-20 object-contain opacity-50 group-hover:opacity-100 transition-all duration-300"
+        className="max-h-20 object-contain opacity-50 transition-all duration-300 group-hover:opacity-100"
       />
     </div>
   </div>

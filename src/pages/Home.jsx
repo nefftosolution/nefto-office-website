@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "../components/SEO";
 import HeroBg from "../assets/hero-bg.jpeg";
 import GlowButton from "../components/GlowButton";
 import { motion, AnimatePresence } from "framer-motion";
@@ -60,17 +61,20 @@ const Home = () => {
   const handleQuoteSubmit = async (e) => {
     e.preventDefault();
     if (!quoteEmail) return;
-    
+
     setIsSubmitting(true);
     setQuoteMessage("");
-    
+
     try {
-      const response = await fetch("https://neffto-solution-backend.vercel.app/api/quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: quoteEmail }),
-      });
-      
+      const response = await fetch(
+        "https://neffto-solution-backend.vercel.app/api/quote",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: quoteEmail }),
+        },
+      );
+
       if (response.ok) {
         setQuoteMessage("Quote request sent!");
         setQuoteEmail("");
@@ -88,16 +92,25 @@ const Home = () => {
 
   return (
     <>
+      <SEO
+        title="NEFFTO | Digital Solutions & Technology"
+        description="NEFFTO creates websites, applications, AI solutions, and digital experiences that help businesses build and grow online."
+        canonical="https://nefftosolution.com/"
+        ogTitle="NEFFTO | Digital Solutions & Technology"
+        ogDescription="Explore NEFFTO's web development, applications, AI, design, SEO, and digital marketing solutions for modern businesses."
+        ogUrl="https://nefftosolution.com/"
+        keywords="technology solutions, digital solutions, web development, AI solutions, digital experiences, digital transformation"
+      />
       <section
         className="relative overflow-hidden w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center pt-35 pb-25 md:pt-45 md:pb-35"
         style={{ backgroundImage: `url(${HeroBg})` }}
       >
         <div className="absolute top-[-20%] left-[-10%] w-180 h-180 bg-[#042558] blur-[140px]" />
-        <div className="relative z-10 mx-auto grid max-w-8xl sm:px-6 px-4 md:items-center gap-20 lg:grid-cols-2">
-          <div className="z-50 max-w-3xl w-full">
+        {/* Content */}
+        <div className="relative z-10 mx-auto w-full max-w-7xl sm:px-6 px-4">
+          <div className="w-full max-w-3xl lg:max-w-2xl xl:max-w-3xl">
             <h1 className="font-sans text-white text-2xl md:text-4xl lg:text-5xl font-black leading-tight flex flex-col justify-start">
-              Where Creativity Meets{" "}
-              <span className="highlight">Computational Power</span>
+              Digital Solutions for <span className="highlight">Modern Businesses</span>
             </h1>
             <p className="mt-4 text-gray-300 text-sm lg:max-w-xl max-w-sm font-sans">
               From stunning web experiences and high-end graphics to custom tool
@@ -105,7 +118,10 @@ const Home = () => {
               full-stack solutions your business needs to scale in the digital
               age.
             </p>
-            <form onSubmit={handleQuoteSubmit} className="relative flex flex-col group/form md:max-w-xl max-w-100 mt-8">
+            <form
+              onSubmit={handleQuoteSubmit}
+              className="relative flex flex-col group/form md:max-w-xl max-w-100 mt-8"
+            >
               <div className="relative flex w-full bg-white border border-gray-200 shadow-xl overflow-hidden">
                 {/* Email Icon */}
                 <div className="flex items-center justify-center pl-2 text-gray-400">
@@ -135,7 +151,11 @@ const Home = () => {
                 />
 
                 {/* Modern Action Button */}
-                <button disabled={isSubmitting} type="submit" className="group/btn relative md:px-6 px-1 md:py-4 py-3 bg-black text-white text-[10px] md:text-xs md:font-black uppercase tracking-widest overflow-hidden transition-all duration-300 whitespace-nowrap cursor-pointer w-45 disabled:opacity-50">
+                <button
+                  disabled={isSubmitting}
+                  type="submit"
+                  className="group/btn relative md:px-6 px-1 md:py-4 py-3 bg-black text-white text-[10px] md:text-xs md:font-black uppercase tracking-widest overflow-hidden transition-all duration-300 whitespace-nowrap cursor-pointer w-45 disabled:opacity-50"
+                >
                   {/* 45-Degree Hover Layer (Violet) */}
                   <div className="absolute top-[-80%] left-[-80%] w-[200%] h-[300%] z-0 bg-surface rotate-45 translate-y-[150%] group-hover/btn:translate-y-[-30%] transition-transform duration-500 ease-out" />
 
@@ -145,10 +165,12 @@ const Home = () => {
                   </div>
 
                   {/* Button Text */}
-                  <span className="relative z-20">{isSubmitting ? "Sending..." : "Get a Quote"}</span>
+                  <span className="relative z-20">
+                    {isSubmitting ? "Sending..." : "Get a Quote"}
+                  </span>
                 </button>
               </div>
-              
+
               {quoteMessage && (
                 <div className="mt-3 text-sm font-bold text-primary">
                   {quoteMessage}
@@ -188,11 +210,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section style={fixedBgStyle} className="relative py-10 sm:px-6 px-4 overflow-hidden">
+      <section
+        style={fixedBgStyle}
+        className="relative py-10 sm:px-6 px-4 overflow-hidden"
+      >
         <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
         {/* Light Overlay for text readability */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 relative z-10">
+        <div className="max-w-7xl mx-auto sm:px-6 px-4 flex flex-wrap items-center justify-between gap-12 relative z-10">
           <Counter value="20+" label="Systems Architected" light={false} />
           <Counter value="98%" label="Success Rate" light={false} />
           <Counter value="10+" label="Global Partners" light={false} />

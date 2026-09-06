@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import SEO from "../components/SEO";
 import { useParams, Link } from "react-router-dom";
 import { servicesData } from "../data/serviceData";
 import GlowButton from "../components/GlowButton";
@@ -39,13 +40,15 @@ const ProjectDetail = () => {
   // If viewing a project inside showcase.projects
   if (isProject && project) {
     return (
-      <section className="bg-main-bg text-white min-h-screen sm:py-20 py-10 sm:px-10 px-4 relative overflow-hidden">
+      <>
+        <SEO title={`${project.title} - Case Study`} description={project.overview} />
+        <section className="bg-main-bg text-white min-h-screen sm:py-20 py-10 relative overflow-hidden">
         <div className="absolute top-[-20%] left-[-10%] w-300 h-300 bg-[#042558] blur-[140px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-300 h-300 bg-[#042558] blur-[140px]" />
         <div className="relative z-10">
           {/* ================= HERO SECTION ================= */}
           <div className="relative py-20">
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div className="max-w-7xl mx-auto sm:px-6 px-4 grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <span className="text-primary uppercase tracking-[4px] text-sm font-bold">
                   {service.title}
@@ -76,7 +79,7 @@ const ProjectDetail = () => {
 
           {/* ================= OVERVIEW ================= */}
           {project.overview && (
-            <div className="max-w-7xl mx-auto py-10 border-t border-white/10">
+            <div className="max-w-7xl mx-auto sm:px-6 px-4 py-10 border-t border-white/10">
               <h2 className="sm:text-3xl text-2xl font-bold mb-4">Overview</h2>
               <p className="text-gray-300 leading-relaxed text-lg">
                 {project.overview}
@@ -86,7 +89,7 @@ const ProjectDetail = () => {
 
           {/* ================= FEATURES ================= */}
           {project.features && project.features.length > 0 && (
-            <div className="max-w-7xl mx-auto py-16 border-t border-white/10">
+            <div className="max-w-7xl mx-auto sm:px-6 px-4 py-16 border-t border-white/10">
               <h2 className="sm:text-3xl text-2xl font-bold mb-10">
                 Key Features
               </h2>
@@ -110,7 +113,7 @@ const ProjectDetail = () => {
 
           {/* ================= TECHNOLOGIES ================= */}
           {project.tech && project.tech.length > 0 && (
-            <div className="max-w-7xl mx-auto py-16 border-t border-white/10">
+            <div className="max-w-7xl mx-auto sm:px-6 px-4 py-16 border-t border-white/10">
               <h2 className="sm:text-3xl text-2xl font-bold mb-10">
                 Technologies Used
               </h2>
@@ -129,7 +132,7 @@ const ProjectDetail = () => {
 
           {/* ================= RESULTS ================= */}
           {project.results && project.results.length > 0 && (
-            <div className="max-w-7xl mx-auto py-16 border-t border-white/10">
+            <div className="max-w-7xl mx-auto sm:px-6 px-4 py-16 border-t border-white/10">
               <h2 className="sm:text-3xl text-2xl font-bold mb-10">
                 Expected Results
               </h2>
@@ -150,7 +153,7 @@ const ProjectDetail = () => {
           {/* ================= OTHER PROJECTS FROM SAME SERVICE ================= */}
           {service.showcase?.projects &&
             service.showcase.projects.length > 1 && (
-              <div className="max-w-7xl mx-auto py-20 border-t border-white/10">
+              <div className="max-w-7xl mx-auto sm:px-6 px-4 py-20 border-t border-white/10">
                 <h2 className="sm:text-3xl text-2xl font-bold mb-4 text-center">
                   Other {service.title} Projects
                 </h2>
@@ -200,7 +203,7 @@ const ProjectDetail = () => {
 
           {/* ================= CTA ================= */}
           <div className="py-10 border-t border-white/10">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl sm:px-6 px-4 mx-auto text-center">
               <h2 className="sm:text-4xl text-2xl font-black mb-4">
                 Ready to Get Started?
               </h2>
@@ -219,6 +222,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       </section>
+      </>
     );
   }
 

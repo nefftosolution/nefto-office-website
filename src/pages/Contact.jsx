@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import {
   Mail,
@@ -62,7 +63,9 @@ const Contact = () => {
     }
   };
   return (
-    <section className={`relative w-full py-32 overflow-hidden bg-cover bg-center text-white`}
+    <>
+      <SEO title="Contact Us" description="Get in touch with Neffto Solutions today." />
+      <section className={`relative w-full py-32 overflow-hidden bg-cover bg-center text-white`}
     style={{
       backgroundImage: `url(${ContactBg})`,
     }}
@@ -195,6 +198,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </section>
+    </>
   );
 };
 

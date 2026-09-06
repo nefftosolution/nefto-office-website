@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Cpu, Zap, Globe } from "lucide-react";
 import GlowButton from "../components/GlowButton";
@@ -90,7 +91,17 @@ const Team = () => {
   ];
 
   return (
-    <main className="bg-main-bg text-white selection:bg-surface selection:text-white pt-20">
+    <>
+      <SEO
+        title="Meet the NEFFTO Team | Developers & Digital Experts"
+        description="Meet the people behind NEFFTO, including developers, designers, AI specialists, and digital professionals building modern solutions."
+        canonical="https://nefftosolution.com/team"
+        ogTitle="Meet the NEFFTO Team"
+        ogDescription="Get to know the developers, designers, AI specialists, and digital professionals behind NEFFTO's projects."
+        ogUrl="https://nefftosolution.com/team"
+        keywords="NEFFTO team, NEFFTO developers, web developers, software developers, AI specialists, designers, digital professionals"
+      />
+      <main className="bg-main-bg text-white selection:bg-surface selection:text-white pt-20">
       <section
         className="relative overflow-hidden px-6 py-20"
         // Hover only works on Desktop
@@ -112,9 +123,9 @@ const Team = () => {
             className="min-w-0 overflow-hidden text-center lg:text-left z-50 lg:pr-10 mb-16 lg:mb-0"
           >
             <h1 className="text-5xl md:text-nowrap md:text-7xl lg:text-8xl font-black italic leading-[0.9] tracking-tighter uppercase text-white">
-              OUR {" "}
+              MEET THE TEAM <br className="hidden md:block" />BEHIND {" "}
               <span className="text-transparent stroke-text font-serif">
-                TEAM.
+                NEFFTO.
               </span>
             </h1>
             <p className="text-zinc-400 md:text-nowrap text-base md:text-xl font-light max-w-md mt-6 italic mx-auto lg:mx-0">
@@ -262,6 +273,7 @@ const Team = () => {
         }
       `}</style>
     </main>
+    </>
   );
 };
 

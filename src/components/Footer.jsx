@@ -71,18 +71,24 @@ const Footer = () => {
             </h2>
 
             <nav className="space-y-3 sm:space-y-4">
-              {["Home", "Case Studies", "Team", "Contact"].map((item) => (
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Case Studies", path: "/casestudies" },
+                { name: "Team", path: "/team" },
+                { name: "Contact Us", path: "/contact" },
+                { name: "Privacy Policy", path: "/privacy-policy" },
+                { name: "Cookies Policy", path: "/cookies-policy" },
+                { name: "Terms and Conditions", path: "/terms-and-conditions" },
+                { name: "Refund & Cancellation Policy", path: "/refund-and-cancellation-policy" },
+                { name: "Disclaimer", path: "/disclaimer" }
+              ].map((item) => (
                 <Link
-                  key={item}
-                  to={
-                    item === "Home"
-                      ? "/"
-                      : `/${item.toLowerCase().replace(/\s+/g, "")}`
-                  }
+                  key={item.name}
+                  to={item.path}
                   className="group flex items-center w-fit gap-2 text-white/80 hover:text-primary transition"
                 >
-                  <span className="w-0 h-px bg-primary group-hover:w-4 transition-all duration-300" />
-                  <span className="text-xs sm:text-sm">{item}</span>
+                  <span className="text-xs sm:text-sm group-hover:scale-110 transition-transform duration-300">{item.name}</span>
                 </Link>
               ))}
             </nav>

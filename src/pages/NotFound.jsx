@@ -1,16 +1,20 @@
 // import { useNavigate } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import SEO from "../components/SEO";
 import { useNavigate } from "react-router-dom";
 
 // Combined component for 404 page
 export default function NotFound() {
 
   return (
-    <div className="w-full h-screen bg-black overflow-x-hidden flex justify-center items-center relative mt-20">
+    <>
+      <SEO title="404 - Page Not Found" description="The page you are looking for does not exist." />
+      <div className="w-full h-screen bg-black overflow-x-hidden flex justify-center items-center relative mt-20">
       <MessageDisplay />
       <CharactersAnimation />
       <CircleAnimation />
     </div>
+    </>
   );
 }
 

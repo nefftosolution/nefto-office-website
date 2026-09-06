@@ -1,6 +1,7 @@
 // ================= ServicePages.jsx (Fixed) =================
 
 import React, { useState } from "react";
+import SEO from "../components/SEO";
 import { motion, AnimatePresence } from "framer-motion";
 import { useParams, Link } from "react-router-dom"; // Add Link import
 import GlowButton from "../components/GlowButton";
@@ -129,8 +130,8 @@ const ProjectSlider = ({ projects, parentSlug }) => {
 // Roadmap Component
 const RoadmapSection = ({ roadmap }) => {
   return (
-    <section className="py-20 px-4 overflow-hidden relative z-10">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 overflow-hidden relative z-10">
+      <div className="max-w-7xl mx-auto sm:px-6 px-4">
         <div className="text-center sm:mb-16 mb-10">
           <h2 className="text-xl sm:text-3xl md:text-5xl font-black mb-4">
             {roadmap?.title || "Our Process Roadmap"}
@@ -185,10 +186,10 @@ const RoadmapSection = ({ roadmap }) => {
 // Next Steps Component
 const NextStepsSection = ({ nextSteps }) => {
   return (
-    <section className="sm:py-16 py-10 sm:px-6 px-4 bg-main-bg relative overflow-hidden">
+    <section className="sm:py-16 py-10 bg-main-bg relative overflow-hidden">
       <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
       <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10">
         <div className="text-center sm:mb-16 mb-10">
           <h2 className="text-xl sm:text-3xl md:text-5xl font-black mb-4">
             {nextSteps?.title || "Ready to Get Started?"}
@@ -272,14 +273,24 @@ const ServicePages = () => {
   };
 
   return (
-    <div className="bg-main-bg text-white selection:bg-main-bg selection:text-black">
+    <>
+      <SEO 
+        title={service.metaTitle || `${service.sectionTitle} - Neffto Solutions`} 
+        description={service.metaDescription || service.sectionDesc}
+        canonical={service.canonical}
+        ogTitle={service.ogTitle}
+        ogDescription={service.ogDescription}
+        ogUrl={service.ogUrl}
+        keywords={service.keywords}
+      />
+      <div className="bg-main-bg text-white selection:bg-main-bg selection:text-black">
       {/* NAVBAR SPACER */}
       <div className="h-20" />
 
       <main>
         {/* SECTION 1: HERO */}
         <section
-          className="relative w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center px-4 sm:px-6 md:px-12 sm:py-20 py-16 overflow-hidden"
+          className="relative w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center sm:py-20 py-16 overflow-hidden"
           style={{
             backgroundImage: `linear-gradient(135deg, rgba(0, 1, 12, 0.95) 0%, rgba(240, 240, 240, 0) 100%), url(${service.heroImage})`,
           }}
@@ -290,13 +301,14 @@ const ServicePages = () => {
             <div className="absolute top-20 left-10 w-72 h-72 bg-main-bg[#042558]/10 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-black/10 rounded-full blur-3xl animate-pulse delay-1000" />
           </div>
-          <div className="z-10 max-w-4xl w-full">
+          <div className="z-10 max-w-7xl mx-auto sm:px-6 px-4 w-full">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              className="max-w-3xl"
             >
-              <h1 className="font-sans text-white text-2xl md:text-4xl lg:text-6xl font-black leading-tight">
+              <h1 className="font-sans text-white text-2xl md:text-4xl lg:text-5xl font-black leading-tight">
                 {service.heroTitle}
               </h1>
               <p className="sm:mt-6 mt-4 text-gray-200 text-sm sm:text-base md:text-lg max-w-2xl font-sans">
@@ -318,10 +330,10 @@ const ServicePages = () => {
         </section>
 
         {/* SECTION 2: TABS / FEATURES */}
-        <section className="bg-main-bg text-white sm:py-16 py-10 sm:px-6 px-4 relative overflow-hidden">
+        <section className="bg-main-bg text-white sm:py-16 py-10 relative overflow-hidden">
           <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
           <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10">
             <div className="flex lg:flex-row flex-col lg:gap-12 mb-16 justify-between">
               <div className="mb-10 lg:mb-0 lg:w-1/2">
                 <h2 className="text-xl sm:text-2xl md:text-4xl font-black mb-6">
@@ -338,7 +350,7 @@ const ServicePages = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10">
             <div className="grid lg:grid-cols-3 grid-cols-1 border border-white/10 overflow-hidden">
               <div className="flex flex-col">
                 {tabs.map((tab, i) => (
@@ -396,13 +408,13 @@ const ServicePages = () => {
 
         {/* SECTION 3: CAPABILITIES GRID */}
         <section
-          className="relative sm:py-16 py-10 sm:px-6 px-4 bg-fixed bg-cover bg-center"
+          className="relative sm:py-16 py-10 bg-fixed bg-cover bg-center"
           style={{
             backgroundImage: `url(${service.capabilitiesBg})`,
           }}
         >
           <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10">
             <div className="text-center space-y-4 sm:mb-20 mb-10">
               <h2 className="text-2xl md:text-6xl font-black tracking-tighter uppercase leading-none text-white">
                 {service.capabilitiesTitle} <br />
@@ -444,10 +456,10 @@ const ServicePages = () => {
         </section>
 
         {/* SECTION 4: PROCESS */}
-        <section className="sm:py-16 py-10 sm:px-6 px-4 bg-main-bg relative overflow-hidden">
+        <section className="sm:py-16 py-10 bg-main-bg relative overflow-hidden">
           <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
 
-          <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row gap-20 lg:items-center text-white border-b border-white/10 pb-20">
+          <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10 flex flex-col lg:flex-row gap-20 lg:items-center text-white border-b border-white/10 pb-20">
             <div className="lg:w-1/2 space-y-2">
               <h3 className="text-sm text-primary font-black">
                 {service.processSubTitle}
@@ -484,7 +496,7 @@ const ServicePages = () => {
               <div className="relative p-1 bg-primary rounded-2xl">
                 <img
                   src={service.processImage}
-                  className="h-auto w-full object-cover transition-all duration-1000 rounded-2xl"
+                  className="h-100 w-full object-cover transition-all duration-1000 rounded-2xl"
                   alt={service.title}
                 />
               </div>
@@ -497,13 +509,13 @@ const ServicePages = () => {
         {/* SECTION 6: PROJECTS SHOWCASE */}
         {projects.length > 0 && (
           <section
-            className="relative sm:py-16 py-10 sm:px-6 px-4 bg-fixed bg-cover bg-center"
+            className="relative sm:py-16 py-10 bg-fixed bg-cover bg-center"
             style={{
               backgroundImage: `url(${service.showcase?.bgImage})`,
             }}
           >
             <div className="absolute inset-0 bg-black/85 backdrop-blur-xl" />
-            <div className="max-w-6xl mx-auto relative z-10">
+            <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10">
               <h2 className="sm:text-4xl text-xl font-black text-center sm:mb-16 mb-10 tracking-widest uppercase italic text-white">
                 {service.showcase?.title}
               </h2>
@@ -520,13 +532,13 @@ const ServicePages = () => {
 
         {/* SECTION 8: FINAL CTA */}
         <section
-          className="relative sm:py-16 py-10 sm:px-6 px-4 bg-fixed bg-cover bg-center"
+          className="relative sm:py-16 py-10 bg-fixed bg-cover bg-center"
           style={{
             backgroundImage: `url(${service.ctaBg})`,
           }}
         >
           <div className="absolute inset-0 bg-black/60 backdrop-blur-xl" />
-          <div className="max-w-7xl mx-auto text-center space-y-12 relative z-10">
+          <div className="max-w-7xl mx-auto sm:px-6 px-4 text-center space-y-12 relative z-10">
             <div className="space-y-8">
               <div className="flex justify-center items-center bg-white/10 backdrop-blur-xl border border-white/30 sm:w-24 sm:h-24 w-20 h-20 rounded-full mx-auto mb-4">
                 <Rocket className="text-primary" size={40} />
@@ -642,6 +654,7 @@ const ServicePages = () => {
         }
       `}</style>
     </div>
+    </>
   );
 };
 
