@@ -6,11 +6,11 @@ const RefundAndCancellationPolicy = () => {
   return (
     <>
       <SEO
-        title="Refund and Cancellation Policy | Neffto"
-        description="Read the Refund and Cancellation Policy for Neffto Solution to understand project cancellation terms, payment refunds, service conditions, and applicable requirements."
+        title="Refund and Cancellation Policy | NEFFTO Solution"
+        description="Read NEFFTO Solution's refund and cancellation policy to learn how to cancel a service, request a refund, and understand refund timelines and eligibility."
         canonical="https://nefftosolution.com/refund-and-cancellation-policy"
-        ogTitle="Refund and Cancellation Policy | Neffto"
-        ogDescription="Read the Refund and Cancellation Policy for Neffto Solution to understand project cancellation terms, payment refunds, service conditions, and applicable requirements."
+        ogTitle="Refund and Cancellation Policy | NEFFTO Solution"
+        ogDescription="Read NEFFTO Solution's refund and cancellation policy to learn how to cancel a service, request a refund, and understand refund timelines and eligibility."
         ogUrl="https://nefftosolution.com/refund-and-cancellation-policy"
         keywords="refund policy, cancellation policy, Neffto Solution refunds, project cancellation, software development refunds"
       />

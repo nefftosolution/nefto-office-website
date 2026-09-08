@@ -9,7 +9,7 @@ import PageWrapper from "./components/PageWrapper";
 
 // Lazy-loaded Pages
 const Home = lazy(() => import("./pages/Home"));
-const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+const Services = lazy(() => import("./pages/Services"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Team = lazy(() => import("./pages/Team"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
@@ -31,7 +31,7 @@ function App() {
         <PageWrapper>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/casestudies" element={<CaseStudies />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
             <Route path="/services/:slug" element={<ServicePages />} />

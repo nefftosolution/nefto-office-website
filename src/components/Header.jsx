@@ -32,7 +32,7 @@ const Header = () => {
 
   const navLinksFirst = [{ name: "Home", to: "/" }];
   const navLinksSec = [
-    { name: "Case Studies", to: "/casestudies" },
+    { name: "About Us", to: "/about" },
     { name: "Team", to: "/team" },
   ];
 

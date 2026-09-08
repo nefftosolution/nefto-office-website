@@ -5,11 +5,11 @@ const TermsAndConditions = () => {
   return (
     <>
       <SEO
-        title="Terms and Conditions | Neffto Solution"
-        description="Read the Terms and Conditions for Neffto Solution to understand the rules, guidelines, service agreements, responsibilities, and conditions for using our website and services."
+        title="Terms and Conditions of Use | NEFFTO Digital Services"
+        description="Review the terms and conditions for using NEFFTO Solution's website and digital services, including user rights, payments, and account responsibilities."
         canonical="https://nefftosolution.com/terms-and-conditions"
-        ogTitle="Terms and Conditions | Neffto Solution"
-        ogDescription="Read the Terms and Conditions for Neffto Solution to understand the rules, guidelines, service agreements, responsibilities, and conditions for using our website and services."
+        ogTitle="Terms and Conditions of Use | NEFFTO Digital Services"
+        ogDescription="Review the terms and conditions for using NEFFTO Solution's website and digital services, including user rights, payments, and account responsibilities."
         ogUrl="https://nefftosolution.com/terms-and-conditions"
         keywords="terms and conditions, Neffto Solution terms, service agreement, website terms, software service terms"
       />

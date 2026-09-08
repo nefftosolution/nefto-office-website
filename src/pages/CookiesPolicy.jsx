@@ -5,11 +5,11 @@ const CookiesPolicy = () => {
   return (
     <>
       <SEO
-        title="Cookies Policy and Website Tracking | Neffto"
-        description="Read the Cookies Policy for Neffto Solution to learn how we use cookies and similar technologies to improve website performance, security, and user experience."
+        title="Cookies Policy | NEFFTO Digital Solutions & Technology"
+        description="Learn how NEFFTO Solution uses cookies to improve your browsing experience, analyse site traffic and personalise content. Control your settings anytime."
         canonical="https://nefftosolution.com/cookies-policy"
-        ogTitle="Cookies Policy and Website Tracking | Neffto"
-        ogDescription="Read the Cookies Policy for Neffto Solution to learn how we use cookies and similar technologies to improve website performance, security, and user experience."
+        ogTitle="Cookies Policy | NEFFTO Digital Solutions & Technology"
+        ogDescription="Learn how NEFFTO Solution uses cookies to improve your browsing experience, analyse site traffic and personalise content. Control your settings anytime."
         ogUrl="https://nefftosolution.com/cookies-policy"
         keywords="cookies policy, Neffto Solution cookies, website tracking, cookies and similar technologies, website user experience"
       />

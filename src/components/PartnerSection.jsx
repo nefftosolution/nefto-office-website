@@ -79,7 +79,7 @@ const PartnerSection = () => {
 
         {/* CTA */}
         <div className="mt-10 border-b border-white/10 pb-20 text-center sm:mt-24">
-          <Link to="/casestudies">
+          <Link to="/services">
             <button className="group relative cursor-pointer overflow-hidden border border-white bg-white px-4 py-2 text-[12px] font-medium uppercase tracking-widest text-black hover:text-white transition sm:px-10 sm:py-5 sm:text-sm sm:font-bold">
               <span className="relative z-10 tracking-tight">
                 Explore Our Services

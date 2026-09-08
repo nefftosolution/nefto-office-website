@@ -32,6 +32,29 @@ const Footer = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
+
+        {/* ================= Location ================= */}
+          <div className="space-y-4 sm:space-y-6 my-16">
+            <h2 className="relative text-lg sm:text-xl font-bold text-white uppercase">
+              Location
+              <span className="absolute -bottom-1 left-0 h-0.75 w-26 rounded-full bg-linear-to-r from-[#5482b4] via-[#b4d0e6] to-transparent"></span>
+            </h2>
+
+            <div className="space-y-3 text-white/70 text-sm">
+              <p>Faisal Colony, Bahawalpur, Pakistan</p>
+              <div className="w-full h-48 sm:h-100 rounded overflow-hidden mt-4 border border-white/10">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d596.9740716689197!2d71.6961130040417!3d29.40105363811351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1788867393649!5m2!1sen!2s" 
+                  className="w-full h-full" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true} 
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-16 items-start">
           {/* ================= LEFT ================= */}
           <div className="space-y-8 lg:col-span-2">
@@ -78,14 +101,19 @@ const Footer = () => {
                 { name: "Cookies Policy", path: "/cookies-policy" },
                 { name: "Disclaimer", path: "/disclaimer" },
                 { name: "Terms and Conditions", path: "/terms-and-conditions" },
-                { name: "Refund & Cancellation Policy", path: "/refund-and-cancellation-policy" },
+                {
+                  name: "Refund & Cancellation Policy",
+                  path: "/refund-and-cancellation-policy",
+                },
               ].map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
                   className="group flex items-center w-fit gap-2 text-white/80 hover:text-primary transition"
                 >
-                  <span className="text-xs sm:text-sm group-hover:scale-110 transition-transform duration-300">{item.name}</span>
+                  <span className="text-xs sm:text-sm group-hover:scale-110 transition-transform duration-300">
+                    {item.name}
+                  </span>
                 </Link>
               ))}
             </nav>
@@ -112,17 +140,30 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* ================= Location ================= */}
+          {/* ================= COMPANY ================= */}
           <div className="space-y-4 sm:space-y-6">
-            <h2 className="relative text-lg sm:text-xl font-bold text-white uppercase">
-              Location
-              <span className="absolute -bottom-1 left-0 h-0.75 w-26 rounded-full bg-linear-to-r from-[#5482b4] via-[#b4d0e6] to-transparent"></span>
+            <h2 className="relative inline-block text-lg font-bold uppercase text-white sm:text-xl">
+              Company
+              <span className="absolute -bottom-1 left-0 h-0.75 w-16 rounded-full bg-linear-to-r from-[#5482b4] via-[#b4d0e6] to-transparent"></span>
             </h2>
 
-            <div className="space-y-3 text-white/70 text-sm">
-              <p>Faisal Colony, Bahawalpur</p>
-              <p>Pakistan</p>
-            </div>
+            <nav className="space-y-3 sm:space-y-4">
+              {[
+                { name: "Home", path: "/" },
+                { name: "Team", path: "/team" },
+                { name: "View All Services", path: "/services" },
+              ].map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="group flex items-center w-fit gap-2 text-white/80 hover:text-primary transition"
+                >
+                  <span className="text-xs sm:text-sm group-hover:scale-110 transition-transform duration-300">
+                    {item.name}
+                  </span>
+                </Link>
+              ))}
+            </nav>
           </div>
         </div>
 

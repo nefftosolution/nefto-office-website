@@ -201,7 +201,7 @@ const Home = () => {
                 hover="hover:text-surface"
               />
               <GlowButton
-                to={"/casestudies"}
+                to={"/services"}
                 name={"View Services"}
                 className="bg-off-white text-surface"
                 hover="hover:text-white"
