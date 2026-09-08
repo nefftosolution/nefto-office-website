@@ -20,7 +20,7 @@ const ProjectDetail = () => {
   if (isProject && !project) {
     return (
       <div className="min-h-screen bg-main-bg text-white flex items-center justify-center flex-col gap-4">
-        <h1 className="text-4xl font-bold">Project Not Found</h1>
+        <h2 className="text-4xl font-bold">Project Not Found</h2>
         <Link to={`/services/${slug}`} className="text-primary hover:underline">
           Back to {service?.title || "Service"}
         </Link>
@@ -41,7 +41,15 @@ const ProjectDetail = () => {
   if (isProject && project) {
     return (
       <>
-        <SEO title={`${project.title} - Case Study`} description={project.overview} />
+        <SEO 
+          title={`${project.title} - Case Study | NEFFTO`} 
+          description={project.overview}
+          canonical={`https://nefftosolution.com/services/${slug}/${project.slug}`}
+          ogTitle={`${project.title} - Case Study | NEFFTO`}
+          ogDescription={project.overview}
+          ogUrl={`https://nefftosolution.com/services/${slug}/${project.slug}`}
+          keywords={`case study, ${project.title}, NEFFTO portfolio, software project, digital solution`}
+        />
         <section className="bg-main-bg text-white min-h-screen sm:py-20 py-10 relative overflow-hidden">
         <div className="absolute top-[-20%] left-[-10%] w-300 h-300 bg-[#042558] blur-[140px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-300 h-300 bg-[#042558] blur-[140px]" />
@@ -80,7 +88,7 @@ const ProjectDetail = () => {
           {/* ================= OVERVIEW ================= */}
           {project.overview && (
             <div className="max-w-7xl mx-auto sm:px-6 px-4 py-10 border-t border-white/10">
-              <h2 className="sm:text-3xl text-2xl font-bold mb-4">Overview</h2>
+              <h2 className="sm:text-3xl text-2xl font-bold mb-4">Project Overview</h2>
               <p className="text-gray-300 leading-relaxed text-lg">
                 {project.overview}
               </p>
@@ -115,7 +123,7 @@ const ProjectDetail = () => {
           {project.tech && project.tech.length > 0 && (
             <div className="max-w-7xl mx-auto sm:px-6 px-4 py-16 border-t border-white/10">
               <h2 className="sm:text-3xl text-2xl font-bold mb-10">
-                Technologies Used
+                Technology Stack
               </h2>
               <div className="grid md:grid-cols-3 lg:grid-cols-4">
                 {project.tech.map((tech, i) => (
@@ -239,9 +247,9 @@ const ProjectDetail = () => {
             <p className="text-cyan-400 uppercase tracking-[5px] mb-4">
               {service.title}
             </p>
-            <h1 className="text-5xl font-black mb-6 leading-tight">
+            <h2 className="text-5xl font-black mb-6 leading-tight">
               {service.heroTitle || service.title}
-            </h1>
+            </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
               {service.heroDesc || service.desc}
             </p>

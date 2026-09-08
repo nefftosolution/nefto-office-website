@@ -93,13 +93,13 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="NEFFTO | Digital Solutions & Technology"
-        description="NEFFTO creates websites, applications, AI solutions, and digital experiences that help businesses build and grow online."
+        title="Best Software House in Bahawalpur | Neffto Solution"
+        description="Neffto Solution is a software house in Bahawalpur building websites, AI tools and SEO campaigns for businesses across Pakistan. Get a free quote today."
         canonical="https://nefftosolution.com/"
-        ogTitle="NEFFTO | Digital Solutions & Technology"
-        ogDescription="Explore NEFFTO's web development, applications, AI, design, SEO, and digital marketing solutions for modern businesses."
+        ogTitle="Best Software House in Bahawalpur | Neffto Solution"
+        ogDescription="Neffto Solution is a software house in Bahawalpur building websites, AI tools and SEO campaigns for businesses across Pakistan. Get a free quote today."
         ogUrl="https://nefftosolution.com/"
-        keywords="technology solutions, digital solutions, web development, AI solutions, digital experiences, digital transformation"
+        keywords="software house in Bahawalpur, software company Bahawalpur, web development Pakistan, AI services Pakistan, SEO services Pakistan"
       />
       <section
         className="relative overflow-hidden w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center pt-35 pb-25 md:pt-45 md:pb-35"
@@ -110,7 +110,8 @@ const Home = () => {
         <div className="relative z-10 mx-auto w-full max-w-7xl sm:px-6 px-4">
           <div className="w-full max-w-3xl lg:max-w-2xl xl:max-w-3xl">
             <h1 className="font-sans text-white text-2xl md:text-4xl lg:text-5xl font-black leading-tight flex flex-col justify-start">
-              Digital Solutions for <span className="highlight">Modern Businesses</span>
+              Digital Solutions for{" "}
+              <span className="highlight">Modern Businesses</span>
             </h1>
             <p className="mt-4 text-gray-300 text-sm lg:max-w-xl max-w-sm font-sans">
               From stunning web experiences and high-end graphics to custom tool

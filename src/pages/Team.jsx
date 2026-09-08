@@ -20,13 +20,15 @@ const MainTeamCard = ({
     <div className="group relative select-none shrink-0 overflow-hidden w-80 rounded-2xl sm:rounded-[28px] border border-white/10 bg-[#020617]/60 backdrop-blur-xl">
       {/* Image Container */}
       <div className="relative h-100 w-full overflow-hidden">
-        <img
-          loading="lazy"
-          src={imageSrc}
-          alt={name}
-          style={{ objectPosition: imagePosition }}
-          className="h-full w-full object-cover"
-        />
+        {imageSrc ? (
+          <img
+            loading="lazy"
+            src={imageSrc}
+            alt={name}
+            style={{ objectPosition: imagePosition }}
+            className="h-full w-full object-cover"
+          />
+        ) : null}
 
         {/* Multi-stage Gradient Overlay for Perfect Text Contrast */}
         <div className="absolute inset-0 bg-linear-to-t from-black to-transparent opacity-90 transition-opacity duration-300" />
@@ -93,186 +95,188 @@ const Team = () => {
   return (
     <>
       <SEO
-        title="Meet the NEFFTO Team | Developers & Digital Experts"
-        description="Meet the people behind NEFFTO, including developers, designers, AI specialists, and digital professionals building modern solutions."
+        title="Meet Our Software Development Team | Neffto Solution"
+        description="Meet the developers, AI engineers and marketers behind Neffto Solution in Bahawalpur. See exactly who builds your project. Talk to the team today."
         canonical="https://nefftosolution.com/team"
-        ogTitle="Meet the NEFFTO Team"
-        ogDescription="Get to know the developers, designers, AI specialists, and digital professionals behind NEFFTO's projects."
+        ogTitle="Meet Our Software Development Team | Neffto Solution"
+        ogDescription="Meet the developers, AI engineers and marketers behind Neffto Solution in Bahawalpur. See exactly who builds your project. Talk to the team today."
         ogUrl="https://nefftosolution.com/team"
-        keywords="NEFFTO team, NEFFTO developers, web developers, software developers, AI specialists, designers, digital professionals"
+        keywords="software development team Pakistan, NEFFTO team, NEFFTO developers, web developers, software developers, AI specialists, designers, digital professionals"
       />
       <main className="bg-main-bg text-white selection:bg-surface selection:text-white pt-20">
-      <section
-        className="relative overflow-hidden px-6 py-20"
-        // Hover only works on Desktop
-        onMouseEnter={() => !isMobile && setIsHovered(true)}
-        onMouseLeave={() => !isMobile && setIsHovered(false)}
-      >
-        <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
-        <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
-        <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto items-center justify-between">
-          {/* LEFT SIDE: TEXT CONTENT */}
-          <motion.div
-            animate={{
-              // On desktop: Shrink to 0 width. On mobile: Stay full width.
-              flexBasis: !isMobile && isHovered ? "0%" : "100%",
-              opacity: !isMobile && isHovered ? 0 : 1,
-              x: !isMobile && isHovered ? -200 : 0,
-            }}
-            transition={springTransition}
-            className="min-w-0 overflow-hidden text-center lg:text-left z-50 lg:pr-10 mb-16 lg:mb-0"
-          >
-            <h1 className="text-5xl md:text-nowrap md:text-7xl lg:text-8xl font-black italic leading-[0.9] tracking-tighter uppercase text-white">
-              MEET THE TEAM <br className="hidden md:block" />BEHIND {" "}
-              <span className="text-transparent stroke-text font-serif">
-                NEFFTO.
-              </span>
-            </h1>
-            <p className="text-zinc-400 md:text-nowrap text-base md:text-xl font-light max-w-md mt-6 italic mx-auto lg:mx-0">
-              "The innovators, creators, and dreamers architecting the digital
-              backbone of the next century."
-            </p>
-          </motion.div>
+        <section
+          className="relative overflow-hidden px-6 py-20"
+          // Hover only works on Desktop
+          onMouseEnter={() => !isMobile && setIsHovered(true)}
+          onMouseLeave={() => !isMobile && setIsHovered(false)}
+        >
+          <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
+          <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
+          <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto items-center justify-between">
+            {/* LEFT SIDE: TEXT CONTENT */}
+            <motion.div
+              animate={{
+                // On desktop: Shrink to 0 width. On mobile: Stay full width.
+                flexBasis: !isMobile && isHovered ? "0%" : "100%",
+                opacity: !isMobile && isHovered ? 0 : 1,
+                x: !isMobile && isHovered ? -200 : 0,
+              }}
+              transition={springTransition}
+              className="min-w-0 overflow-hidden text-center lg:text-left z-50 lg:pr-10 mb-16 lg:mb-0"
+            >
+              <h1 className="text-5xl md:text-nowrap md:text-6xl lg:text-6xl font-black italic leading-[0.9] tracking-tighter uppercase text-white">
+                MEET THE TEAM <br className="hidden md:block" />
+                BEHIND{" "}
+                <span className="text-transparent stroke-text font-serif">
+                  NEFFTO.
+                </span>
+              </h1>
+              <p className="text-zinc-400 md:text-nowrap text-base md:text-sm font-light max-w-md mt-6 italic mx-auto lg:mx-0">
+                "The innovators, creators, and dreamers architecting the digital <br />
+                backbone of the next century."
+              </p>
+            </motion.div>
 
-          {/* RIGHT SIDE: INTERACTIVE CARDS GALLERY */}
-          <motion.div
-            animate={{
-              flexBasis: !isMobile && isHovered ? "100%" : "50%",
-            }}
-            transition={springTransition}
-            className="relative w-full shrink-0"
-          >
-            {/* 
+            {/* RIGHT SIDE: INTERACTIVE CARDS GALLERY */}
+            <motion.div
+              animate={{
+                flexBasis: !isMobile && isHovered ? "100%" : "50%",
+              }}
+              transition={springTransition}
+              className="relative w-full shrink-0"
+            >
+              {/* 
               MOBILE: Grid layout (2 columns on tablet, 1 on mobile)
               DESKTOP: Stacked layout 
           */}
-            <div className="flex items-center justify-center flex-wrap lg:block relative w-full gap-6 md:gap-10">
-              {teamMembers.map((member, index) => {
-                const total = teamMembers.length;
-                const centerIndex = (total - 1) / 2;
-                const distanceFromCenter = index - centerIndex;
+              <div className="flex items-center justify-center flex-wrap lg:block relative w-full gap-6 md:gap-10">
+                {teamMembers.map((member, index) => {
+                  const total = teamMembers.length;
+                  const centerIndex = (total - 1) / 2;
+                  const distanceFromCenter = index - centerIndex;
 
-                return (
-                  <motion.div
-                    key={index}
-                    initial={false}
-                    animate={
-                      !isMobile
-                        ? {
-                            // DESKTOP ANIMATION
-                            x: isHovered
-                              ? distanceFromCenter * 340 // Horizontal spread
-                              : distanceFromCenter * 25, // Tight stack
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={false}
+                      animate={
+                        !isMobile
+                          ? {
+                              // DESKTOP ANIMATION
+                              x: isHovered
+                                ? distanceFromCenter * 340 // Horizontal spread
+                                : distanceFromCenter * 25, // Tight stack
 
-                            y: 0, // NO Y-AXIS MOVEMENT AS REQUESTED
+                              y: 0, // NO Y-AXIS MOVEMENT AS REQUESTED
 
-                            rotate: isHovered ? 0 : distanceFromCenter * 4,
+                              rotate: isHovered ? 0 : distanceFromCenter * 4,
 
-                            scale: isHovered ? 1 : 1 - index * 0.02,
+                              scale: isHovered ? 1 : 1 - index * 0.02,
 
-                            zIndex: 100 - index, // First index on top
-                          }
-                        : {
-                            // MOBILE: No animation, reset positions for grid
-                            x: 0,
-                            y: 0,
-                            rotate: 0,
-                            scale: 1,
-                            zIndex: 1,
-                          }
-                    }
-                    transition={springTransition}
-                    // On Desktop it's absolute, on mobile it's relative to fill the grid
-                    className={`${isMobile ? "relative" : "absolute inset-0 m-auto flex items-center justify-center"}`}
-                  >
-                    <div className="relative group">
+                              zIndex: 100 - index, // First index on top
+                            }
+                          : {
+                              // MOBILE: No animation, reset positions for grid
+                              x: 0,
+                              y: 0,
+                              rotate: 0,
+                              scale: 1,
+                              zIndex: 1,
+                            }
+                      }
+                      transition={springTransition}
+                      // On Desktop it's absolute, on mobile it's relative to fill the grid
+                      className={`${isMobile ? "relative" : "absolute inset-0 m-auto flex items-center justify-center"}`}
+                    >
+                      <div className="relative group">
+                        <MainTeamCard
+                          imageSrc={member.image}
+                          name={member.name}
+                          title={member.title}
+                          imagePosition="center 0%"
+                        />
+                      </div>
+                    </motion.div>
+                  );
+                })}
 
-                      <MainTeamCard
-                        imageSrc={member.image}
-                        name={member.name}
-                        title={member.title}
-                        imagePosition="center 0%"
-                      />
-                    </div>
-                  </motion.div>
-                );
-              })}
-
-              {/* 
+                {/* 
                 This "Ghost" div ensures the section has height on Desktop 
                 since the children are absolute.
             */}
-              <div className="hidden lg:block invisible pointer-events-none">
-                <MainTeamCard imageSrc="" name="" title="" />
+                <div className="hidden lg:block invisible pointer-events-none">
+                  <MainTeamCard imageSrc="" name="" title="" />
+                </div>
               </div>
+            </motion.div>
+          </div>
+
+          <style>{`
+            .stroke-text {
+              -webkit-text-stroke: 1px white;
+            }
+          `}</style>
+        </section>
+
+        <div className="relative">
+          <TeamGrid />
+        </div>
+
+        {/* SECTION 5 (ODD): JOIN THE PIPELINE */}
+        <section
+          className="relative sm:py-16 py-10 px-4 bg-fixed bg-cover bg-center text-center overflow-hidden"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070')`,
+          }}
+        >
+          {/* overlays */}
+          <div className="absolute inset-0 bg-black/60" />
+
+          <div className="relative max-w-5xl mx-auto sm:space-y-8 space-y-4 z-10 text-white">
+            {/* small label */}
+            <div className="flex justify-center items-center gap-3 text-[10px] uppercase tracking-[0.4em] text-off-white font-bold">
+              <span className="sm:w-10 w-4 h-px bg-off-white" />
+              Join The Network
             </div>
-          </motion.div>
-        </div>
 
-        <style jsx>{`
-          .stroke-text {
-            -webkit-text-stroke: 1px white;
-          }
-        `}</style>
-      </section>
+            {/* heading */}
+            <motion.div
+              whileInView={{ scale: [0.9, 1], opacity: [0, 1] }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.8]">
+                BUILD THE <br />
+                <span className="text-transparent stroke-text">FUTURE.</span>
+              </h2>
+            </motion.div>
 
-      <TeamGrid />
+            {/* description */}
+            <p className="text-zinc-200 text-sm sm:text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
+              We’re assembling a high-performance engineering team focused on
+              AI, distributed systems, and next-generation products. If you
+              think in systems and build with precision, you’ll fit right in.
+            </p>
 
-      {/* SECTION 5 (ODD): JOIN THE PIPELINE */}
-      <section
-        className="relative sm:py-16 py-10 px-4 bg-fixed bg-cover bg-center text-center overflow-hidden"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070')`,
-        }}
-      >
-        {/* overlays */}
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="relative max-w-5xl mx-auto sm:space-y-8 space-y-4 z-10 text-white">
-          {/* small label */}
-          <div className="flex justify-center items-center gap-3 text-[10px] uppercase tracking-[0.4em] text-off-white font-bold">
-            <span className="sm:w-10 w-4 h-px bg-off-white" />
-            Join The Network
+            {/* actions */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+              <GlowButton
+                name="Let's Connect"
+                to="/contact"
+                className="bg-surface text-white border-2 border-surface"
+                hover="hover:text-surface"
+                layerHover="bg-white"
+              />
+            </div>
           </div>
-
-          {/* heading */}
-          <motion.div
-            whileInView={{ scale: [0.9, 1], opacity: [0, 1] }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.8]">
-              BUILD THE <br />
-              <span className="text-transparent stroke-text">FUTURE.</span>
-            </h2>
-          </motion.div>
-
-          {/* description */}
-          <p className="text-zinc-200 text-sm sm:text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
-            We’re assembling a high-performance engineering team focused on AI,
-            distributed systems, and next-generation products. If you think in
-            systems and build with precision, you’ll fit right in.
-          </p>
-
-          {/* actions */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <GlowButton
-              name="Let's Connect"
-              to="/contact"
-              className="bg-surface text-white border-2 border-surface"
-              hover="hover:text-surface"
-              layerHover="bg-white"
-            />
-          </div>
-        </div>
-      </section>
-      {/* stroke style */}
-      <style>{`
+        </section>
+        {/* stroke style */}
+        <style>{`
         .stroke-text {
           -webkit-text-stroke: 1.5px #efeff2;
           color: transparent;
         }
       `}</style>
-    </main>
+      </main>
     </>
   );
 };

@@ -1,14 +1,22 @@
 // import { useNavigate } from "react-router-dom";
 import React, { useEffect, useRef, useState } from "react";
 import SEO from "../components/SEO";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 // Combined component for 404 page
 export default function NotFound() {
 
   return (
     <>
-      <SEO title="404 - Page Not Found" description="The page you are looking for does not exist." />
+      <SEO 
+        title="404 - Page Not Found | NEFFTO" 
+        description="The page you are looking for does not exist on NEFFTO IT Solution." 
+        canonical="https://nefftosolution.com/404"
+        ogTitle="404 - Page Not Found | NEFFTO"
+        ogDescription="The page you are looking for does not exist on NEFFTO IT Solution."
+        ogUrl="https://nefftosolution.com/404"
+        keywords="404, page not found, NEFFTO error"
+      />
       <div className="w-full h-screen bg-black overflow-x-hidden flex justify-center items-center relative mt-20">
       <MessageDisplay />
       <CharactersAnimation />
@@ -38,15 +46,28 @@ function MessageDisplay() {
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="text-[35px] font-semibold text-black m-[1%]">
+        <h1 className="text-[35px] font-semibold text-black m-[1%]">
           Page Not Found
-        </div>
+        </h1>
         <div className="text-[80px] font-bold text-black m-[1%]">
           404
         </div>
         <div className="text-[15px] w-1/2 min-w-[40%] text-center text-black m-[1%]">
           The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
         </div>
+
+        <div className="mt-8 text-center bg-white/20 backdrop-blur-md p-6 rounded-2xl border border-black/10 shadow-lg">
+          <h2 className="text-xl font-bold text-black mb-4">Try One of These Instead</h2>
+          <div className="flex flex-wrap justify-center gap-4 text-sm font-medium">
+            <Link to="/services/web-development" className="text-black hover:text-white hover:bg-black px-4 py-2 rounded-full border border-black/20 transition">Web Development</Link>
+            <Link to="/services/app-development" className="text-black hover:text-white hover:bg-black px-4 py-2 rounded-full border border-black/20 transition">App Development</Link>
+            <Link to="/services/python-ml-ai" className="text-black hover:text-white hover:bg-black px-4 py-2 rounded-full border border-black/20 transition">Python, ML & AI</Link>
+            <Link to="/services/graphic-design" className="text-black hover:text-white hover:bg-black px-4 py-2 rounded-full border border-black/20 transition">Graphic Design</Link>
+            <Link to="/services/digital-marketing" className="text-black hover:text-white hover:bg-black px-4 py-2 rounded-full border border-black/20 transition">Digital Marketing</Link>
+            <Link to="/services/seo" className="text-black hover:text-white hover:bg-black px-4 py-2 rounded-full border border-black/20 transition">SEO Services</Link>
+          </div>
+        </div>
+
         <div className="flex gap-6 mt-8">
           <button
             onClick={() => navigate(-1)}

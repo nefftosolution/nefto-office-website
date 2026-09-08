@@ -275,7 +275,7 @@ const ServicePages = () => {
   return (
     <>
       <SEO 
-        title={service.metaTitle || `${service.sectionTitle} - Neffto Solutions`} 
+        title={service.metaTitle || `${service.sectionTitle} - Neffto Solution`} 
         description={service.metaDescription || service.sectionDesc}
         canonical={service.canonical}
         ogTitle={service.ogTitle}

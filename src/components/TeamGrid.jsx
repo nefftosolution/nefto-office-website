@@ -169,9 +169,9 @@ const TeamGrid = () => {
   );
 
   return (
-    <div className="relative">
+    <div className="relative" ref={targetRef}>
       {/* DESKTOP VIEW: Horizontal Scroll (lg:block) */}
-      <section ref={targetRef} className="hidden lg:block relative h-[500vh]">
+      <section className="hidden lg:block h-[500vh]">
         <div className="sticky top-10 flex h-screen items-center overflow-hidden">
           <motion.div
             style={{ x }}
@@ -224,7 +224,7 @@ const TeamGrid = () => {
         </div>
       </section>
 
-      <style jsx>{`
+      <style>{`
         .stroke-text {
           -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.1);
         }

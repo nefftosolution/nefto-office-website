@@ -33,7 +33,15 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <SEO title="Privacy Policy" description="Privacy Policy for Neffto Solutions" />
+      <SEO 
+        title="Privacy Policy | Neffto Solution Software House Bahawalpur" 
+        description="Read the Privacy Policy for NEFFTO IT Solution. Learn how we collect, use, and protect your personal data when using our digital services." 
+        canonical="https://nefftosolution.com/privacy-policy"
+        ogTitle="Privacy Policy | Neffto Solution Software House Bahawalpur"
+        ogDescription="Read the Privacy Policy for NEFFTO IT Solution. Learn how we collect, use, and protect your personal data when using our digital services."
+        ogUrl="https://nefftosolution.com/privacy-policy"
+        keywords="privacy policy, data protection, NEFFTO privacy, user data, terms"
+      />
       <div className="bg-main-bg text-white font-sans antialiased selection:bg-primary selection:text-main-bg">
         <header className="relative bg-gradient-to-br from-[#071524] to-[#042558] text-white py-24 sm:py-32 text-center overflow-hidden pt-40">
           <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px] pointer-events-none"></div>
