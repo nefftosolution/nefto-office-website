@@ -15,7 +15,7 @@ const RefundAndCancellationPolicy = () => {
         keywords="refund policy, cancellation policy, Neffto Solution refunds, project cancellation, software development refunds"
       />
       <div className="bg-main-bg text-white font-sans antialiased selection:bg-primary selection:text-main-bg">
-        <header className="relative bg-gradient-to-br from-[#071524] to-[#042558] text-white py-24 sm:py-32 text-center overflow-hidden pt-40">
+        <header className="relative bg-linear-to-br from-[#071524] to-[#042558] text-white py-24 sm:py-32 text-center overflow-hidden pt-40">
           <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px] pointer-events-none"></div>
           <div className="relative z-10 max-w-7xl mx-auto sm:px-6 px-4">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
