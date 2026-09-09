@@ -15,7 +15,7 @@ const Loader = () => {
         {/* Logo */}
         <img
           src="/logo.png"
-          alt="Logo"
+          alt="Neffto Solution software development and digital marketing agency official company logo"
           className="absolute h-20 w-20 animate-pulse object-contain"
         />
       </div>

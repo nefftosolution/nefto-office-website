@@ -88,7 +88,7 @@ const Services = () => {
                       <div className="relative aspect-4/5 overflow-hidden">
                         <img
                           src={project.heroImage}
-                          alt={project.title}
+                          alt={project.imageAlt || project.title}
                           className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                         />
 

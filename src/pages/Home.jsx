@@ -295,7 +295,9 @@ const Home = () => {
               <div className="relative overflow-hidden border border-black/10">
                 <img
                   src={PerformanceImg}
-                  alt="NEFFTO Success"
+                  alt="Website performance report showing improved load speed and Core Web Vitals scores"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-120 object-cover"
                 />
 

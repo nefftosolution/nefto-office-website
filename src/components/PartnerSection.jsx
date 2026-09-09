@@ -10,27 +10,27 @@ import { Link } from "react-router-dom";
 
 const brandsRow = [
   {
-    name: "Web Development",
+    name: "Custom website and web application development service",
     url: WebDevImg,
   },
   {
-    name: "Digital Marketing",
+    name: "Paid advertising and campaign management service",
     url: DigitalMarketingImg,
   },
   {
-    name: "Amazon",
+    name: "Amazon AWS cloud hosting and e-commerce marketplace integration services",
     url: Amazon,
   },
   {
-    name: "Tik Tok",
+    name: "TikTok viral video marketing and influencer campaign management strategies",
     url: TiktokImg,
   },
   {
-    name: "Youtube",
+    name: "YouTube channel management and long form video content optimization",
     url: YoutubeImg,
   },
   {
-    name: "Video Editing",
+    name: "Video editing and post-production for social media content",
     url: VideoEditing,
   },
 ];

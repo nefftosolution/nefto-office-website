@@ -128,7 +128,7 @@ const TeamMemberCard = ({ card, index }) => {
       <div className="absolute inset-0 h-full w-full">
         <img
           src={card.image}
-          alt={card.title}
+          alt={`${card.title} - ${card.category} at Neffto Solution software agency in Bahawalpur`}
           className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/30 to-transparent" />

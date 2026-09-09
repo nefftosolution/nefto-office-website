@@ -79,7 +79,7 @@ const ProjectDetail = () => {
                 <img
                   src={project.image}
                   className="rounded-3xl shadow-2xl border border-white/10 w-full"
-                  alt={project.title}
+                  alt={project.altText || project.title}
                 />
               </div>
             </div>
@@ -182,7 +182,7 @@ const ProjectDetail = () => {
                           <img
                             src={p.image}
                             className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                            alt={p.title}
+                            alt={p.altText || p.title}
                           />
                         </div>
                         <div className="p-6">
@@ -264,7 +264,7 @@ const ProjectDetail = () => {
             <img
               src={service.heroImage}
               className="rounded-3xl shadow-2xl border border-white/10 w-full"
-              alt={service.title}
+              alt={service.imageAlt || service.title}
             />
           </div>
         </div>
@@ -358,7 +358,7 @@ const ProjectDetail = () => {
                   <img
                     src={projectItem.image}
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                    alt={projectItem.title}
+                    alt={projectItem.altText || projectItem.title}
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent"></div>
                   <p className="absolute bottom-3 left-4 text-xs text-cyan-400 font-semibold uppercase tracking-wider">
@@ -448,7 +448,7 @@ const ProjectDetail = () => {
                   <img
                     src={testimonial.src}
                     className="w-12 h-12 rounded-full object-cover"
-                    alt={testimonial.name}
+                    alt={`${testimonial.name} - Client testimonial for Neffto Solution`}
                   />
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
@@ -481,7 +481,7 @@ const ProjectDetail = () => {
                 <img
                   src={post.imageUrl}
                   className="h-48 w-full object-cover"
-                  alt={post.title}
+                  alt={`${post.title} - Insightful blog post by Neffto Solution`}
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-2">
@@ -558,7 +558,7 @@ const ProjectDetail = () => {
                 <img
                   src={item.heroImage}
                   className="h-48 w-full object-cover group-hover:scale-105 transition duration-500"
-                  alt={item.title}
+                  alt={item.imageAlt || item.title}
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>

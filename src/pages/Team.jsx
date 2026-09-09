@@ -24,7 +24,7 @@ const MainTeamCard = ({
           <img
             loading="lazy"
             src={imageSrc}
-            alt={name}
+            alt={`${name} - ${title} at Neffto Solution executive team`}
             style={{ objectPosition: imagePosition }}
             className="h-full w-full object-cover"
           />

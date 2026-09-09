@@ -47,6 +47,7 @@ export const servicesData = [
   {
     slug: "web-development",
     title: "Web Development",
+    imageAlt: "Full stack web development team building a custom website for a Pakistani business",
     desc: "Full stack web development company in Pakistan. We build fast websites, web apps, and Shopify stores for local and global clients.",
     icon: Laptop,
     heroImage: Web,
@@ -165,6 +166,7 @@ export const servicesData = [
       projects: [
         {
           slug: "fundbox",
+          altText: "Fundbox platform showing lines of credit and term loan options for small businesses",
           title: "Fundbox – Capital Products for Small Businesses",
           desc: "Fundbox offers fast, easy access to business financing, including lines of credit and term loans up to $250,000, to help small businesses manage cash flow and grow.",
           image: WebProject1,
@@ -194,6 +196,7 @@ export const servicesData = [
         },
         {
           slug: "offdeal",
+          altText: "OffDeal AI-powered M&A platform interface for selling a small business",
           title: "OffDeal – The Investment Bank for Small Businesses",
           desc: "AI-powered M&A platform to sell your business faster and for more.",
           image: WebProject2,
@@ -221,8 +224,8 @@ export const servicesData = [
         },
         {
           slug: "human-interest",
-          title:
-            "Human Interest – Full-Service 401(k) Provider for Small Businesses",
+          altText: "Human Interest dashboard for managing 401(k) and 403(b) retirement plans",
+          title: "Human Interest – Full-Service 401(k) Provider for Small Businesses",
           desc: "Affordable, easy-to-manage 401(k) and 403(b) retirement plans for businesses of all sizes.",
           image: WebProject3,
           tech: [
@@ -250,8 +253,8 @@ export const servicesData = [
         },
         {
           slug: "weave",
-          title:
-            "Weave – All-in-One Communication Platform for Healthcare & Small Business",
+          altText: "Weave platform combining phone, texting, payments and scheduling for healthcare practices",
+          title: "Weave – All-in-One Communication Platform for Healthcare & Small Business",
           desc: "AI-powered phone, texting, payments, and scheduling platform that helps practices attract, engage, and retain patients.",
           image: WebProject4,
           tech: [
@@ -427,6 +430,7 @@ Looking ahead, the evolution of 'Web Performance Optimization Guide' will undoub
   {
     slug: "app-development",
     title: "App Development",
+    imageAlt: "Custom software and automation tools built by the Neffto Solution team in Bahawalpur",
     desc: "Custom software tools and automation from one of the best software houses in Pakistan, based in Bahawalpur.",
     icon: Wrench,
     heroImage: App,
@@ -545,6 +549,7 @@ Looking ahead, the evolution of 'Web Performance Optimization Guide' will undoub
       projects: [
         {
           slug: "firmware-security-platform",
+          altText: "Firmware security platform detecting device vulnerabilities across a hardware supply chain",
           title: "Firmware & Supply Chain Security Platform",
           desc: "Advanced enterprise-grade firmware security platform designed to detect vulnerabilities, monitor device integrity, and protect hardware supply chains.",
           image: ToolProject1,
@@ -572,6 +577,7 @@ Looking ahead, the evolution of 'Web Performance Optimization Guide' will undoub
         },
         {
           slug: "ai-finance-audit-platform",
+          altText: "AI finance audit platform automating invoice review and expense compliance checks",
           title: "AI Finance Audit & Spend Management Platform",
           desc: "AI-powered financial auditing and spend management software that automates invoice reviews, fraud detection, and expense compliance.",
           image: ToolProject2,
@@ -741,6 +747,7 @@ Looking ahead, the evolution of 'Why Your Business Needs a Custom CRM (Not a Gen
   {
     slug: "python-ml-ai",
     title: "AI & Machine Learning",
+    imageAlt: "Python machine learning model training on a developer workstation",
     desc: "Python, ML, and AI solutions from one of the best software houses in Pakistan.",
     icon: BrainCircuit,
     heroImage: Python,
@@ -860,6 +867,7 @@ Looking ahead, the evolution of 'Why Your Business Needs a Custom CRM (Not a Gen
       projects: [
         {
           slug: "predictive-analytics",
+          altText: "Predictive analytics machine learning model forecasting business trends and revenue",
           title: "Predictive Analytics Engine",
           desc: "Machine learning models that forecast business trends, demand, and outcomes with high accuracy.",
           image:
@@ -882,6 +890,7 @@ Looking ahead, the evolution of 'Why Your Business Needs a Custom CRM (Not a Gen
         },
         {
           slug: "chatbot-development",
+          altText: "Intelligent AI chatbot handling customer support queries automatically via natural language",
           title: "AI Chatbot & Virtual Assistant",
           desc: "Intelligent, context-aware chatbots that handle customer support, lead qualification, and FAQs automatically.",
           image:
@@ -904,6 +913,7 @@ Looking ahead, the evolution of 'Why Your Business Needs a Custom CRM (Not a Gen
         },
         {
           slug: "image-recognition",
+          altText: "Computer vision model identifying objects in an automated quality control system",
           title: "Computer Vision & Image Recognition",
           desc: "Custom computer vision systems for object detection, image classification, OCR, and visual search.",
           image:
@@ -1074,6 +1084,7 @@ Looking ahead, the evolution of 'Predictive Analytics: A Practical Guide for Bus
   {
     slug: "graphic-design",
     title: "Graphic Designing",
+    imageAlt: "Brand identity and UI UX design laid out across desktop and mobile screens",
     desc: "Brand identity design agency offering UI UX design services and creative social media post design.",
     icon: Palette,
     heroImage: Graphic,
@@ -1193,6 +1204,7 @@ Looking ahead, the evolution of 'Predictive Analytics: A Practical Guide for Bus
       projects: [
         {
           slug: "logo-design",
+          altText: "Professional corporate logo design concepts for a modern tech brand identity",
           title: "Logo & Brand Mark Design",
           desc: "Unique, versatile logo designs that represent your brand identity across every medium and scale.",
           image:
@@ -1215,6 +1227,7 @@ Looking ahead, the evolution of 'Predictive Analytics: A Practical Guide for Bus
         },
         {
           slug: "social-media-graphics",
+          altText: "Engaging social media graphics and banners optimized for Instagram and Facebook engagement",
           title: "Social Media Graphics & Ad Creatives",
           desc: "Scroll-stopping graphics and ad creatives for Instagram, Facebook, TikTok, and LinkedIn.",
           image:
@@ -1237,6 +1250,7 @@ Looking ahead, the evolution of 'Predictive Analytics: A Practical Guide for Bus
         },
         {
           slug: "brand-identity",
+          altText: "Complete brand identity package including typography, color palette, and business cards",
           title: "Complete Brand Identity System",
           desc: "A comprehensive brand identity package with everything you need to present your business professionally.",
           image:
@@ -1407,6 +1421,7 @@ Looking ahead, the evolution of 'Why Your Brand Needs a Proper Brand Identity (N
   {
     slug: "digital-marketing",
     title: "Digital Marketing",
+    imageAlt: "Digital marketing dashboard showing Google Ads and Meta Ads campaign performance",
     desc: "Best SEO services in Pakistan, on page SEO optimization, Google Ads, and Meta Ads for business growth.",
     icon: Search,
     heroImage: Digital,
@@ -1525,6 +1540,7 @@ Looking ahead, the evolution of 'Why Your Brand Needs a Proper Brand Identity (N
       projects: [
         {
           slug: "seo-services",
+          altText: "Comprehensive SEO campaign strategy showing local and global search ranking improvements",
           title: "SEO Services",
           desc: "Comprehensive SEO packages designed to rank your website higher and drive sustainable organic traffic.",
           image:
@@ -1553,6 +1569,7 @@ Looking ahead, the evolution of 'Why Your Brand Needs a Proper Brand Identity (N
         },
         {
           slug: "meta-ads",
+          altText: "Meta Facebook and Instagram ad campaign dashboard with high conversion rate metrics",
           title: "Meta Ads Management",
           desc: "Precision-targeted Facebook and Instagram advertising campaigns built for leads, sales, and brand awareness.",
           image:
@@ -1580,6 +1597,7 @@ Looking ahead, the evolution of 'Why Your Brand Needs a Proper Brand Identity (N
         },
         {
           slug: "google-ads",
+          altText: "Google Ads PPC campaign analytics showing low CPC and high ROI results",
           title: "Google Ads Management",
           desc: "Professional Google Ads campaign management that puts your business in front of high-intent buyers.",
           image:
@@ -1747,6 +1765,7 @@ Looking ahead, the evolution of 'Meta Ads vs Google Ads: Which Should You Run?' 
   // 6. SEO
   {
     slug: "seo",
+    imageAlt: "SEO analytics dashboard tracking keyword rankings and organic traffic growth",
     title: "SEO",
     desc: "SEO services in Bahawalpur. On page SEO, technical audits, and link building that help you rank higher on Google.",
     icon: Globe,
@@ -1866,6 +1885,7 @@ Looking ahead, the evolution of 'Meta Ads vs Google Ads: Which Should You Run?' 
       projects: [
         {
           slug: "technical-seo-audit",
+          altText: "In-depth technical SEO audit report highlighting site speed and indexability fixes",
           title: "Technical SEO Audit & Recovery",
           desc: "Full-site technical SEO audits that find and fix the errors blocking your rankings.",
           image:
@@ -1893,6 +1913,7 @@ Looking ahead, the evolution of 'Meta Ads vs Google Ads: Which Should You Run?' 
         },
         {
           slug: "on-page-seo-optimization",
+          altText: "On-page SEO optimization checklist improving meta tags, headers, and keyword density",
           title: "On Page SEO Optimization",
           desc: "Keyword research and on page SEO optimization services that align your content with what people actually search for.",
           image:
@@ -1915,6 +1936,7 @@ Looking ahead, the evolution of 'Meta Ads vs Google Ads: Which Should You Run?' 
         },
         {
           slug: "local-seo-bahawalpur",
+          altText: "Local SEO Google My Business listing optimization for a Bahawalpur business",
           title: "Local SEO for Bahawalpur Businesses",
           desc: "Local SEO services that help Bahawalpur businesses rank in Google Maps and local search results.",
           image:

@@ -14,6 +14,7 @@ const FeaturedWork = () => {
       title: service.showcase.projects[0].title,
       desc: service.showcase.projects[0].desc,
       desktopImg: service.showcase.projects[0].image,
+      altText: service.showcase.projects[0].altText,
       serviceTitle: service.title,
     }));
 
@@ -184,7 +185,7 @@ const FeaturedWork = () => {
                         <div className="aspect-video w-full">
                           <img
                             src={project.desktopImg}
-                            alt={project.title}
+                            alt={project.altText || project.title}
                             loading="lazy"
                             className="h-full w-full object-cover"
                           />

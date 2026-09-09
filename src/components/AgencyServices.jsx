@@ -71,7 +71,7 @@ const AgencyServices = () => {
             hover="hover:text-white"
             layerHover="bg-primary"
           />
-          <img src={ServicesImage} alt="" className="w-full mt-4 pr-4" />
+          <img src={ServicesImage} alt="The six Neffto Solution services: web, app, AI, design, marketing and SEO" loading="lazy" decoding="async" className="w-full mt-4 pr-4" />
         </div>
 
         {/* RIGHT SIDE - GLASS CARDS */}

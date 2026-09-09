@@ -166,7 +166,7 @@ const WhitepaperSection = () => {
             <div className="relative z-10 drop-shadow-[0_50px_50px_rgba(0,0,0,0.5)]">
               <img
                 src={EmailBookImg}
-                alt="2026 Trends Whitepaper"
+                alt="Cover of the free 2026 digital trends whitepaper from Neffto Solution"
                 className="h-auto w-full rounded-lg"
               />
             </div>

@@ -58,15 +58,16 @@ const ProjectSlider = ({ projects, parentSlug }) => {
       <div className="grid lg:grid-cols-2">
         <div className="h-full overflow-hidden">
           <AnimatePresence mode="wait">
-            <motion.img
-              key={index}
-              src={projects[index].image}
-              initial={{ opacity: 0, scale: 1.1 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.2 }}
-              className="w-full h-full object-cover object-left transition-all duration-1000"
-            />
+              <motion.img
+                key={index}
+                src={projects[index].image}
+                alt={projects[index].altText || projects[index].title}
+                initial={{ opacity: 0, scale: 1.1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+                className="w-full h-full object-cover object-left transition-all duration-1000"
+              />
           </AnimatePresence>
         </div>
 
@@ -344,7 +345,7 @@ const ServicePages = () => {
               <div className="ml-auto">
                 <img
                   src={service.sectionImage}
-                  alt={service.title}
+                  alt={service.imageAlt || service.title}
                   className="rounded w-100 h-50 object-cover transition-all duration-1000"
                 />
               </div>
@@ -497,7 +498,7 @@ const ServicePages = () => {
                 <img
                   src={service.processImage}
                   className="h-100 w-full object-cover transition-all duration-1000 rounded-2xl"
-                  alt={service.title}
+                  alt={service.imageAlt || service.title}
                 />
               </div>
             </div>

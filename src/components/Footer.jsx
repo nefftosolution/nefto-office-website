@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="space-y-8 lg:col-span-2">
             <div className="space-y-2">
               <Link to="/" className="inline-block">
-                <img src={logo} alt="Logo" className="w-30 -translate-x-8" />
+                <img src={logo} alt="Neffto Solution software development and digital marketing agency official company logo" className="w-30 -translate-x-8" />
               </Link>
 
               <p className="max-w-sm text-white/70 text-xs sm:text-sm leading-relaxed">
@@ -86,6 +86,33 @@ const Footer = () => {
             </MotionLink>
           </div>
 
+{/* ================= COMPANY ================= */}
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="relative inline-block text-lg font-bold uppercase text-white sm:text-xl">
+              Company
+              <span className="absolute -bottom-1 left-0 h-0.75 w-16 rounded-full bg-linear-to-r from-[#5482b4] via-[#b4d0e6] to-transparent"></span>
+            </h2>
+
+            <nav className="space-y-3 sm:space-y-4">
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Team", path: "/team" },
+                { name: "Contact Us", path: "/contact" },
+              ].map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="group flex items-center w-fit gap-2 text-white/80 hover:text-primary transition"
+                >
+                  <span className="text-xs sm:text-sm group-hover:scale-110 transition-transform duration-300">
+                    {item.name}
+                  </span>
+                </Link>
+              ))}
+            </nav>
+          </div>
+
           {/* ================= NAV ================= */}
           <div className="space-y-4 sm:space-y-6">
             <h2 className="relative inline-block text-lg font-bold uppercase text-white sm:text-xl">
@@ -95,8 +122,6 @@ const Footer = () => {
 
             <nav className="space-y-3 sm:space-y-4">
               {[
-                { name: "About Us", path: "/about" },
-                { name: "Contact Us", path: "/contact" },
                 { name: "Privacy Policy", path: "/privacy-policy" },
                 { name: "Cookies Policy", path: "/cookies-policy" },
                 { name: "Disclaimer", path: "/disclaimer" },
@@ -135,32 +160,6 @@ const Footer = () => {
                 >
                   <span className="w-0 h-px bg-primary group-hover:w-4 transition-all duration-300" />
                   <span className="text-xs sm:text-sm">{item.title}</span>
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-          {/* ================= COMPANY ================= */}
-          <div className="space-y-4 sm:space-y-6">
-            <h2 className="relative inline-block text-lg font-bold uppercase text-white sm:text-xl">
-              Company
-              <span className="absolute -bottom-1 left-0 h-0.75 w-16 rounded-full bg-linear-to-r from-[#5482b4] via-[#b4d0e6] to-transparent"></span>
-            </h2>
-
-            <nav className="space-y-3 sm:space-y-4">
-              {[
-                { name: "Home", path: "/" },
-                { name: "Team", path: "/team" },
-                { name: "View All Services", path: "/services" },
-              ].map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className="group flex items-center w-fit gap-2 text-white/80 hover:text-primary transition"
-                >
-                  <span className="text-xs sm:text-sm group-hover:scale-110 transition-transform duration-300">
-                    {item.name}
-                  </span>
                 </Link>
               ))}
             </nav>

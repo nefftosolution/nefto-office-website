@@ -34,6 +34,7 @@ const Header = () => {
   const navLinksSec = [
     { name: "About Us", to: "/about" },
     { name: "Team", to: "/team" },
+    { name: "Contact", to: "/contact" },
   ];
 
   // Animation Variants
@@ -65,7 +66,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto sm:px-6 px-4 h-20 flex justify-between items-center">
         {/* LOGO */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="w-20 -translate-x-6" />
+          <img src={logo} alt="Neffto Solution software development and digital marketing agency official company logo" className="w-20 -translate-x-6" />
         </Link>
 
         {/* DESKTOP NAVIGATION */}
@@ -93,13 +94,13 @@ const Header = () => {
 
           {/* SERVICES MEGA MENU */}
           <div className="relative group">
-            <button className="flex items-center gap-1 px-5 py-2 text-[13px] font-bold uppercase tracking-wider text-white group-hover:text-primary transition-colors cursor-pointer">
+            <Link to="/services" className="flex items-center gap-1 px-5 py-2 text-[13px] font-bold uppercase tracking-wider text-white group-hover:text-primary transition-colors cursor-pointer">
               Services{" "}
               <ChevronDown
                 size={14}
                 className="group-hover:rotate-180 transition-transform duration-300"
               />
-            </button>
+            </Link>
 
             {/* Dropdown Card */}
             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
