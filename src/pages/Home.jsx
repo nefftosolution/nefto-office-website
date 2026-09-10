@@ -5,7 +5,6 @@ import GlowButton from "../components/GlowButton";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, CheckIcon, ArrowUpRight, X } from "lucide-react";
 
-import FeaturedWork from "../components/FeaturedWork";
 import AgencyServices from "../components/AgencyServices";
 import PartnerSection from "../components/PartnerSection";
 import WhitepaperSection from "../components/WhitepaperSection";
@@ -18,7 +17,38 @@ import BlogBg from "../assets/blog-bg.jpg";
 import Counter from "../components/Counter";
 import ServicesImage from "../assets/Explore-Services.png";
 import PerformanceImg from "../assets/performance-img.jpeg";
-import { servicesData } from "../data/serviceData";
+const servicesData = [
+  {
+    slug: "web-development",
+    title: "Web Development",
+    desc: "Custom web development services in Bahawalpur. We build fast, secure, and scalable websites for businesses of all sizes.",
+  },
+  {
+    slug: "app-development",
+    title: "App Development",
+    desc: "Top-tier mobile app development company creating custom iOS and Android applications.",
+  },
+  {
+    slug: "python-ml-ai",
+    title: "AI & Machine Learning",
+    desc: "Python, ML, and AI solutions from one of the best software houses in Pakistan.",
+  },
+  {
+    slug: "graphic-design",
+    title: "Graphic Designing",
+    desc: "Professional graphic designing services in Bahawalpur. Logos, branding, UI/UX, and marketing materials.",
+  },
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    desc: "Result-driven digital marketing agency in Bahawalpur specializing in Meta Ads, Google Ads, and SMM.",
+  },
+  {
+    slug: "seo",
+    title: "SEO",
+    desc: "SEO services in Bahawalpur. On page SEO, technical audits, and link building that help you rank higher on Google.",
+  },
+];
 
 const Home = () => {
   const faqs = [
@@ -100,6 +130,8 @@ const Home = () => {
         ogDescription="Neffto Solution is a software house in Bahawalpur building websites, AI tools and SEO campaigns for businesses across Pakistan. Get a free quote today."
         ogUrl="https://nefftosolution.com/"
         keywords="software house in Bahawalpur, software company Bahawalpur, web development Pakistan, AI services Pakistan, SEO services Pakistan"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://nefftosolution.com/#organization","name":"Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan","url":"https://nefftosolution.com/","logo":{"@type":"ImageObject","url":"https://nefftosolution.com/logo.png"},"sameAs":["https://www.facebook.com/nefftosolution","https://www.linkedin.com/company/neffto-solution","https://www.instagram.com/nefftosolution"],"contactPoint":{"@type":"ContactPoint","telephone":"+92-300-0000000","contactType":"customer service","areaServed":"PK","availableLanguage":"en"}},{"@type":"WebSite","@id":"https://nefftosolution.com/#website","url":"https://nefftosolution.com/","name":"Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan","publisher":{"@id":"https://nefftosolution.com/#organization"}}]})}
       />
       <section
         className="relative overflow-hidden w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center pt-35 pb-25 md:pt-45 md:pb-35"
@@ -319,7 +351,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <FeaturedWork />
+
       <PartnerSection />
       <WhitepaperSection />
       <FAQ faqs={faqs} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ title, description, keywords, canonical, ogTitle, ogDescription, ogUrl }) => {
+const SEO = ({ title, description, keywords, canonical, ogTitle, ogDescription, ogUrl, schema }) => {
   const siteName = "Neffto Solution";
   const finalTitle = title || siteName;
   const finalOgTitle = ogTitle || finalTitle;
@@ -18,6 +18,7 @@ const SEO = ({ title, description, keywords, canonical, ogTitle, ogDescription, 
       {ogUrl && <meta property="og:url" content={ogUrl} />}
       <meta name="twitter:title" content={finalOgTitle} />
       <meta name="twitter:description" content={finalOgDescription} />
+      {schema && <script type="application/ld+json">{schema}</script>}
     </Helmet>
   );
 };

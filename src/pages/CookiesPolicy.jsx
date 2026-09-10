@@ -12,6 +12,8 @@ const CookiesPolicy = () => {
         ogDescription="Learn how NEFFTO Solution uses cookies to improve your browsing experience, analyse site traffic and personalise content. Control your settings anytime."
         ogUrl="https://nefftosolution.com/cookies-policy"
         keywords="cookies policy, Neffto Solution cookies, website tracking, cookies and similar technologies, website user experience"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Cookies Policy - Digital Experience | Neffto Solution","url":"https://nefftosolution.com/cookies-policy"})}
       />
       <div className="bg-main-bg text-white font-sans antialiased selection:bg-primary selection:text-main-bg">
         <header className="relative bg-linear-to-br from-[#071524] to-[#042558] text-white py-24 sm:py-32 text-center overflow-hidden pt-40">

@@ -13,6 +13,8 @@ const RefundAndCancellationPolicy = () => {
         ogDescription="Read NEFFTO Solution's refund and cancellation policy to learn how to cancel a service, request a refund, and understand refund timelines and eligibility."
         ogUrl="https://nefftosolution.com/refund-and-cancellation-policy"
         keywords="refund policy, cancellation policy, Neffto Solution refunds, project cancellation, software development refunds"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Refund Policy - Software Services | Neffto Solution","url":"https://nefftosolution.com/refund-and-cancellation-policy"})}
       />
       <div className="bg-main-bg text-white font-sans antialiased selection:bg-primary selection:text-main-bg">
         <header className="relative bg-linear-to-br from-[#071524] to-[#042558] text-white py-24 sm:py-32 text-center overflow-hidden pt-40">

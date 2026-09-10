@@ -102,6 +102,8 @@ const Team = () => {
         ogDescription="Meet the developers, AI engineers and marketers behind Neffto Solution in Bahawalpur. See exactly who builds your project. Talk to the team today."
         ogUrl="https://nefftosolution.com/team"
         keywords="software development team Pakistan, NEFFTO team, NEFFTO developers, web developers, software developers, AI specialists, designers, digital professionals"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"AboutPage","name":"Expert Developers & Designers Team - Neffto Solution","description":"Meet the talented and passionate team behind Neffto Solution.","url":"https://nefftosolution.com/team"})}
       />
       <main className="bg-main-bg text-white selection:bg-surface selection:text-white pt-20">
         <section

@@ -41,6 +41,8 @@ const PrivacyPolicy = () => {
         ogDescription="Read the Privacy Policy for NEFFTO IT Solution. Learn how we collect, use, and protect your personal data when using our digital services."
         ogUrl="https://nefftosolution.com/privacy-policy"
         keywords="privacy policy, data protection, NEFFTO privacy, user data, terms"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Privacy Policy - Secure Data & Tech Services | Neffto Solution","url":"https://nefftosolution.com/privacy-policy"})}
       />
       <div className="bg-main-bg text-white font-sans antialiased selection:bg-primary selection:text-main-bg">
         <header className="relative bg-linear-to-br from-[#071524] to-[#042558] text-white py-24 sm:py-32 text-center overflow-hidden pt-40">

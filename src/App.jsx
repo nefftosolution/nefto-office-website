@@ -12,8 +12,12 @@ const Home = lazy(() => import("./pages/Home"));
 const Services = lazy(() => import("./pages/Services"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Team = lazy(() => import("./pages/Team"));
-const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
-const ServicePages = lazy(() => import("./pages/ServicePages"));
+const WebDevelopment = lazy(() => import("./pages/WebDevelopment"));
+const AppDevelopment = lazy(() => import("./pages/AppDevelopment"));
+const AIMachineLearning = lazy(() => import("./pages/AIMachineLearning"));
+const GraphicDesigning = lazy(() => import("./pages/GraphicDesigning"));
+const DigitalMarketing = lazy(() => import("./pages/DigitalMarketing"));
+const SearchEngineOptimization = lazy(() => import("./pages/SearchEngineOptimization"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const Disclaimer = lazy(() => import("./pages/Disclaimer"));
@@ -34,11 +38,12 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/services/:slug" element={<ServicePages />} />
-            <Route
-              path="/services/:slug/:projectSlug"
-              element={<ProjectDetail />}
-            />
+            <Route path="/services/web-development" element={<WebDevelopment />} />
+            <Route path="/services/app-development" element={<AppDevelopment />} />
+            <Route path="/services/python-ml-ai" element={<AIMachineLearning />} />
+            <Route path="/services/graphic-design" element={<GraphicDesigning />} />
+            <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/services/seo" element={<SearchEngineOptimization />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

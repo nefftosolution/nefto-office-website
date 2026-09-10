@@ -77,6 +77,8 @@ const Contact = () => {
         ogDescription="Contact Neffto Solution in Bahawalpur about web, AI or SEO work. Tell us what you need and receive a costed proposal back within one working day."
         ogUrl="https://nefftosolution.com/contact"
         keywords="contact software company Bahawalpur, contact Neffto Solution, software house Bahawalpur, web development contact"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"LocalBusiness","name":"Neffto Solution - Custom Software Development Agency in Bahawalpur","image":"https://nefftosolution.com/logo.png","url":"https://nefftosolution.com/contact","telephone":"+92-300-0000000","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"Neffto Solution Office","addressLocality":"Bahawalpur","addressRegion":"Punjab","postalCode":"63100","addressCountry":"PK"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}})}
       />
 
       {/* HERO & FORM SECTION */}

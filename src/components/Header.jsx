@@ -10,10 +10,54 @@ import {
   Cpu,
   ShieldCheck,
   ArrowRight,
+  Laptop,
+  ShoppingCart,
+  BrainCircuit,
+  Palette,
+  Video,
+  Globe,
 } from "lucide-react";
 import GlowButton from "./GlowButton";
 const logo = "/logo.png";
-import { servicesData } from "../data/serviceData";
+
+const servicesData = [
+  {
+    slug: "web-development",
+    title: "Web Development",
+    desc: "Custom web development services in Bahawalpur. We build fast, secure, and scalable websites for businesses of all sizes.",
+    icon: Laptop,
+  },
+  {
+    slug: "app-development",
+    title: "App Development",
+    desc: "Top-tier mobile app development company creating custom iOS and Android applications.",
+    icon: ShoppingCart,
+  },
+  {
+    slug: "python-ml-ai",
+    title: "AI & Machine Learning",
+    desc: "Python, ML, and AI solutions from one of the best software houses in Pakistan.",
+    icon: BrainCircuit,
+  },
+  {
+    slug: "graphic-design",
+    title: "Graphic Designing",
+    desc: "Professional graphic designing services in Bahawalpur. Logos, branding, UI/UX, and marketing materials.",
+    icon: Palette,
+  },
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    desc: "Result-driven digital marketing agency in Bahawalpur specializing in Meta Ads, Google Ads, and SMM.",
+    icon: Video,
+  },
+  {
+    slug: "seo",
+    title: "SEO",
+    desc: "SEO services in Bahawalpur. On page SEO, technical audits, and link building that help you rank higher on Google.",
+    icon: Globe,
+  },
+];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +78,7 @@ const Header = () => {
   const navLinksSec = [
     { name: "About Us", to: "/about" },
     { name: "Team", to: "/team" },
-    { name: "Contact", to: "/contact" },
+    { name: "Contact Us", to: "/contact" },
   ];
 
   // Animation Variants

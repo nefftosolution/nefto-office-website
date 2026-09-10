@@ -16,6 +16,8 @@ export default function NotFound() {
         ogDescription="The page you are looking for does not exist on NEFFTO IT Solution."
         ogUrl="https://nefftosolution.com/404"
         keywords="404, page not found, NEFFTO error"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Page Not Found - Neffto Solution IT Agency","description":"The page you are looking for does not exist."})}
       />
       <div className="w-full h-screen bg-black overflow-x-hidden flex justify-center items-center relative mt-20">
       <MessageDisplay />

@@ -12,6 +12,8 @@ const TermsAndConditions = () => {
         ogDescription="Review the terms and conditions for using NEFFTO Solution's website and digital services, including user rights, payments, and account responsibilities."
         ogUrl="https://nefftosolution.com/terms-and-conditions"
         keywords="terms and conditions, Neffto Solution terms, service agreement, website terms, software service terms"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Terms & Conditions - IT Services | Neffto Solution","url":"https://nefftosolution.com/terms-and-conditions"})}
       />
       <div className="bg-main-bg text-white font-sans antialiased selection:bg-primary selection:text-main-bg">
         <header className="relative bg-linear-to-br from-[#071524] to-[#042558] text-white py-24 sm:py-32 text-center overflow-hidden pt-40">

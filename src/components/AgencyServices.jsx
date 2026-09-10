@@ -17,7 +17,44 @@ import GlowButton from "./GlowButton";
 import ServicesImage from "../assets/Explore-Services.png";
 import { Link } from "react-router-dom";
 
-import { servicesData } from "../data/serviceData";
+const servicesData = [
+  {
+    slug: "web-development",
+    title: "Web Development",
+    desc: "Custom web development services in Bahawalpur. We build fast, secure, and scalable websites for businesses of all sizes.",
+    icon: Laptop,
+  },
+  {
+    slug: "app-development",
+    title: "App Development",
+    desc: "Top-tier mobile app development company creating custom iOS and Android applications.",
+    icon: ShoppingCart, // Using available icon, or we could import Smartphone
+  },
+  {
+    slug: "python-ml-ai",
+    title: "AI & Machine Learning",
+    desc: "Python, ML, and AI solutions from one of the best software houses in Pakistan.",
+    icon: BrainCircuit,
+  },
+  {
+    slug: "graphic-design",
+    title: "Graphic Designing",
+    desc: "Professional graphic designing services in Bahawalpur. Logos, branding, UI/UX, and marketing materials.",
+    icon: Palette,
+  },
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    desc: "Result-driven digital marketing agency in Bahawalpur specializing in Meta Ads, Google Ads, and SMM.",
+    icon: Video, // Or import Megaphone
+  },
+  {
+    slug: "seo",
+    title: "SEO",
+    desc: "SEO services in Bahawalpur. On page SEO, technical audits, and link building that help you rank higher on Google.",
+    icon: Globe,
+  },
+];
 
 const AgencyServices = () => {
   return (
@@ -63,14 +100,6 @@ const AgencyServices = () => {
               drive measurable success.
             </p>
           </div>
-
-          <GlowButton
-            name="More Services"
-            to="/casestudies"
-            className="bg-white text-surface border-2 border-primary"
-            hover="hover:text-white"
-            layerHover="bg-primary"
-          />
           <img src={ServicesImage} alt="The six Neffto Solution services: web, app, AI, design, marketing and SEO" loading="lazy" decoding="async" className="w-full mt-4 pr-4" />
         </div>
 

@@ -12,6 +12,8 @@ const Disclaimer = () => {
         ogDescription="Read the disclaimer covering information, services and third party content published on the Neffto Solution website. Contact us with any questions."
         ogUrl="https://nefftosolution.com/disclaimer"
         keywords="disclaimer, NEFFTO disclaimer, legal, liability"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Disclaimer - Software & Tech Solutions | Neffto Solution","url":"https://nefftosolution.com/disclaimer"})}
       />
       <div className="bg-main-bg text-white sm:pt-40 pt-30 sm:pb-20 pb-10">
         <div className="max-w-7xl mx-auto sm:px-6 px-4 space-y-6 bg-surface/30 p-8 rounded-2xl border border-white/10 backdrop-blur-md">

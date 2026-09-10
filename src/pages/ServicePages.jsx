@@ -283,6 +283,8 @@ const ServicePages = () => {
         ogDescription={service.ogDescription}
         ogUrl={service.ogUrl}
         keywords={service.keywords}
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"ServicePages - Neffto Solution"})}
       />
       <div className="bg-main-bg text-white selection:bg-main-bg selection:text-black">
       {/* NAVBAR SPACER */}

@@ -78,6 +78,8 @@ const AboutUs = () => {
         ogDescription="Learn how Neffto Solution grew into a full service software house in Bahawalpur serving clients across Pakistan and abroad. Read our story today."
         ogUrl="https://nefftosolution.com/about"
         keywords="about software company Bahawalpur, Neffto Solution, software house Bahawalpur, software company Pakistan"
+      
+        schema={JSON.stringify({"@context":"https://schema.org","@type":"AboutPage","mainEntityOfPage":{"@type":"WebPage","@id":"https://nefftosolution.com/about"},"name":"About Neffto Solution - Leading Tech & Software Agency","description":"Learn more about Neffto Solution, our mission, vision, and the expert team driving digital transformation.","publisher":{"@id":"https://nefftosolution.com/#organization"}})}
       />
 
       <div className="bg-main-bg text-white min-h-screen font-sans selection:bg-primary selection:text-white">
