@@ -43,8 +43,7 @@ const BlogCard = ({
               } ${post.className || ""}`}
             >
               {/* 1. BACKGROUND IMAGE: Slow Zoom & Saturation Pop */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-all duration-1500 ease-out group-hover:scale-110 saturate-[0.6] group-hover:saturate-100"
+              <div title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="absolute inset-0 bg-cover bg-center transition-all duration-1500 ease-out group-hover:scale-110 saturate-[0.6] group-hover:saturate-100"
                 style={{ backgroundImage: `url(${post.imageUrl})` }}
               />
 

@@ -82,8 +82,7 @@ const Contact = () => {
       />
 
       {/* HERO & FORM SECTION */}
-      <section
-        className="relative w-full py-25 lg:py-32 overflow-hidden bg-cover bg-center"
+      <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="relative w-full py-25 lg:py-32 overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: `url(${ContactBg})` }}
       >
         {/* Dark Overlay with Blur */}

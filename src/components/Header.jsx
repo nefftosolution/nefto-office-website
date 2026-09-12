@@ -76,7 +76,7 @@ const Header = () => {
 
   const navLinksFirst = [{ name: "Home", to: "/" }];
   const navLinksSec = [
-    { name: "About Us", to: "/about" },
+    { name: "About", to: "/about" },
     { name: "Team", to: "/team" },
     { name: "Contact Us", to: "/contact" },
   ];
@@ -110,7 +110,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto sm:px-6 px-4 h-20 flex justify-between items-center">
         {/* LOGO */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Neffto Solution software development and digital marketing agency official company logo" className="w-20 -translate-x-6" />
+          <img src={logo} alt="Neffto Solution software development and digital marketing agency official company logo" className="w-20 -translate-x-6" title="Neffto Solution software development and digital marketing agency official company logo" />
         </Link>
 
         {/* DESKTOP NAVIGATION */}

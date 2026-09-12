@@ -46,8 +46,7 @@ const WhitepaperSection = () => {
       {/* HUMAN DESIGN ELEMENT: The "Silk" Aura Gradient */}
       <div className="pointer-events-none absolute inset-0">
         {/* Deep Indigo Base */}
-        <div
-          className="absolute inset-0 bg-cover bg-fixed bg-no-repeat"
+        <div title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="absolute inset-0 bg-cover bg-fixed bg-no-repeat"
           style={{
             backgroundImage: `url(${EmailBg})`,
           }}

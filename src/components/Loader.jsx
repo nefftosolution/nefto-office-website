@@ -13,11 +13,9 @@ const Loader = () => {
         <div className="absolute h-32 w-32 animate-spin rounded-full border-2 border-white/10 border-b-white border-l-white [animation-direction:reverse] [animation-duration:2s]" />
 
         {/* Logo */}
-        <img
-          src="/logo.png"
+        <img src="/logo.png"
           alt="Neffto Solution software development and digital marketing agency official company logo"
-          className="absolute h-20 w-20 animate-pulse object-contain"
-        />
+          className="absolute h-20 w-20 animate-pulse object-contain" title="Neffto Solution software development and digital marketing agency official company logo" />
       </div>
     </div>
   );

@@ -21,13 +21,11 @@ const MainTeamCard = ({
       {/* Image Container */}
       <div className="relative h-100 w-full overflow-hidden">
         {imageSrc ? (
-          <img
-            loading="lazy"
+          <img loading="lazy"
             src={imageSrc}
             alt={`${name} - ${title} at Neffto Solution executive team`}
             style={{ objectPosition: imagePosition }}
-            className="h-full w-full object-cover"
-          />
+            className="h-full w-full object-cover" title="Expert Software Developers & Designers Team - Neffto Solution" />
         ) : null}
 
         {/* Multi-stage Gradient Overlay for Perfect Text Contrast */}
@@ -225,8 +223,7 @@ const Team = () => {
         </div>
 
         {/* SECTION 5 (ODD): JOIN THE PIPELINE */}
-        <section
-          className="relative sm:py-16 py-10 px-4 bg-fixed bg-cover bg-center text-center overflow-hidden"
+        <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="relative sm:py-16 py-10 px-4 bg-fixed bg-cover bg-center text-center overflow-hidden"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070')`,
           }}

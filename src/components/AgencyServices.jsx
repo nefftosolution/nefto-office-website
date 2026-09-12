@@ -100,7 +100,7 @@ const AgencyServices = () => {
               drive measurable success.
             </p>
           </div>
-          <img src={ServicesImage} alt="The six Neffto Solution services: web, app, AI, design, marketing and SEO" loading="lazy" decoding="async" className="w-full mt-4 pr-4" />
+          <img src={ServicesImage} alt="The six Neffto Solution services: web, app, AI, design, marketing and SEO" loading="lazy" decoding="async" className="w-full mt-4 pr-4" title="The six Neffto Solution services: web, app, AI, design, marketing and SEO" />
         </div>
 
         {/* RIGHT SIDE - GLASS CARDS */}

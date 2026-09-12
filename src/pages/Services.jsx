@@ -102,7 +102,7 @@ const Services = () => {
       />
       <main className="selection:bg-surface selection:text-white">
         {/* SECTION 3: SERVICE CARDS */}
-        <section className="bg-main-bg text-white pt-20 sm:pb-24 pb-14 relative overflow-hidden">
+        <section className="bg-main-bg text-white pt-30 sm:pb-24 pb-14 relative overflow-hidden">
           <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
           <div className="absolute bottom-[-20%] right-[-10%] w-300 h-300 bg-[#042558] blur-[140px]" />
           
@@ -110,7 +110,7 @@ const Services = () => {
           <div className="relative z-10 border-b border-white/10 mb-10">
             <div className="max-w-7xl mx-auto sm:px-6 px-4 sm:py-6 py-4 flex flex-col justify-between md:gap-10 gap-6">
               <div className="flex items-center gap-3 text-white">
-                <span className="text-4xl uppercase font-bold tracking-widest">
+                <span className="sm:text-5xl text-4xl` uppercase font-bold tracking-widest">
                   Services
                 </span>
               </div>
@@ -163,7 +163,7 @@ const Services = () => {
                       </div>
 
                       {/* Content */}
-                      <div className="relative z-10 flex-grow">
+                      <div className="relative z-10 grow">
                         <h3 className="text-2xl font-black tracking-tight text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-white group-hover:to-zinc-400 transition-all duration-500">
                           {project.title}
                         </h3>

@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Loader from "./components/Loader";
-import ScrollToTop from "./components/ScrollToTop";
 import PageWrapper from "./components/PageWrapper";
 
 // Lazy-loaded Pages
@@ -29,7 +28,6 @@ const RefundAndCancellationPolicy = lazy(() => import("./pages/RefundAndCancella
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <Header />
       <Suspense fallback={<Loader />}>
         <PageWrapper>

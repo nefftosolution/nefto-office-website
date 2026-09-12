@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 const servicesData = [
-  { slug: "web-development", title: "Web Development" },
-  { slug: "app-development", title: "App Development" },
-  { slug: "python-ml-ai", title: "AI & Machine Learning" },
-  { slug: "graphic-design", title: "Graphic Designing" },
-  { slug: "digital-marketing", title: "Digital Marketing" },
   { slug: "seo", title: "SEO" },
+  { slug: "digital-marketing", title: "Digital Marketing" },
+  { slug: "app-development", title: "App Development" },
+  { slug: "graphic-design", title: "Graphic Designing" },
+  { slug: "web-development", title: "Web Development" },
+  { slug: "python-ml-ai", title: "AI & Machine Learning" },
 ];
 const logo = "/logo.png";
 
@@ -66,11 +66,9 @@ const Footer = () => {
           <div className="space-y-8 lg:col-span-2">
             <div className="space-y-2">
               <Link to="/" className="inline-block">
-                <img
-                  src={logo}
+                <img src={logo}
                   alt="Neffto Solution software development and digital marketing agency official company logo"
-                  className="w-30 -translate-x-8"
-                />
+                  className="w-30 -translate-x-8" title="Neffto Solution software development and digital marketing agency official company logo" />
               </Link>
 
               <p className="max-w-sm text-white/70 text-xs sm:text-sm leading-relaxed">
@@ -106,8 +104,8 @@ const Footer = () => {
             <nav className="space-y-3 sm:space-y-4">
               {[
                 { name: "Home", path: "/" },
-                { name: "About Us", path: "/about" },
                 { name: "Team", path: "/team" },
+                { name: "About Us", path: "/about" },
                 { name: "Contact Us", path: "/contact" },
               ].map((item) => (
                 <Link
@@ -152,9 +150,9 @@ const Footer = () => {
 
             <nav className="space-y-3 sm:space-y-4">
               {[
+                { name: "Disclaimer", path: "/disclaimer" },
                 { name: "Privacy Policy", path: "/privacy-policy" },
                 { name: "Cookies Policy", path: "/cookies-policy" },
-                { name: "Disclaimer", path: "/disclaimer" },
                 { name: "Terms and Conditions", path: "/terms-and-conditions" },
                 {
                   name: "Refund & Cancellation Policy",

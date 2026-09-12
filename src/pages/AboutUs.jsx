@@ -181,11 +181,9 @@ const AboutUs = () => {
               className="relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 p-2 backdrop-blur-sm group"
             >
               <div className="relative rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Neffto Solution software development and marketing team collaborating in the Bahawalpur office"
-                  className="w-full h-120 object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                  className="w-full h-120 object-cover transition-transform duration-700 group-hover:scale-105" title="Neffto Solution software development and marketing team collaborating in the Bahawalpur office" />
                 <div className="absolute inset-0 bg-linear-to-t from-main-bg via-main-bg/30 to-transparent opacity-90" />
 
               </div>

@@ -133,8 +133,7 @@ const Home = () => {
       
         schema={JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://nefftosolution.com/#organization","name":"Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan","url":"https://nefftosolution.com/","logo":{"@type":"ImageObject","url":"https://nefftosolution.com/logo.png"},"sameAs":["https://www.facebook.com/nefftosolution","https://www.linkedin.com/company/neffto-solution","https://www.instagram.com/nefftosolution"],"contactPoint":{"@type":"ContactPoint","telephone":"+92-300-0000000","contactType":"customer service","areaServed":"PK","availableLanguage":"en"}},{"@type":"WebSite","@id":"https://nefftosolution.com/#website","url":"https://nefftosolution.com/","name":"Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan","publisher":{"@id":"https://nefftosolution.com/#organization"}}]})}
       />
-      <section
-        className="relative overflow-hidden w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center pt-35 pb-25 md:pt-45 md:pb-35"
+      <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="relative overflow-hidden w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center pt-35 pb-25 md:pt-45 md:pb-35"
         style={{ backgroundImage: `url(${HeroBg})` }}
       >
         <div className="absolute top-[-20%] left-[-10%] w-180 h-180 bg-[#042558] blur-[140px]" />
@@ -257,8 +256,7 @@ const Home = () => {
           <Counter value="500+" label="Active Users" light={false} />
         </div>
       </section>
-      <section
-        className=" bg-cover bg-center relative"
+      <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className=" bg-cover bg-center relative"
         style={{
           backgroundImage: `url(${FeaturedProjectImg})`,
         }}
@@ -325,13 +323,11 @@ const Home = () => {
             <div className="relative">
               {/* MAIN IMAGE */}
               <div className="relative overflow-hidden border border-black/10">
-                <img
-                  src={PerformanceImg}
+                <img src={PerformanceImg}
                   alt="Website performance report showing improved load speed and Core Web Vitals scores"
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-120 object-cover"
-                />
+                  className="w-full h-120 object-cover" title="Website performance report showing improved load speed and Core Web Vitals scores | Neffto Solution Software Agency" />
 
                 {/* OVERLAY */}
                 <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent"></div>

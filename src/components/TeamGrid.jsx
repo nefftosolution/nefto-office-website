@@ -175,23 +175,23 @@ const TeamGrid = () => {
         <div className="sticky top-10 flex h-screen items-center overflow-hidden">
           <motion.div
             style={{ x }}
-            className="flex gap-16 px-[6vw] items-center"
+            className="flex gap-16 px-[5vw] items-center"
           >
             {/* Unique Header Design */}
-            <div className="flex w-125 shrink-0 flex-col justify-center">
+            <div className="flex w-110 shrink-0 flex-col justify-center">
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-8 bg-primary"></span>
                 <span className="text-primary font-bold tracking-widest text-sm uppercase">
                   The Core Team
                 </span>
               </div>
-              <h2 className="text-8xl font-black italic text-white leading-[0.8] tracking-tighter uppercase">
+              <h2 className="text-6xl font-black italic text-white leading-[0.8] tracking-tighter uppercase">
                 MEET THE <br />
                 <span className="text-transparent stroke-text-white">
                   SQUAD.
                 </span>
               </h2>
-              <p className="mt-8 text-zinc-400 text-xl font-light italic leading-relaxed max-w-sm">
+              <p className="mt-8 text-zinc-400 text-base font-light italic leading-relaxed max-w-sm">
                 Architecting the digital backbone of the next century with
                 precision and passion.
               </p>

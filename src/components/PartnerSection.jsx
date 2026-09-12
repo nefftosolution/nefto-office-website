@@ -131,11 +131,9 @@ const LogoCard = ({ brand }) => (
       {/* shine */}
       <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
 
-      <img
-        src={brand.url}
+      <img src={brand.url}
         alt={brand.name}
-        className="max-h-20 object-contain opacity-50 transition-all duration-300 group-hover:opacity-100"
-      />
+        className="max-h-20 object-contain opacity-50 transition-all duration-300 group-hover:opacity-100" title="Trusted Partner of Neffto Solution Software Agency" />
     </div>
   </div>
 );
