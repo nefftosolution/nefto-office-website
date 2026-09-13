@@ -114,9 +114,9 @@ const whyChooseUs = [
   "Data-driven strategies focused on leads and sales, not just likes.",
   "In-house design, video, and web teams for faster execution.",
   "Transparent reporting with clear, easy-to-understand results.",
-  "Flexible packages for startups, small businesses, and growing brands.",
+  "Flexible packages for startups, small businesses, and growing brands Bahawalpur.",
   "Close collaboration with our SEO team for complete online growth.",
-  "Honest advice about what will and won't work for your business.",
+  "Honest advice about what will and won't work for your market.",
 ];
 
 const faqs = [
@@ -126,11 +126,11 @@ const faqs = [
   },
   {
     question: "What budget do I need for Facebook ads services?",
-    answer: "You can start with a modest daily budget. We'll recommend a suitable budget based on your goals, industry, and level of competition.",
+    answer: "You can start with a modest daily budget in your own currency. We'll recommend a suitable budget based on your goals, industry, and level of competition.",
   },
   {
-    question: "Do you manage both Google Ads and social media marketing?",
-    answer: "Yes, we manage all major channels and can combine them into one coordinated strategy for stronger results.",
+    question: "Do you manage campaigns for businesses in the Bahawalpur?",
+    answer: "Yes. We work as a digital marketing agency in Bahawalpur businesses trust for coordinated, Bahawalpur-time-zone-friendly campaign management across Google, Meta, and beyond.",
   },
   {
     question: "Will I receive regular reports?",
@@ -157,7 +157,7 @@ const DigitalMarketing = () => {
     "@type": "Service",
     name: "Digital Marketing Services",
     serviceType: "Digital Marketing",
-    description: "Grow leads and sales with NEFFTO, a digital marketing agency in Pakistan offering social media marketing, Google Ads and Facebook ads services.",
+    description: "Grow leads and sales with NEFFTO, a digital marketing agency serving clients in Bahawalpur, offering social media marketing, Google Ads and Facebook ads.",
     provider: {
       "@type": "Organization",
       name: "Neffto Solution",
@@ -172,7 +172,7 @@ const DigitalMarketing = () => {
 
   return (
     <>
-      <SEO
+            <SEO
         title="Digital Marketing Agency in Pakistan | NEFFTO IT Solution"
         description="Grow leads and sales with NEFFTO, a digital marketing agency in Pakistan offering social media marketing, Google Ads and Facebook ads services."
         canonical="https://nefftosolution.com/services/digital-marketing"
@@ -199,11 +199,11 @@ const DigitalMarketing = () => {
                 </motion.div>
                 
                 <motion.h1 variants={fadeUp} className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white leading-tight mb-6">
-                  Digital Marketing Agency in Pakistan: Grow Your Leads, Sales and Brand Online
+                  Digital Marketing Agency Helping Brands Grow Leads, Sales and Reach Bahawalpur
                 </motion.h1>
                 
                 <motion.p variants={fadeUp} className="text-sm sm:text-base md:text-lg text-zinc-300 font-sans mb-10 leading-relaxed">
-                  Having a great product or service is only half the battle. The other half is making sure the right people know about it. NEFFTO IT Solution is a results-focused <strong className="text-secondary font-bold">digital marketing agency in Pakistan</strong> that helps businesses reach new customers, build strong online brands, and turn clicks into real sales.
+                  Having a great product or service is only half the battle. The other half is making sure the right people know about it, wherever they are. NEFFTO IT Solution is a results-focused <strong className="text-secondary font-bold">digital marketing agency in Bahawalpur</strong> that helps businesses reach new customers, build strong online brands, and turn clicks into real sales, across markets including Bahawalpur and beyond.
                 </motion.p>
 
                 <motion.div variants={fadeUp}>
@@ -243,10 +243,7 @@ const DigitalMarketing = () => {
               <Megaphone className="w-12 h-12 text-secondary mb-4" />
               <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Why Digital Marketing Is Essential for Your Business</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                Your customers are online every day, scrolling social media, searching on Google, and watching videos. Digital marketing lets you reach them exactly where they spend their time, with messages tailored to their interests, location, and buying intent. Unlike traditional advertising, every rupee spent online can be measured, so you know exactly what's working and where to invest more.
-              </p>
-              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                For small and medium businesses, <strong className="text-secondary font-bold">online marketing for small business</strong> is one of the most cost-effective ways to compete with bigger brands. With the right strategy, even a modest budget can generate a steady flow of enquiries and sales, and those results can be scaled up as your business grows.
+                As a digital marketing agency in Bahawalpur businesses partner with for measurable, transparent results, we combine creativity with data. We research your audience, test different approaches, track every result, and continually improve your campaigns.
               </p>
             </div>
             <div className="w-full md:w-1/2 relative">
@@ -306,10 +303,7 @@ const DigitalMarketing = () => {
               <div>
                 <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Social Media Marketing That Builds Real Engagement</h2>
                 <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                  Social media is where many customers first discover and connect with brands. Our <strong className="text-secondary font-bold">social media marketing</strong> service helps you build a consistent, professional presence that grows your audience and keeps them engaged. We create content calendars, design on-brand posts, write engaging captions, and respond to comments and messages to build a genuine community around your business.
-                </p>
-                <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                  We tailor our approach to each platform, using short-form video and reels on Instagram and TikTok, professional thought leadership on LinkedIn, and community-driven content on Facebook. Every post has a purpose, whether that's building awareness, starting conversations, or driving people to your website.
+                  Social media is where many customers first discover and connect with brands, no matter the country. Our <strong className="text-secondary font-bold">social media marketing</strong> service helps you build a consistent, professional presence that grows your audience and keeps them engaged, tailored to the platforms and habits of your specific market.
                 </p>
               </div>
               <div className="hidden md:flex justify-end">
@@ -328,7 +322,7 @@ const DigitalMarketing = () => {
               <div>
                 <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Google Ads Management for High-Intent Customers</h2>
                 <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                  When someone searches for your product or service on Google, they're often ready to buy. Our <strong className="text-secondary font-bold">Google Ads management</strong> service puts your business at the top of search results for those valuable searches. We handle keyword research, ad copywriting, landing page recommendations, bid strategy, and conversion tracking. We regularly review search terms, remove wasted spend, and refine targeting so your budget works harder every single month.
+                  When someone searches for your product or service on Google, they're often ready to buy. Our <strong className="text-secondary font-bold">Google Ads management</strong> service puts your business at the top of search results for those valuable searches, wherever your customers are searching from.
                 </p>
               </div>
             </div>
@@ -336,13 +330,7 @@ const DigitalMarketing = () => {
             <div className="max-w-5xl text-left">
               <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Facebook Ads Services That Generate Leads and Sales</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                Facebook and Instagram offer some of the most detailed audience targeting available anywhere. Our <strong className="text-secondary font-bold">Facebook ads services</strong> use this power to put your offers in front of people based on their location, age, interests, and online behaviour. We design scroll-stopping creatives, write persuasive ad copy, set up the Meta Pixel for accurate tracking, and build retargeting campaigns that bring back visitors who didn't buy the first time.
-              </p>
-              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                Whether your goal is more WhatsApp enquiries, more online orders, or more sign-ups, we structure every campaign around the result that matters most to your business.
-              </p>
-              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                Our team also creates high-quality video ads and carousel creatives in-house, so your campaigns always have fresh content ready to test.
+                Facebook and Instagram offer some of the most detailed audience targeting available anywhere in the world. Our <strong className="text-secondary font-bold">Facebook ads services</strong> use this power to put your offers in front of people based on their location, age, interests, and online behaviour, including precise targeting within Bahawalpur.
               </p>
             </div>
 
@@ -350,7 +338,7 @@ const DigitalMarketing = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">Online Marketing for Small Business</h2>
                  <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                   We understand that small businesses need to see results without overspending. Our <strong className="text-secondary font-bold">online marketing for small business</strong> packages are designed to deliver maximum impact on a controlled budget. We focus on the channels most likely to bring you customers, whether that's local Facebook ads, Google search campaigns, or a strong organic social media presence, and we scale up as your results grow.
+                   We understand that small businesses need to see results without overspending. Our <strong className="text-secondary font-bold">online marketing for small business</strong> packages are designed to deliver maximum impact on a controlled budget, in any currency and market.
                  </p>
                </div>
                
@@ -402,7 +390,7 @@ const DigitalMarketing = () => {
         <section className="sm:py-16 py-10 relative">
           <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10">
             <div className="max-w-3xl mb-12">
-              <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Why Choose NEFFTO as Your Digital Marketing Agency in Pakistan</h2>
+              <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Why Choose NEFFTO as Your Digital Marketing Agency in Bahawalpur</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
                 Here's why businesses trust us with their marketing budgets:
               </p>
@@ -437,7 +425,7 @@ const DigitalMarketing = () => {
           <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Ready to Grow Your Business Online?</h2>
             <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Stop guessing and start growing. Partner with NEFFTO IT Solution, the <strong className="text-secondary font-bold">digital marketing agency in Pakistan</strong> that focuses on real, measurable results. Contact us today for a free marketing audit and discover how we can help you attract more customers and increase your sales.
+              Stop guessing and start growing. Partner with NEFFTO IT Solution, the <strong className="text-secondary font-bold">digital marketing agency in Bahawalpur</strong> that focuses on real, measurable results, wherever your customers are. Contact us today for a free marketing audit.
             </p>
             <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
           </div>

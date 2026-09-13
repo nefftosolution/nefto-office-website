@@ -108,7 +108,7 @@ const whyChooseUs = [
   "Every project is handled by an experienced, professional graphic designer.",
   "Designs built around your business goals, not just passing trends.",
   "Fast turnaround with reasonable revision rounds.",
-  "Affordable packages for startups and small businesses.",
+  "Affordable packages for startups and small businesses in Bahawalpur.",
   "Full ownership of your final design files.",
   "Seamless collaboration with our web, app, and marketing teams.",
 ];
@@ -123,8 +123,8 @@ const faqs = [
     answer: "Yes. Once the project is complete and paid for, you receive full ownership of the final design files.",
   },
   {
-    question: "Do you offer monthly social media post design packages?",
-    answer: "Yes, we offer monthly design packages for businesses that need a regular flow of fresh social media content.",
+    question: "Do you work with clients based in the Bahawalpur?",
+    answer: "Yes. We regularly work as a graphic design company in Bahawalpur clients hire for its combination of international quality and competitive pricing, with feedback calls scheduled in Bahawalpur time zones.",
   },
   {
     question: "Can you redesign my existing logo?",
@@ -151,7 +151,7 @@ const GraphicDesigning = () => {
     "@type": "Service",
     name: "Graphic Design Services",
     serviceType: "Design and Branding",
-    description: "Graphic design services in Pakistan: logo design, brand identity, UI/UX and social media post design by NEFFTO in Bahawalpur.",
+    description: "Graphic design services for brands in Bahawalpur: logo design, brand identity, UI/UX and social media post design by NEFFTO.",
     provider: {
       "@type": "Organization",
       name: "Neffto Solution",
@@ -166,7 +166,7 @@ const GraphicDesigning = () => {
 
   return (
     <>
-      <SEO
+            <SEO
         title="Graphic Design Services in Pakistan | Logo & Branding"
         description="Graphic design services in Pakistan: logo design, brand identity, UI/UX and social media post design by NEFFTO in Bahawalpur. Get a free quote today."
         canonical="https://nefftosolution.com/services/graphic-designing"
@@ -179,8 +179,6 @@ const GraphicDesigning = () => {
       <main className="bg-main-bg min-h-screen text-slate-200 selection:bg-amber-500/30 selection:text-amber-200 font-sans pt-20">
         
         {/* HERO SECTION */}
-        
-        {/* UNIQUE HERO: GRAPHIC DESIGN (Creative Masonry / Abstract Shapes) */}
         <section className="relative flex items-center py-20 overflow-hidden bg-main-bg">
           <div className="absolute top-[-10%] left-[-10%] w-100 h-100 bg-purple-600/20 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
           <div className="absolute bottom-[-10%] right-[-10%] w-100 h-100 bg-[#5482b4]/30 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
@@ -193,11 +191,15 @@ const GraphicDesigning = () => {
               </motion.div>
               
               <motion.h1 variants={fadeUp} initial="hidden" animate="visible" className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white leading-tight mb-6">
-                Graphic Design Services in Pakistan: Creative Designs That Build Strong Brands
+                Graphic Design Services for Creative, Recognisable Brands in Bahawalpur
               </motion.h1>
               
               <motion.p variants={fadeUp} initial="hidden" animate="visible" className="text-sm sm:text-base md:text-lg text-zinc-300 font-sans mb-10 leading-relaxed">
-                People judge a business by how it looks before they read a single word. A sharp logo, consistent colours, and professional marketing visuals can make a small company look established and trustworthy. NEFFTO IT Solution offers creative <strong className="text-secondary font-bold">graphic design services in Pakistan</strong> that help businesses stand out and communicate clearly.
+                People judge a business by how it looks before they read a single word, no matter which country they are browsing from. A sharp logo, consistent colours, and professional marketing visuals can make a small company look established and trustworthy. NEFFTO IT Solution offers creative graphic design services that help businesses stand out, communicate clearly, and leave a lasting impression, for clients across Bahawalpur.
+              </motion.p>
+              
+              <motion.p variants={fadeUp} initial="hidden" animate="visible" className="text-sm sm:text-base md:text-lg text-zinc-300 font-sans mb-10 leading-relaxed">
+                As a graphic design company in Bahawalpur startups and agencies increasingly outsource creative work to, we combine professional design standards with fast turnaround and friendly, transparent pricing.
               </motion.p>
 
               <motion.div variants={fadeUp} initial="hidden" animate="visible">
@@ -252,10 +254,10 @@ const GraphicDesigning = () => {
             <div className="w-full md:w-1/2">
               <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Why Professional Graphic Design Matters</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                Good design is about much more than looking nice. It shapes how people feel about your brand, guides their attention to the most important information, and encourages them to take action. Consistent branding across your website, social media, packaging, and printed materials builds recognition, and recognition builds trust.
+                People judge a business by how it looks before they read a single word, no matter which country they are browsing from. A sharp logo, consistent colours, and professional marketing visuals can make a small company look established and trustworthy. NEFFTO IT Solution offers creative graphic design services that help businesses stand out, communicate clearly, and leave a lasting impression, for clients across Bahawalpur.
               </p>
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                Working with a <strong className="text-secondary font-bold">professional graphic designer</strong> ensures every piece of content reflects your brand personality and speaks directly to your target audience, whether you're launching a new business or refreshing an existing one. Professional design also saves money in the long run, because you avoid costly reprints and rebrands caused by rushed, inconsistent work.
+                As a graphic design company in Bahawalpur startups and agencies increasingly outsource creative work to, we combine professional design standards with fast turnaround and friendly, transparent pricing.
               </p>
             </div>
           </div>
@@ -291,40 +293,24 @@ const GraphicDesigning = () => {
           <div className="max-w-7xl mx-auto sm:px-6 px-4 space-y-16 relative z-10">
             
             <div className="max-w-5xl text-left">
-              <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Logo Design That Makes Your Brand Memorable</h2>
+              <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Logo Design and Brand Identity Design</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                Your logo is the face of your business. As a trusted <strong className="text-secondary font-bold">logo design company in Bahawalpur</strong>, we create logos that are simple, distinctive, and versatile enough to work everywhere, from a tiny mobile app icon to a large shop signboard. We start by learning about your business, audience, and competitors, then develop several concepts for you to review. You share your feedback, and we refine the design until it feels exactly right. You receive final files in every format needed for both print and digital use.
+                Your logo is the face of your business, and a logo alone isn't a brand. Brand identity design brings together every visual element that represents your business, including colours, fonts, imagery style, icons, and layout rules. We create a complete brand guideline document so your team, printers, and partners can use your brand consistently, whether they're in your home office or across Bahawalpur.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
-                 <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">Brand Identity Design for Consistent, Professional Branding</h2>
+                 <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">UI/UX Design Services for Websites and Apps</h2>
                  <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                   A logo alone isn't a brand. <strong className="text-secondary font-bold">Brand identity design</strong> brings together every visual element that represents your business, including colours, fonts, imagery style, icons, and layout rules. We create a complete brand guideline document so your team, printers, and partners can use your brand consistently. This consistency makes your business instantly recognisable and helps it look professional at every customer touchpoint, online and offline.
+                   A website or app can have powerful features and still fail if users find it confusing. Our UI/UX design services focus on making digital products easy, enjoyable, and effective to use. We research user needs, map customer journeys, create wireframes, and design polished interfaces in tools like Figma.
                  </p>
                </div>
                
-               <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
-                 <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">UI/UX Design Services for Websites and Apps</h2>
-                 <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                   A website or app can have powerful features and still fail if users find it confusing. Our <strong className="text-secondary font-bold">UI/UX design services</strong> focus on making digital products easy, enjoyable, and effective to use. We research user needs, map customer journeys, create wireframes, and design polished interfaces in tools like Figma. Because NEFFTO also offers web and app development, our designs move smoothly into development without costly gaps or misunderstandings between designers and developers.
-                 </p>
-               </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12">
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">Social Media Post Design That Stops the Scroll</h2>
                  <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                   Social media is crowded, and you only have a second or two to catch someone's attention. Our <strong className="text-secondary font-bold">social media post design</strong> service creates bold, on-brand graphics for Facebook, Instagram, LinkedIn, TikTok, and X. We design regular content posts, carousels, stories, cover images, and paid ad creatives that are sized and styled correctly for each platform. Consistent, high-quality visuals help grow your followers, increase engagement, and support your wider digital marketing campaigns.
-                 </p>
-               </div>
-               
-               <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
-                 <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">Print Design and Marketing Materials</h2>
-                 <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                   Despite the rise of digital channels, printed materials still play an important role for many businesses. We design business cards, brochures, flyers, product labels, packaging, banners, and stationery that carry your brand identity into the physical world. Every file is prepared to print-ready standards, with correct colour settings and bleed, so your materials look sharp and professional every time.
+                   Social media is crowded, and you only have a second or two to catch someone's attention, anywhere in Bahawalpur. Our social media post design service creates bold, on-brand graphics for Facebook, Instagram, LinkedIn, TikTok, and X, sized and styled correctly for each platform and audience.
                  </p>
                </div>
             </div>
@@ -332,10 +318,7 @@ const GraphicDesigning = () => {
             <div className="max-w-5xl text-left">
               <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Design for Every Stage of Your Business</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                Our graphic design services adapt to where your business is today. New startups often need a logo, business cards, and launch graphics to get off the ground quickly. Established businesses may need a brand refresh, a full set of brand guidelines, or a steady supply of marketing creatives for campaigns and seasonal promotions. Whatever stage you're at, a <strong className="text-secondary font-bold">professional graphic designer</strong> from our team will recommend the design work that will make the biggest impact for your budget.
-              </p>
-              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                Local businesses in particular benefit from working with a <strong className="text-secondary font-bold">logo design company in Bahawalpur</strong> that understands the local market, culture, and customer expectations, while still delivering designs that stand up to international standards. We regularly create branding for shops, restaurants, schools, clinics, and online sellers who want to look professional and trustworthy from day one.
+                A professional graphic designer from our team will recommend the design work that will make the biggest impact for your budget, whether you're a brand-new startup or an established company refreshing your look for a new market.
               </p>
             </div>
 
@@ -392,12 +375,6 @@ const GraphicDesigning = () => {
                 </div>
               ))}
             </div>
-            
-            <div className="max-w-3xl">
-              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed italic border-l-4 border-amber-500/50 pl-6 py-2">
-                Choosing NEFFTO means working with a team that understands both creativity and business, so your designs look great and deliver real results. Our <strong className="text-secondary font-bold">graphic design services in Pakistan</strong> are built to give growing businesses the kind of polished branding that was once available only to large companies.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -411,7 +388,7 @@ const GraphicDesigning = () => {
           <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Let's Design Something Remarkable</h2>
             <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Your brand deserves visuals that match the quality of your work. Whether you need a new logo, a complete brand identity, a user-friendly app interface, or eye-catching social media graphics, NEFFTO's <strong className="text-secondary font-bold">graphic design services in Pakistan</strong> are here to help. Contact us today to discuss your project and get a free quote.
+              Your brand deserves visuals that match the quality of your work, wherever your customers are. Whether you need a new logo, a complete brand identity, a user-friendly app interface, or eye-catching social media graphics, NEFFTO's graphic design services are here to help. Contact us today to discuss your project and get a free quote.
             </p>
             <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
           </div>
