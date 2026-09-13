@@ -205,9 +205,9 @@ const AppDevelopment = () => {
         {/* UNIQUE HERO: APP DEVELOPMENT (Central Hub / Orbit Design) */}
         <section className="relative flex items-center justify-center py-20 overflow-hidden bg-main-bg">
           <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
-            <div className="absolute w-[600px] h-[600px] rounded-full border border-white/5 animate-[spin_40s_linear_infinite]" />
-            <div className="absolute w-[800px] h-[800px] rounded-full border border-[#5482b4]/20 animate-[spin_60s_linear_reverse_infinite]" />
-            <div className="absolute w-[400px] h-[400px] bg-[#042558] rounded-full blur-[100px]" />
+            <div className="absolute w-150 h-150 rounded-full border border-white/5 animate-[spin_40s_linear_infinite]" />
+            <div className="absolute w-200 h-200 rounded-full border border-[#5482b4]/20 animate-[spin_60s_linear_reverse_infinite]" />
+            <div className="absolute w-100 h-100 bg-[#042558] rounded-full blur-[100px]" />
           </div>
           
           <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 w-full sm:text-center">
@@ -252,7 +252,7 @@ const AppDevelopment = () => {
             </div>
             <div className="w-full md:w-1/2 relative">
                <div className="absolute inset-0 bg-secondary/20 blur-[100px] rounded-full" />
-               <div className="relative bg-white/5 glass backdrop-blur-md border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+               <div className="relative bg-white/5 glass backdrop-blur-md border border-white/10 rounded-3xl p-8">
                   <div className="flex gap-4 items-center mb-6">
                      <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary">
                         <Zap size={24} />
@@ -280,13 +280,13 @@ const AppDevelopment = () => {
         <section className="sm:py-16 py-10 relative bg-surface/30 border-y border-white/5">
           <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10">
             <div className="mb-16 text-center max-w-3xl mx-auto">
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-white mb-6">Our App Development Services</h2>
-              <p className="text-xl text-zinc-300 text-sm font-sans">We cover every stage of the mobile app journey, so you can rely on one experienced team:</p>
+              <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Our App Development Services</h2>
+              <p className="text-zinc-300 text-sm font-sans">We cover every stage of the mobile app journey, so you can rely on one experienced team:</p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
-                <div key={index} className="group relative p-8 rounded-3xl bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/10 hover:border-purple-500/50 hover:bg-white/[0.04] transition-all duration-500">
+                <div key={index} className="group relative p-8 rounded-3xl bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/10 hover:border-purple-500/50 transition-all duration-500">
                   <div className="absolute top-0 right-0 p-8 text-6xl font-black text-white/5 group-hover:text-purple-500/10 transition-colors duration-500 pointer-events-none select-none">
                     {service.number}
                   </div>

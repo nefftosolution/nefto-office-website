@@ -182,8 +182,8 @@ const GraphicDesigning = () => {
         
         {/* UNIQUE HERO: GRAPHIC DESIGN (Creative Masonry / Abstract Shapes) */}
         <section className="relative flex items-center py-20 overflow-hidden bg-main-bg">
-          <div className="absolute top-[-10%] left-[-10%] w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
-          <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-[#5482b4]/30 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
+          <div className="absolute top-[-10%] left-[-10%] w-100 h-100 bg-purple-600/20 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
+          <div className="absolute bottom-[-10%] right-[-10%] w-100 h-100 bg-[#5482b4]/30 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div className="sm:text-center max-w-4xl mx-auto mb-16">
@@ -207,7 +207,7 @@ const GraphicDesigning = () => {
 
             <div className="hidden lg:grid grid-cols-4 gap-4 h-64">
                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="bg-[#042558] rounded-2xl border border-white/10 overflow-hidden relative group">
-                  <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent,rgba(255,255,255,0.1),transparent)] -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent,rgba(255,255,255,0.1),transparent)] -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                   <div className="w-full h-full flex items-center justify-center"><PenTool className="w-12 h-12 text-[#5482b4]" /></div>
                </motion.div>
                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="col-span-2 bg-[#5482b4]/20 rounded-2xl border border-[#5482b4]/30 backdrop-blur-sm overflow-hidden relative group">
@@ -217,7 +217,7 @@ const GraphicDesigning = () => {
                   </div>
                </motion.div>
                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="bg-[#042558] rounded-2xl border border-white/10 overflow-hidden relative group">
-                  <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent,rgba(255,255,255,0.1),transparent)] -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent,rgba(255,255,255,0.1),transparent)] -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                   <div className="w-full h-full flex items-center justify-center"><Monitor className="w-12 h-12 text-[#c3e9fe]" /></div>
                </motion.div>
             </div>
@@ -230,7 +230,7 @@ const GraphicDesigning = () => {
           <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10 flex flex-col md:flex-row-reverse gap-12 items-center">
             <div className="w-full md:w-1/2 relative">
                <div className="absolute inset-0 bg-secondary/20 blur-[100px] rounded-full" />
-               <div className="relative bg-white/5 glass backdrop-blur-md border border-white/10 rounded-3xl p-8 backdrop-blur-sm grid grid-cols-2 gap-6">
+               <div className="relative bg-white/5 glass backdrop-blur-md border border-white/10 rounded-3xl p-8 grid grid-cols-2 gap-6">
                   <div className="flex flex-col items-center text-center gap-3">
                      <Brush className="w-10 h-10 text-secondary" />
                      <span className="font-semibold text-white">Visual Impact</span>
@@ -271,7 +271,7 @@ const GraphicDesigning = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
-                <div key={index} className="group relative p-8 rounded-3xl bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/10 hover:border-amber-500/50 hover:bg-white/[0.04] transition-all duration-500">
+                <div key={index} className="group relative p-8 rounded-3xl bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/10 hover:border-amber-500/50 transition-all duration-500">
                   <div className="absolute top-0 right-0 p-8 text-6xl font-black text-white/5 group-hover:text-amber-500/10 transition-colors duration-500 pointer-events-none select-none">
                     {service.number}
                   </div>

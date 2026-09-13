@@ -189,8 +189,8 @@ const WebDevelopment = () => {
         
         {/* UNIQUE HERO: WEB DEVELOPMENT (Split Screen with Code Animation) */}
         <section className="relative min-h-[90vh] flex items-center py-20 overflow-hidden bg-main-bg">
-          <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-[#042558] blur-[140px] pointer-events-none" />
-          <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-[#5482b4] opacity-20 blur-[140px] pointer-events-none" />
+          <div className="absolute top-[-20%] left-[-10%] w-125 h-125 bg-[#042558] blur-[140px] pointer-events-none" />
+          <div className="absolute bottom-[-20%] right-[-10%] w-125 h-125 bg-[#5482b4] opacity-20 blur-[140px] pointer-events-none" />
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -214,7 +214,7 @@ const WebDevelopment = () => {
               </motion.div>
 
               <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="hidden lg:block relative">
-                 <div className="relative w-full h-[450px] bg-[#020e24] rounded-2xl border border-white/10 overflow-hidden shadow-2xl flex flex-col">
+                 <div className="relative w-full h-112.5 bg-[#020e24] rounded-2xl border border-white/10 overflow-hidden shadow-2xl flex flex-col">
                     <div className="h-10 bg-[#042558] flex items-center px-4 gap-2 border-b border-white/10 shrink-0">
                        <div className="w-3 h-3 rounded-full bg-red-500" />
                        <div className="w-3 h-3 rounded-full bg-yellow-500" />
@@ -289,7 +289,7 @@ const WebDevelopment = () => {
               </div>
               <div className="hidden md:flex justify-end relative">
                  <div className="absolute inset-0 bg-purple-500/20 blur-[80px] rounded-full" />
-                 <div className="w-48 h-48 rounded-[2rem] bg-purple-500/10 border border-purple-500/20 flex items-center justify-center animate-[spin_10s_linear_infinite]">
+                 <div className="w-48 h-48 rounded-4xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center animate-[spin_10s_linear_infinite]">
                     <MonitorSmartphone size={80} className="text-purple-400" />
                  </div>
               </div>

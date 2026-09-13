@@ -193,7 +193,7 @@ const SearchEngineOptimization = () => {
         {/* UNIQUE HERO: SEO (Search Bar Design) */}
         <section className="relative flex items-center py-20 overflow-hidden bg-main-bg">
           <div className="absolute inset-0 z-0 opacity-30" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#042558] rounded-full blur-[150px] pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-[#042558] rounded-full blur-[150px] pointer-events-none" />
           
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full sm:text-center">
             <motion.div variants={stagger} initial="hidden" animate="visible">
@@ -229,7 +229,7 @@ const SearchEngineOptimization = () => {
           <div className="max-w-7xl mx-auto sm:px-6 px-4 relative z-10 flex flex-col md:flex-row-reverse gap-12 items-center">
             <div className="w-full md:w-1/2 relative">
                <div className="absolute inset-0 bg-secondary/20 blur-[100px] rounded-full" />
-               <div className="relative bg-white/5 glass backdrop-blur-md border border-white/10 rounded-3xl p-8 backdrop-blur-sm grid grid-cols-2 gap-6">
+               <div className="relative bg-white/5 glass backdrop-blur-md border border-white/10 rounded-3xl p-8 grid grid-cols-2 gap-6">
                   <div className="flex flex-col items-center text-center gap-3">
                      <TrendingUp className="w-10 h-10 text-secondary" />
                      <span className="font-semibold text-white">Organic Traffic</span>
@@ -270,7 +270,7 @@ const SearchEngineOptimization = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
               {services.map((service, index) => (
-                <div key={index} className={`group relative p-8 rounded-3xl bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/10 hover:border-indigo-500/50 hover:bg-white/[0.04] transition-all duration-500 ${index === 6 ? 'lg:col-start-2' : ''}`}>
+                <div key={index} className={`group relative p-8 rounded-3xl bg-white/5 glass backdrop-blur-md border border-white/10 hover:border-indigo-500/50 hover:bg-white/4 transition-all duration-500 ${index === 6 ? 'lg:col-start-2' : ''}`}>
                   <div className="absolute top-0 right-0 p-8 text-6xl font-black text-white/5 group-hover:text-indigo-500/10 transition-colors duration-500 pointer-events-none select-none">
                     {service.number}
                   </div>
@@ -401,7 +401,7 @@ const SearchEngineOptimization = () => {
             </div>
             
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed italic border-x-4 border-indigo-500/50 px-6 py-2 rounded-xl bg-white/[0.01]">
+              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed italic border-x-4 border-indigo-500/50 px-6 py-2 rounded-xl bg-white/1">
                 We believe in building long-term, sustainable growth. That means no shortcuts or risky tactics that could harm your website in the future.
               </p>
             </div>
