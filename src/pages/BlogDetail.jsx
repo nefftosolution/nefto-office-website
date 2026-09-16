@@ -339,13 +339,25 @@ const BlogDetail = () => {
             [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:font-bold [&>h2]:font-heading [&>h2]:text-white [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:border-b [&>h2]:border-white/10 [&>h2]:pb-2
             [&>h3]:text-xl [&>h3]:sm:text-2xl [&>h3]:font-bold [&>h3]:font-heading [&>h3]:text-white [&>h3]:mt-8 [&>h3]:mb-3
             [&>p]:text-white/85 [&>p]:leading-relaxed [&>p]:my-4
+            [&_a]:text-secondary [&_a]:underline [&_a]:decoration-secondary/50 [&_a]:underline-offset-4 hover:[&_a]:text-white [&_a]:transition-colors [&_a]:font-medium
             [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:space-y-2 [&>ul]:my-4
             [&>ol]:list-decimal [&>ol]:pl-6 [&>ol]:space-y-2 [&>ol]:my-4
             [&>li]:text-white/85
             [&>blockquote]:border-l-4 [&>blockquote]:border-primary [&>blockquote]:pl-4 [&>blockquote]:italic [&>blockquote]:text-secondary [&>blockquote]:bg-secondary-navy/30 [&>blockquote]:py-3 [&>blockquote]:px-4 [&>blockquote]:rounded-r-xl [&>blockquote]:my-6
-            [&>code]:bg-white/10 [&>code]:text-secondary [&>code]:px-1.5 [&>code]:py-0.5 [&>code]:rounded [&>code]:text-sm
-            [&>pre]:bg-secondary-navy/80 [&>pre]:p-4 [&>pre]:rounded-2xl [&>pre]:overflow-x-auto [&>pre]:border [&>pre]:border-white/10 [&>pre]:my-6
-            [&>img]:rounded-2xl [&>img]:my-6 [&>img]:border [&>img]:border-white/10 [&>img]:w-full"
+            [&_code]:bg-white/10 [&_code]:text-secondary [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-sm [&_code]:font-mono
+            [&_pre]:bg-secondary-navy/80 [&_pre]:p-4 [&_pre]:rounded-2xl [&_pre]:overflow-x-auto [&_pre]:border [&_pre]:border-white/10 [&_pre]:my-6
+            [&_img]:rounded-2xl [&_img]:my-6 [&_img]:border [&_img]:border-white/10 [&_img]:w-full
+            [&_table]:w-full [&_table]:my-6 [&_table]:border-collapse [&_table]:rounded-2xl [&_table]:overflow-hidden [&_table]:border [&_table]:border-white/10
+            [&_th]:bg-white/10 [&_th]:p-3.5 [&_th]:text-left [&_th]:text-xs [&_th]:font-bold [&_th]:uppercase [&_th]:tracking-wider [&_th]:text-white [&_th]:border [&_th]:border-white/10
+            [&_td]:p-3.5 [&_td]:text-sm [&_td]:border [&_td]:border-white/10 [&_td]:text-white/80
+            [&_tr:nth-child(even)]:bg-white/5
+            [&_.callout-box]:p-5 [&_.callout-box]:rounded-2xl [&_.callout-box]:my-6 [&_.callout-box]:border
+            [&_.callout-info]:bg-blue-950/40 [&_.callout-info]:border-blue-500/30 [&_.callout-info]:text-blue-100
+            [&_.callout-tip]:bg-emerald-950/40 [&_.callout-tip]:border-emerald-500/30 [&_.callout-tip]:text-emerald-100
+            [&_.callout-cta]:bg-gradient-to-r [&_.callout-cta]:from-[#042558]/80 [&_.callout-cta]:to-[#020e24]/90 [&_.callout-cta]:border-[#5482b4]/40 [&_.callout-cta]:p-6 [&_.callout-cta]:rounded-3xl
+            [&_.cta-btn]:inline-flex [&_.cta-btn]:items-center [&_.cta-btn]:gap-2 [&_.cta-btn]:px-5 [&_.cta-btn]:py-2.5 [&_.cta-btn]:rounded-xl [&_.cta-btn]:bg-secondary [&_.cta-btn]:text-main-bg [&_.cta-btn]:font-bold [&_.cta-btn]:no-underline hover:[&_.cta-btn]:bg-white [&_.cta-btn]:transition-all
+            [&_.metrics-grid]:grid [&_.metrics-grid]:grid-cols-1 [&_.metrics-grid]:sm:grid-cols-3 [&_.metrics-grid]:gap-4 [&_.metrics-grid]:my-6
+            [&_.metric-card]:p-5 [&_.metric-card]:rounded-2xl [&_.metric-card]:bg-white/5 [&_.metric-card]:border [&_.metric-card]:border-white/10 [&_.metric-card]:text-center"
           dangerouslySetInnerHTML={{ __html: blog.content }}
         />
 
