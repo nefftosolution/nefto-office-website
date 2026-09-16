@@ -147,7 +147,7 @@ const Blogs = () => {
   });
 
   return (
-    <div className="min-h-screen bg-main-bg text-text pt-28 pb-20 overflow-hidden relative selection:bg-primary/30">
+    <div className="min-h-screen bg-main-bg text-text pt-36 pb-20 overflow-hidden relative selection:bg-primary/30">
       <SEO
         title="Tech & Software Development Blog | Neffto Solution"
         description="Discover industry insights, engineering guides, AI automation, and technical SEO strategies from Neffto Solution."
@@ -158,21 +158,12 @@ const Blogs = () => {
       />
 
       {/* Decorative Glow Backgrounds */}
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-secondary-navy/40 blur-[140px] -z-10 pointer-events-none" />
-      <div className="absolute top-96 -right-20 w-[450px] h-[450px] bg-primary/10 blur-[150px] -z-10 pointer-events-none" />
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-175 h-87.5-secondary-navy/40 blur-[140px] -z-10 pointer-events-none" />
+      <div className="absolute top-96 -right-20 w-112.5 h-112.5 bg-primary/10 blur-[150px] -z-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ================= Header Section ================= */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-secondary-navy/40 text-secondary text-xs sm:text-sm font-medium mb-4 backdrop-blur-md"
-          >
-            <Sparkles className="w-4 h-4 text-primary animate-pulse" />
-            <span>Articles, Innovations & Engineering Insights</span>
-          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 15 }}
@@ -293,7 +284,7 @@ const Blogs = () => {
           >
             <div className="absolute -top-10 -right-10 w-48 h-48 bg-primary/15 blur-[80px] pointer-events-none" />
 
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary to-secondary-navy flex items-center justify-center mx-auto shadow-xl border border-white/20">
+            <div className="w-16 h-16 rounded-2xl bg-linear-to-tr from-primary to-secondary-navy flex items-center justify-center mx-auto shadow-xl border border-white/20">
               <BookOpen className="w-8 h-8 text-white" />
             </div>
 
@@ -358,10 +349,6 @@ const Blogs = () => {
             transition={{ duration: 0.6 }}
             className="mb-14"
           >
-            <div className="text-xs uppercase tracking-widest text-primary font-bold mb-3 flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Featured Story</span>
-            </div>
 
             <Link
               to={`/blogs/${featuredBlog.slug}`}
@@ -375,7 +362,7 @@ const Blogs = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-navy/80 via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-linear-to-t from-primary-navy/80 via-transparent to-transparent opacity-60" />
                   <span className="absolute top-4 left-4 px-3 py-1 rounded-lg text-xs font-semibold bg-primary text-white backdrop-blur-md shadow-md">
                     {featuredBlog.category}
                   </span>
@@ -452,7 +439,7 @@ const Blogs = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary-navy/80 via-transparent to-transparent opacity-40" />
+                    <div className="absolute inset-0 bg-linear-to-t from-primary-navy/80 via-transparent to-transparent opacity-40" />
                     <span className="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-semibold bg-primary/90 text-white backdrop-blur-md">
                       {blog.category}
                     </span>
@@ -527,7 +514,7 @@ const Blogs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-24 relative rounded-3xl overflow-hidden border border-primary/30 bg-gradient-to-r from-secondary-navy/80 via-primary-navy to-secondary-navy/80 p-8 sm:p-12 text-center"
+          className="mt-24 relative rounded-3xl overflow-hidden border border-primary/30 bg-linear-to-r from-secondary-navy/80 via-primary-navy to-secondary-navy/80 p-8 sm:p-12 text-center"
         >
           <div className="absolute top-0 right-0 w-80 h-80 bg-primary/20 blur-[100px] pointer-events-none" />
           <div className="relative z-10 max-w-2xl mx-auto space-y-4">
