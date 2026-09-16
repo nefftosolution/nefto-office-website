@@ -33,10 +33,8 @@ const BlogDetail = () => {
     restDelta: 0.001,
   });
 
-  const API_BASE =
-    typeof window !== "undefined" && window.location.hostname === "localhost"
-      ? "http://localhost:5000"
-      : "https://neffto-solution-backend.vercel.app";
+  const PROD_API = "https://neffto-solution-backend.vercel.app";
+  const API_BASE = import.meta.env.VITE_API_URL || PROD_API;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,7 +42,10 @@ const BlogDetail = () => {
     const fetchBlog = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`${API_BASE}/api/blogs/${slug}`);
+        let res = await fetch(`${API_BASE}/api/blogs/${slug}`);
+        if (!res.ok && API_BASE !== PROD_API) {
+          res = await fetch(`${PROD_API}/api/blogs/${slug}`);
+        }
         if (res.ok) {
           const data = await res.json();
           setBlog(data);
@@ -52,6 +53,18 @@ const BlogDetail = () => {
           setBlog(null);
         }
       } catch (err) {
+        if (API_BASE !== PROD_API) {
+          try {
+            const fallbackRes = await fetch(`${PROD_API}/api/blogs/${slug}`);
+            if (fallbackRes.ok) {
+              const data = await fallbackRes.json();
+              setBlog(data);
+              return;
+            }
+          } catch {
+            // fallback error
+          }
+        }
         console.warn("Could not fetch blog detail:", err);
         setBlog(null);
       } finally {
@@ -66,13 +79,29 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchRelated = async () => {
       try {
-        const res = await fetch(`${API_BASE}/api/blogs?status=published&limit=4`);
+        let res = await fetch(`${API_BASE}/api/blogs?status=published&limit=4`);
+        if (!res.ok && API_BASE !== PROD_API) {
+          res = await fetch(`${PROD_API}/api/blogs?status=published&limit=4`);
+        }
         if (res.ok) {
           const data = await res.json();
           const list = (data.blogs || []).filter((b) => b.slug !== slug && b.id !== slug);
           setRelatedBlogs(list.slice(0, 3));
         }
       } catch {
+        if (API_BASE !== PROD_API) {
+          try {
+            const fallbackRes = await fetch(`${PROD_API}/api/blogs?status=published&limit=4`);
+            if (fallbackRes.ok) {
+              const data = await fallbackRes.json();
+              const list = (data.blogs || []).filter((b) => b.slug !== slug && b.id !== slug);
+              setRelatedBlogs(list.slice(0, 3));
+              return;
+            }
+          } catch {
+            // ignore
+          }
+        }
         setRelatedBlogs([]);
       }
     };

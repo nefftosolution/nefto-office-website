@@ -37,15 +37,16 @@ const Blogs = () => {
   const [subscribedEmail, setSubscribedEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
-  const API_BASE =
-    typeof window !== "undefined" && window.location.hostname === "localhost"
-      ? "http://localhost:5000"
-      : "https://neffto-solution-backend.vercel.app";
+  const PROD_API = "https://neffto-solution-backend.vercel.app";
+  const API_BASE = import.meta.env.VITE_API_URL || PROD_API;
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch(`${API_BASE}/api/blogs?status=published`);
+        let res = await fetch(`${API_BASE}/api/blogs?status=published`);
+        if (!res.ok && API_BASE !== PROD_API) {
+          res = await fetch(`${PROD_API}/api/blogs?status=published`);
+        }
         if (res.ok) {
           const data = await res.json();
           setBlogs(data.blogs || []);
@@ -53,6 +54,18 @@ const Blogs = () => {
           setBlogs([]);
         }
       } catch (err) {
+        if (API_BASE !== PROD_API) {
+          try {
+            const fallbackRes = await fetch(`${PROD_API}/api/blogs?status=published`);
+            if (fallbackRes.ok) {
+              const data = await fallbackRes.json();
+              setBlogs(data.blogs || []);
+              return;
+            }
+          } catch {
+            // fallback ignore
+          }
+        }
         console.warn("Could not fetch blogs from API:", err);
         setBlogs([]);
       } finally {
