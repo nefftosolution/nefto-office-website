@@ -108,10 +108,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-1000 w-full border-b border-white/30 bg-[#042558]/30 backdrop-blur-xl">
 
-      <div className="max-w-7xl mx-auto sm:px-6 px-4 h-20 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
         {/* LOGO */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Neffto Solution software development and digital marketing agency official company logo" className="w-20 -translate-x-3" title="Neffto Solution software development and digital marketing agency official company logo" />
+          <img src={logo} alt="Neffto Solution software development and digital marketing agency official company logo" className="w-20 -translate-x-6" title="Neffto Solution software development and digital marketing agency official company logo" />
         </Link>
 
         {/* DESKTOP NAVIGATION */}
@@ -148,7 +148,7 @@ const Header = () => {
             </Link>
 
             {/* Dropdown Card */}
-            <div className="absolute top-full left-50 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <div className="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
               <div className="bg-white border border-gray-200 shadow-2xl w-60 overflow-hidden">
                 <div className="p-2 grid grid-cols-1 gap-1">
                   {services.map((service, index) => (

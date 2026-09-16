@@ -188,7 +188,7 @@ const AIMachineLearning = () => {
         <section className="relative flex items-center py-20 overflow-hidden bg-main-bg">
           <div className="absolute top-0 right-0 w-150 h-150 bg-[#5482b4] opacity-20 blur-[150px] pointer-events-none" />
           
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div variants={stagger} initial="hidden" animate="visible" className="">
                 <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#5482b4]/20 border border-[#5482b4]/30 text-secondary text-sm font-bold tracking-wide uppercase mb-6">
@@ -453,12 +453,14 @@ const AIMachineLearning = () => {
         {/* CTA SECTION */}
         <section className="sm:py-16 py-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-primary-navy z-0" />
-          <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
-            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Bring AI Into Your Business Today</h2>
-            <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              The businesses that adopt AI thoughtfully today will lead their markets tomorrow. Let NEFFTO IT Solution, your <strong className="text-secondary font-bold">AI development company</strong> of choice, help you take the first step with custom AI solutions designed around your goals. Contact us for a free consultation.
-            </p>
-            <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Bring AI Into Your Business Today</h2>
+              <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
+                The businesses that adopt AI thoughtfully today will lead their markets tomorrow. Let NEFFTO IT Solution, your <strong className="text-secondary font-bold">AI development company</strong> of choice, help you take the first step with custom AI solutions designed around your goals. Contact us for a free consultation.
+              </p>
+              <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+            </div>
           </div>
         </section>
 

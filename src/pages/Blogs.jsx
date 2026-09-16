@@ -161,7 +161,7 @@ const Blogs = () => {
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-175 h-87.5-secondary-navy/40 blur-[140px] -z-10 pointer-events-none" />
       <div className="absolute top-96 -right-20 w-112.5 h-112.5 bg-primary/10 blur-[150px] -z-10 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* ================= Header Section ================= */}
         <div className="text-center max-w-3xl mx-auto mb-14">
 

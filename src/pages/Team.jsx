@@ -112,7 +112,7 @@ const Team = () => {
         >
           <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
           <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
-          <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto items-center justify-between">
+          <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto px-4 sm:px-6 items-center justify-between">
             {/* LEFT SIDE: TEXT CONTENT */}
             <motion.div
               animate={{
@@ -223,7 +223,7 @@ const Team = () => {
         </div>
 
         {/* SECTION 5 (ODD): JOIN THE PIPELINE */}
-        <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="relative sm:py-16 py-10 px-4 bg-fixed bg-cover bg-center text-center overflow-hidden"
+        <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="relative sm:py-16 py-10 bg-fixed bg-cover bg-center text-center overflow-hidden"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070')`,
           }}
@@ -231,7 +231,7 @@ const Team = () => {
           {/* overlays */}
           <div className="absolute inset-0 bg-black/60" />
 
-          <div className="relative max-w-5xl mx-auto sm:space-y-8 space-y-4 z-10 text-white">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 sm:space-y-8 space-y-4 z-10 text-white">
             {/* small label */}
             <div className="flex justify-center items-center gap-3 text-[10px] uppercase tracking-[0.4em] text-off-white font-bold">
               <span className="sm:w-10 w-4 h-px bg-off-white" />

@@ -184,7 +184,7 @@ const GraphicDesigning = () => {
           <div className="absolute top-[-10%] left-[-10%] w-100 h-100 bg-purple-600/20 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
           <div className="absolute bottom-[-10%] right-[-10%] w-100 h-100 bg-[#5482b4]/30 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
           
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div className="sm:text-center max-w-4xl mx-auto mb-16">
               <motion.div variants={fadeUp} initial="hidden" animate="visible" className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-secondary text-sm font-bold tracking-wide uppercase mb-6">
                 <Palette className="w-4 h-4" />
@@ -406,12 +406,14 @@ const GraphicDesigning = () => {
         {/* CTA SECTION */}
         <section className="sm:py-16 py-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-primary-navy z-0" />
-          <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
-            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Let's Design Something Remarkable</h2>
-            <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Your brand deserves visuals that match the quality of your work, wherever your customers are. Whether you need a new logo, a complete brand identity, a user-friendly app interface, or eye-catching social media graphics, NEFFTO's graphic design services are here to help. Contact us today to discuss your project and get a free quote.
-            </p>
-            <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Let's Design Something Remarkable</h2>
+              <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
+                Your brand deserves visuals that match the quality of your work, wherever your customers are. Whether you need a new logo, a complete brand identity, a user-friendly app interface, or eye-catching social media graphics, NEFFTO's graphic design services are here to help. Contact us today to discuss your project and get a free quote.
+              </p>
+              <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+            </div>
           </div>
         </section>
 

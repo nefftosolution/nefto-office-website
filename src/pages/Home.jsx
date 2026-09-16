@@ -244,7 +244,7 @@ const Home = () => {
       </section>
       <section
         style={fixedBgStyle}
-        className="relative py-10 sm:px-6 px-4 overflow-hidden"
+        className="relative py-10 overflow-hidden"
       >
         <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />

@@ -63,19 +63,17 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-16 items-start">
           {/* ================= LEFT ================= */}
-          <div className="space-y-6 lg:col-span-2">
-            <div className="">
+            <div className="space-y-4 lg:col-span-2">
               <Link to="/" className="">
                 <img src={logo}
                   alt="Neffto Solution software development and digital marketing agency official company logo"
-                  className="w-30 -translate-x-5" title="Neffto Solution software development and digital marketing agency official company logo" />
+                  className="w-30 -translate-x-8" title="Neffto Solution software development and digital marketing agency official company logo" />
               </Link>
 
               <p className="max-w-sm text-white/70 text-xs sm:text-sm leading-relaxed">
                 We take on a limited number of projects each year to ensure deep
                 focus, precision, and premium quality execution.
               </p>
-            </div>
 
            {/* SOCIAL LINKS */}
             <div className="flex flex-wrap gap-4">
@@ -138,8 +136,8 @@ const Footer = () => {
               {[
                 { name: "Home", path: "/" },
                 { name: "Team", path: "/team" },
-                { name: "About Us", path: "/about" },
                 { name: "Blogs", path: "/blogs" },
+                { name: "About Us", path: "/about" },
                 { name: "Contact Us", path: "/contact" },
               ].map((item) => (
                 <Link

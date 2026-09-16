@@ -190,7 +190,7 @@ const SearchEngineOptimization = () => {
           <div className="absolute inset-0 z-0 opacity-30" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-[#042558] rounded-full blur-[150px] pointer-events-none" />
           
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full sm:text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full sm:text-center">
             <motion.div variants={stagger} initial="hidden" animate="visible">
               <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-secondary text-sm font-bold tracking-wide uppercase mb-8">
                 <Search className="w-4 h-4" />
@@ -436,7 +436,8 @@ const SearchEngineOptimization = () => {
         {/* CTA SECTION */}
         <section className="sm:py-16 py-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-primary-navy z-0" />
-          <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Get Found on Google Today</h2>
             <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
               Every day your website isn't ranking, potential customers are going to your competitors, wherever they are. Let NEFFTO IT Solution's <strong className="text-secondary font-bold">SEO services</strong> put your business in front of the people who are already searching for you. Browse our{" "}
@@ -449,6 +450,7 @@ const SearchEngineOptimization = () => {
               or contact us today for a free SEO audit.
             </p>
             <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+            </div>
           </div>
         </section>
 

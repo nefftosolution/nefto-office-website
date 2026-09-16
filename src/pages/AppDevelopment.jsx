@@ -211,7 +211,7 @@ const AppDevelopment = () => {
             <div className="absolute w-100 h-100 bg-[#042558] rounded-full blur-[100px]" />
           </div>
           
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 w-full sm:text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full sm:text-center">
             <motion.div variants={stagger} initial="hidden" animate="visible">
               <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-secondary text-sm font-bold tracking-wide uppercase mb-6">
                 <Smartphone className="w-4 h-4" />
@@ -456,16 +456,18 @@ const AppDevelopment = () => {
         {/* CTA SECTION */}
         <section className="sm:py-16 py-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-primary-navy z-0" />
-          <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
-            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Turn Your App Idea Into Reality</h2>
-            <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Have an app idea you've been thinking about for a while? Let's make it happen. NEFFTO IT Solution provides reliable <strong className="text-secondary font-bold">mobile app development company services</strong> for clients Bahawalpur. Check out our{" "}
-              <Link to="/blogs" className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium">
-                development blog
-              </Link>{" "}
-              or contact us today for a free consultation and quote, and take the first step towards launching your app.
-            </p>
-            <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Turn Your App Idea Into Reality</h2>
+              <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
+                Have an app idea you've been thinking about for a while? Let's make it happen. NEFFTO IT Solution provides reliable <strong className="text-secondary font-bold">mobile app development company services</strong> for clients Bahawalpur. Check out our{" "}
+                <Link to="/blogs" className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium">
+                  development blog
+                </Link>{" "}
+                or contact us today for a free consultation and quote, and take the first step towards launching your app.
+              </p>
+              <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+            </div>
           </div>
         </section>
 

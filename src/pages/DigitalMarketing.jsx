@@ -191,7 +191,7 @@ const DigitalMarketing = () => {
         <section className="relative flex items-center py-20 overflow-hidden bg-main-bg">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-[#042558] skew-x-[-20deg] translate-x-32 hidden lg:block opacity-50" />
           
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-2xl">
                 <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-secondary text-sm font-bold tracking-wide uppercase mb-6">
@@ -466,12 +466,14 @@ const DigitalMarketing = () => {
         {/* CTA SECTION */}
         <section className="sm:py-16 py-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-primary-navy z-0" />
-          <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
-            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Ready to Grow Your Business Online?</h2>
-            <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Stop guessing and start growing. Partner with NEFFTO IT Solution, the <strong className="text-secondary font-bold">digital marketing agency in Bahawalpur</strong> that focuses on real, measurable results, wherever your customers are. Contact us today for a free marketing audit.
-            </p>
-            <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Ready to Grow Your Business Online?</h2>
+              <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
+                Stop guessing and start growing. Partner with NEFFTO IT Solution, the <strong className="text-secondary font-bold">digital marketing agency in Bahawalpur</strong> that focuses on real, measurable results, wherever your customers are. Contact us today for a free marketing audit.
+              </p>
+              <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
+            </div>
           </div>
         </section>
 

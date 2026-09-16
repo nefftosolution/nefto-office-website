@@ -197,7 +197,7 @@ const WebDevelopment = () => {
           <div className="absolute top-[-20%] left-[-10%] w-125 h-125 bg-[#042558] blur-[140px] pointer-events-none" />
           <div className="absolute bottom-[-20%] right-[-10%] w-125 h-125 bg-[#5482b4] opacity-20 blur-[140px] pointer-events-none" />
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div
                 variants={stagger}
@@ -497,7 +497,8 @@ const WebDevelopment = () => {
         {/* CTA SECTION */}
         <section className="sm:py-16 py-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-primary-navy z-0" />
-          <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">
               Start Your Web Development Project Today
             </h2>
@@ -540,6 +541,7 @@ const WebDevelopment = () => {
               hover="hover:text-surface"
               layerHover="bg-white"
             />
+            </div>
           </div>
         </section>
       </main>

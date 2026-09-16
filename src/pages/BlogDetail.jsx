@@ -204,7 +204,7 @@ const BlogDetail = () => {
       {isCustomPage ? (
         <div className="w-full">
           {/* ================= Custom Page Mode Header & Navigation ================= */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 flex items-center justify-between border-b border-white/10 pb-4 flex-wrap gap-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 flex items-center justify-between border-b border-white/10 pb-4 flex-wrap gap-4">
             <Link
               to="/blogs"
               className="inline-flex items-center gap-2 text-xs font-semibold text-white/60 hover:text-primary transition"
@@ -239,12 +239,12 @@ const BlogDetail = () => {
 
           {/* ================= Unconstrained Custom HTML & Tailwind Canvas ================= */}
           <div
-            className="custom-blog-canvas w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+            className="custom-blog-canvas w-full max-w-7xl mx-auto px-4 sm:px-6"
             dangerouslySetInnerHTML={{ __html: blog.content }}
           />
 
           {/* ================= Custom Page Footer ================= */}
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/10">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 mt-16 pt-8 border-t border-white/10">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex items-center gap-3">
                 <img
@@ -316,7 +316,7 @@ const BlogDetail = () => {
           </div>
         </div>
       ) : (
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article className="max-w-4xl mx-auto px-4 sm:px-6">
           {/* ================= Breadcrumbs ================= */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}

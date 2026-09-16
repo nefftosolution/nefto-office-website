@@ -88,7 +88,7 @@ const Contact = () => {
         {/* Dark Overlay with Blur */}
         <div className="absolute inset-0 bg-slate-950/20 backdrop-blur-md" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 lg:gap-8 items-start">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           
           {/* LEFT SIDE CONTENT */}
           <motion.div
@@ -230,7 +230,7 @@ const Contact = () => {
 
       {/* SEO CONTACT REASONS SECTION */}
       <section className="relative w-full py-20 bg-slate-950 border-t border-slate-800/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-16">
           
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto space-y-4">
