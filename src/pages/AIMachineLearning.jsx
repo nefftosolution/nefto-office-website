@@ -169,10 +169,10 @@ const AIMachineLearning = () => {
 
   return (
     <>
-            <SEO
+                        <SEO
         title="AI Development Company in Pakistan | AI & ML | NEFFTO"
         description="Custom AI solutions, AI chatbot development, machine learning services and AI business automation from NEFFTO, an AI development company in Pakistan."
-        canonical="https://nefftosolution.com/services/ai-machine-learning"
+        canonical="https://nefftosolution.com/services/python-ml-ai"
         ogTitle="AI Development Company in Pakistan | AI & ML | NEFFTO"
         ogDescription="Custom AI solutions, AI chatbot development, machine learning services and AI business automation from NEFFTO, an AI development company in Pakistan."
         schema={JSON.stringify([serviceSchema, faqSchema])}

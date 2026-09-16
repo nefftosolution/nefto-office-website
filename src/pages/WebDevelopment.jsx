@@ -178,7 +178,7 @@ const WebDevelopment = () => {
 
   return (
     <>
-      <SEO
+                  <SEO
         title="Web Development Company in Pakistan | NEFFTO IT Solution"
         description="NEFFTO is a web development company in Pakistan offering custom website development, full stack and Shopify development in Bahawalpur. Get a free quote."
         canonical="https://nefftosolution.com/services/web-development"

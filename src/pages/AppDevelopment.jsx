@@ -188,7 +188,7 @@ const AppDevelopment = () => {
 
   return (
     <>
-            <SEO
+                        <SEO
         title="Mobile App Development Company in Pakistan | NEFFTO"
         description="Android, iOS and cross-platform app development services in Bahawalpur and Pakistan. NEFFTO builds custom mobile apps that users love. Get a free quote."
         canonical="https://nefftosolution.com/services/app-development"

@@ -166,10 +166,10 @@ const GraphicDesigning = () => {
 
   return (
     <>
-            <SEO
+                        <SEO
         title="Graphic Design Services in Pakistan | Logo & Branding"
         description="Graphic design services in Pakistan: logo design, brand identity, UI/UX and social media post design by NEFFTO in Bahawalpur. Get a free quote today."
-        canonical="https://nefftosolution.com/services/graphic-designing"
+        canonical="https://nefftosolution.com/services/graphic-design"
         ogTitle="Graphic Design Services in Pakistan | Logo & Branding"
         ogDescription="Graphic design services in Pakistan: logo design, brand identity, UI/UX and social media post design by NEFFTO in Bahawalpur. Get a free quote today."
         schema={JSON.stringify([serviceSchema, faqSchema])}

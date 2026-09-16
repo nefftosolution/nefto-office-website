@@ -170,7 +170,7 @@ const SearchEngineOptimization = () => {
 
   return (
     <>
-            <SEO
+                        <SEO
         title="SEO Services in Pakistan | SEO Company in Bahawalpur"
         description="Rank higher on Google with NEFFTO's SEO services in Pakistan: local SEO, on-page and technical SEO, keyword research and affordable SEO packages."
         canonical="https://nefftosolution.com/services/seo"
