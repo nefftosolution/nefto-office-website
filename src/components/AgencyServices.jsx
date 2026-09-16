@@ -77,10 +77,35 @@ const AgencyServices = () => {
 
           <div className="space-y-6 max-w-md text-white/80">
             <p className="sm:text-[14px] text-[11px]">
-              At NEFFTO, we provide complete digital solutions including web
-              development, e-commerce, digital marketing, AI solutions,
-              branding, creative design, and content production — all focused on
-              helping businesses grow faster in the digital world.
+              At NEFFTO, we provide complete digital solutions including{" "}
+              <Link
+                to="/services/web-development"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                web development
+              </Link>
+              , e-commerce,{" "}
+              <Link
+                to="/services/digital-marketing"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                digital marketing
+              </Link>
+              ,{" "}
+              <Link
+                to="/services/ai-machine-learning"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                AI solutions
+              </Link>
+              , branding,{" "}
+              <Link
+                to="/services/graphic-designing"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                creative design
+              </Link>
+              , and content production — all focused on helping businesses grow faster in the digital world.
               <br />
               <br />
               We begin by understanding your business goals, target audience,
@@ -94,10 +119,28 @@ const AgencyServices = () => {
               speed, and consistent results across every platform.
               <br />
               <br />
-              Whether you need a high-converting website, a scalable online
-              store, AI-powered tools, or powerful marketing campaigns, NEFFTO
-              delivers innovative solutions designed to elevate your brand and
-              drive measurable success.
+              Whether you need a{" "}
+              <Link
+                to="/services/web-development"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                high-converting website
+              </Link>
+              , a scalable online store,{" "}
+              <Link
+                to="/services/ai-machine-learning"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                AI-powered tools
+              </Link>
+              , or powerful{" "}
+              <Link
+                to="/services/digital-marketing"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                marketing campaigns
+              </Link>
+              , NEFFTO delivers innovative solutions designed to elevate your brand and drive measurable success.
             </p>
           </div>
           <img src={ServicesImage} alt="The six Neffto Solution services: web, app, AI, design, marketing and SEO" loading="lazy" decoding="async" className="w-full mt-4 pr-4" title="The six Neffto Solution services: web, app, AI, design, marketing and SEO" />

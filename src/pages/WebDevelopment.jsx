@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import GlowButton from "../components/GlowButton";
@@ -329,7 +330,7 @@ const WebDevelopment = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div id="shopify" className="grid md:grid-cols-2 gap-12 items-center">
               <div className="hidden md:flex justify-start relative order-2 md:order-1">
                 <div className="absolute inset-0 bg-emerald-500/20 blur-[80px] rounded-full" />
                 <div className="w-48 h-48 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center animate-[bounce_4s_ease-in-out_infinite]">
@@ -344,9 +345,12 @@ const WebDevelopment = () => {
                   Shopify is one of the most popular platforms for selling
                   online across Bahawalpur, but a generic theme can make your
                   store look like thousands of others. Our{" "}
-                  <strong className="text-secondary font-bold">
+                  <a
+                    href="#shopify"
+                    className="text-secondary font-bold hover:underline decoration-secondary/50 underline-offset-4"
+                  >
                     Shopify custom theme development
-                  </strong>{" "}
+                  </a>{" "}
                   service gives your store a distinct identity and a shopping
                   experience built around your products. We create custom
                   sections, product page layouts, collection filters, and
@@ -397,7 +401,14 @@ const WebDevelopment = () => {
                   clean URL structures, a proper heading hierarchy, optimised
                   images, fast loading speed, schema markup, XML sitemaps, and
                   meta tags ready for your keywords, in any target region or
-                  language.
+                  language. For ongoing growth and top search rankings, we also
+                  pair our builds with{" "}
+                  <Link
+                    to="/services/seo"
+                    className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                  >
+                    dedicated SEO services
+                  </Link>.
                 </p>
               </div>
             </div>
@@ -490,13 +501,37 @@ const WebDevelopment = () => {
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">
               Start Your Web Development Project Today
             </h2>
-            <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
+            <p className="text-zinc-300 text-sm font-sans mb-6 leading-relaxed">
               Ready to build a website that works as hard as you do, wherever
               your customers are in Bahawalpur? Whether you need a fresh
               business website, a custom web application, or a high-converting
               Shopify store, NEFFTO IT Solution is here to help. Contact our web
               development company team today, share your idea, and get a free
               quote for your project.
+            </p>
+            <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed italic">
+              Need help promoting your new site? See our{" "}
+              <Link
+                to="/services/digital-marketing"
+                className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+              >
+                Digital Marketing
+              </Link>{" "}
+              and{" "}
+              <Link
+                to="/services/seo"
+                className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+              >
+                SEO
+              </Link>{" "}
+              services. You can also explore our{" "}
+              <Link
+                to="/blogs"
+                className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+              >
+                latest blog insights
+              </Link>{" "}
+              for web development best practices.
             </p>
             <GlowButton
               name="Get a Free Quote"

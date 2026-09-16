@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import GlowButton from "../components/GlowButton";
@@ -294,7 +295,18 @@ const AppDevelopment = () => {
                   <div className="mb-6 w-16 h-16 rounded-xl flex items-center justify-center shadow-lg" style={{ background: 'linear-gradient(90deg, #5482b4, #c3e9fe)' }}>
                     <service.icon size={32} className="text-[#020e24]" />
                   </div>
-                  <h3 className="text-lg font-black uppercase tracking-tight text-white mb-4">{service.title}</h3>
+                  <h3 className="text-lg font-black uppercase tracking-tight text-white mb-4">
+                    {service.title === "App UI/UX Design" ? (
+                      <Link
+                        to="/services/graphic-designing"
+                        className="hover:text-secondary underline decoration-secondary/50 underline-offset-4 transition-colors"
+                      >
+                        {service.title}
+                      </Link>
+                    ) : (
+                      service.title
+                    )}
+                  </h3>
                   <p className="text-zinc-400 text-sm font-sans leading-relaxed">{service.text}</p>
                 </div>
               ))}
@@ -355,14 +367,28 @@ const AppDevelopment = () => {
                  ))}
               </div>
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed text-center max-w-3xl mx-auto italic">
-                We can also connect your app with Bahawalpur and Bahawalpur payment gateways, maps, in-app chat, and AI features built in.
+                We can also connect your app with Bahawalpur and Bahawalpur payment gateways, maps, in-app chat, and AI features built in. Want AI features in your app, like a chatbot or recommendations? Explore our{" "}
+                <Link
+                  to="/services/ai-machine-learning"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  AI & Machine Learning
+                </Link>{" "}
+                services.
               </p>
             </div>
 
             <div className="max-w-4xl">
               <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Secure, Scalable Backends and Admin Panels</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                A great app needs a reliable engine behind it. Alongside the mobile app itself, we build secure backends, APIs, and easy-to-use admin panels that let you manage users, orders, content, and notifications. Your data stays protected, and your app is ready to handle growth from a few hundred users to many thousands.
+                A great app needs a reliable engine behind it. Alongside the mobile app itself, we build{" "}
+                <Link
+                  to="/services/web-development"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                >
+                  secure backends, APIs, and easy-to-use admin panels
+                </Link>{" "}
+                that let you manage users, orders, content, and notifications. Your data stays protected, and your app is ready to handle growth from a few hundred users to many thousands.
               </p>
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
                 We also integrate analytics tools so you can see how people use your app and make smarter decisions about future updates.
@@ -433,7 +459,11 @@ const AppDevelopment = () => {
           <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Turn Your App Idea Into Reality</h2>
             <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Have an app idea you've been thinking about for a while? Let's make it happen. NEFFTO IT Solution provides reliable <strong className="text-secondary font-bold">mobile app development company services</strong> for clients Bahawalpur. Contact us today for a free consultation and quote, and take the first step towards launching your app.
+              Have an app idea you've been thinking about for a while? Let's make it happen. NEFFTO IT Solution provides reliable <strong className="text-secondary font-bold">mobile app development company services</strong> for clients Bahawalpur. Check out our{" "}
+              <Link to="/blogs" className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium">
+                development blog
+              </Link>{" "}
+              or contact us today for a free consultation and quote, and take the first step towards launching your app.
             </p>
             <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
           </div>

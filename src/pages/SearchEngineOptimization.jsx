@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import GlowButton from "../components/GlowButton";
@@ -8,7 +9,7 @@ import {
   BarChart,
   FileText,
   MapPin,
-  Link,
+  Link as LinkIcon,
   ShoppingCart,
   Check,
   ChevronDown,
@@ -68,7 +69,7 @@ const services = [
     text: "SEO-friendly service pages, blogs, and product descriptions.",
   },
   {
-    icon: Link,
+    icon: LinkIcon,
     number: "06",
     title: "Link Building",
     text: "Earning quality backlinks from relevant, trustworthy websites.",
@@ -284,7 +285,14 @@ const SearchEngineOptimization = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">On-Page and Technical SEO</h2>
                  <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                   Strong rankings start with a solid foundation. Our <strong className="text-secondary font-bold">on-page and technical SEO</strong> work makes sure search engines can crawl, understand, and trust your website, wherever it is hosted or targeted. We improve page speed, fix broken links and crawl errors, strengthen mobile usability, set up XML sitemaps and robots.txt, add schema markup, and improve Core Web Vitals.
+                   Strong rankings start with a solid foundation. Our <strong className="text-secondary font-bold">on-page and technical SEO</strong> work makes sure search engines can crawl, understand, and trust your website, wherever it is hosted or targeted. We work alongside our{" "}
+                   <Link
+                     to="/services/web-development"
+                     className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                   >
+                     in-house developers
+                   </Link>{" "}
+                   to improve page speed, fix broken links and crawl errors, strengthen mobile usability, set up XML sitemaps and robots.txt, add schema markup, and improve Core Web Vitals.
                  </p>
                </div>
                
@@ -316,7 +324,14 @@ const SearchEngineOptimization = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl md:col-span-1">
                   <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-white mb-4">E-commerce and Shopify SEO</h2>
                   <p className="text-zinc-300 text-sm font-sans leading-relaxed">
-                     Online stores face unique SEO challenges, such as duplicate product pages, thin descriptions, and slow loading category pages. Our e-commerce SEO service fixes these issues and optimises your product and collection pages so they appear when shoppers search for what you sell. For Shopify stores, we improve site structure, apps, speed, and structured data so your products can show rich results like prices and ratings in Google.
+                     Online stores face unique SEO challenges, such as duplicate product pages, thin descriptions, and slow loading category pages. Our e-commerce SEO service fixes these issues and optimises your product and collection pages so they appear when shoppers search for what you sell. For{" "}
+                     <Link
+                       to="/services/web-development#shopify"
+                       className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                     >
+                       Shopify stores
+                     </Link>
+                     , we improve site structure, apps, speed, and structured data so your products can show rich results like prices and ratings in Google.
                   </p>
                </div>
                
@@ -377,14 +392,38 @@ const SearchEngineOptimization = () => {
                   <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
                     <Check className="w-6 h-6 text-secondary" />
                   </div>
-                  <p className="text-zinc-300 text-sm font-sans leading-relaxed">{point}</p>
+                  <p className="text-zinc-300 text-sm font-sans leading-relaxed">
+                    {point.includes("In-house developers") ? (
+                      <>
+                        <Link
+                          to="/services/web-development"
+                          className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                        >
+                          In-house developers
+                        </Link>{" "}
+                        to fix technical SEO issues quickly.
+                      </>
+                    ) : (
+                      point
+                    )}
+                  </p>
                 </div>
               ))}
             </div>
             
-            <div className="max-w-3xl mx-auto text-center">
+            <div className="max-w-3xl mx-auto text-center space-y-4">
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed italic border-x-4 border-indigo-500/50 px-6 py-2 rounded-xl bg-white/1">
                 We believe in building long-term, sustainable growth. That means no shortcuts or risky tactics that could harm your website in the future.
+              </p>
+              <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
+                Want your content to look as good as it ranks? See our{" "}
+                <Link
+                  to="/services/graphic-designing"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                >
+                  Graphic Designing
+                </Link>{" "}
+                services.
               </p>
             </div>
           </div>
@@ -400,7 +439,14 @@ const SearchEngineOptimization = () => {
           <div className="max-w-4xl mx-auto sm:px-6 px-4 relative z-10 text-center">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Get Found on Google Today</h2>
             <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Every day your website isn't ranking, potential customers are going to your competitors, wherever they are. Let NEFFTO IT Solution's <strong className="text-secondary font-bold">SEO services</strong> put your business in front of the people who are already searching for you. Contact us today for a free SEO audit.
+              Every day your website isn't ranking, potential customers are going to your competitors, wherever they are. Let NEFFTO IT Solution's <strong className="text-secondary font-bold">SEO services</strong> put your business in front of the people who are already searching for you. Browse our{" "}
+              <Link
+                to="/blogs"
+                className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+              >
+                SEO & tech blog
+              </Link>{" "}
+              or contact us today for a free SEO audit.
             </p>
             <GlowButton name="Get a Free Quote" to="/contact" className="bg-surface text-white border-2 border-surface" hover="hover:text-surface" layerHover="bg-white" />
           </div>

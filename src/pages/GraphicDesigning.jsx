@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import GlowButton from "../components/GlowButton";
@@ -303,14 +304,34 @@ const GraphicDesigning = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">UI/UX Design Services for Websites and Apps</h2>
                  <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                   A website or app can have powerful features and still fail if users find it confusing. Our UI/UX design services focus on making digital products easy, enjoyable, and effective to use. We research user needs, map customer journeys, create wireframes, and design polished interfaces in tools like Figma.
+                   A website or app can have powerful features and still fail if users find it confusing. Our UI/UX design services focus on making digital products easy, enjoyable, and effective to use. We research user needs, map customer journeys, create wireframes, and design polished interfaces in tools like Figma that align perfectly with our{" "}
+                   <Link
+                     to="/services/web-development"
+                     className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                   >
+                     web
+                   </Link>{" "}
+                   and{" "}
+                   <Link
+                     to="/services/app-development"
+                     className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                   >
+                     app development
+                   </Link>{" "}
+                   workflows.
                  </p>
                </div>
                
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">Social Media Post Design That Stops the Scroll</h2>
                  <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                   Social media is crowded, and you only have a second or two to catch someone's attention, anywhere in Bahawalpur. Our social media post design service creates bold, on-brand graphics for Facebook, Instagram, LinkedIn, TikTok, and X, sized and styled correctly for each platform and audience.
+                   Social media is crowded, and you only have a second or two to catch someone's attention, anywhere in Bahawalpur. Our social media post design service creates bold, on-brand graphics for Facebook, Instagram, LinkedIn, TikTok, and X, sized and styled correctly for each platform, audience, and{" "}
+                   <Link
+                     to="/services/digital-marketing"
+                     className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                   >
+                     wider digital marketing campaigns
+                   </Link>.
                  </p>
                </div>
             </div>

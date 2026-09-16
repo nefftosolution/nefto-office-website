@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import GlowButton from "../components/GlowButton";
@@ -305,7 +306,21 @@ const AIMachineLearning = () => {
                   Customers expect fast answers, often outside normal business hours, regardless of where they live. Our <strong className="text-secondary font-bold">AI chatbot development</strong> service creates intelligent assistants that understand natural questions, respond in a friendly and accurate way, and hand complex issues over to your human team when needed.
                 </p>
                 <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                  Chatbots can be deployed on your website, mobile app, or WhatsApp, and can support multiple languages, including English and others your customers use.
+                  Chatbots can be deployed on your{" "}
+                  <Link
+                    to="/services/web-development"
+                    className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                  >
+                    website
+                  </Link>
+                  ,{" "}
+                  <Link
+                    to="/services/app-development"
+                    className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                  >
+                    mobile app
+                  </Link>
+                  , or WhatsApp, and can support multiple languages, including English and others your customers use.
                 </p>
               </div>
               <div className="md:col-span-4 flex justify-center">
@@ -411,7 +426,21 @@ const AIMachineLearning = () => {
             
             <div className="max-w-3xl">
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed italic border-l-4 border-rose-500/50 pl-6 py-2">
-                Because our AI specialists work alongside our web and app developers, we can deliver complete solutions, from the AI model itself to the dashboard, website, or app your users interact with.
+                Because our AI specialists work alongside our{" "}
+                <Link
+                  to="/services/web-development"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  web developers
+                </Link>{" "}
+                and{" "}
+                <Link
+                  to="/services/app-development"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  app developers
+                </Link>
+                , we can deliver complete solutions, from the AI model itself to the dashboard, website, or app your users interact with.
               </p>
             </div>
           </div>

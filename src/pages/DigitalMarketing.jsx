@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import GlowButton from "../components/GlowButton";
@@ -402,14 +403,57 @@ const DigitalMarketing = () => {
                   <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-1">
                     <Check className="w-4 h-4 text-secondary" />
                   </div>
-                  <p className="text-zinc-300 text-sm font-sans leading-relaxed">{point}</p>
+                  <p className="text-zinc-300 text-sm font-sans leading-relaxed">
+                    {point.includes("SEO team") ? (
+                      <>
+                        Close collaboration with our{" "}
+                        <Link
+                          to="/services/seo"
+                          className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
+                        >
+                          SEO team
+                        </Link>{" "}
+                        for complete online growth.
+                      </>
+                    ) : (
+                      point
+                    )}
+                  </p>
                 </div>
               ))}
             </div>
             
             <div className="max-w-3xl">
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed italic border-l-4 border-emerald-500/50 pl-6 py-2">
-                Because we also build websites, design graphics, and handle SEO in-house, your marketing campaigns are supported by landing pages and creatives that are designed to convert.
+                Because we also build{" "}
+                <Link
+                  to="/services/web-development"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  websites
+                </Link>
+                , design{" "}
+                <Link
+                  to="/services/graphic-designing"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  graphics
+                </Link>
+                , and handle{" "}
+                <Link
+                  to="/services/seo"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  SEO
+                </Link>{" "}
+                in-house, your marketing campaigns are supported by{" "}
+                <Link
+                  to="/services/web-development"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  landing pages
+                </Link>{" "}
+                and creatives that are designed to convert.
               </p>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import {
@@ -106,9 +107,35 @@ const AboutUs = () => {
                 className="text-base text-zinc-300 font-light leading-relaxed max-w-3xl"
               >
                 Neffto Solution is a leading technology & digital marketing company. We
-                engineer high-performance web applications, develop advanced AI & Python 
-                automations, and execute data-driven SEO and marketing strategies that 
-                empower modern businesses to scale effortlessly.
+                engineer high-performance{" "}
+                <Link
+                  to="/services/web-development"
+                  className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+                >
+                  web applications
+                </Link>
+                , develop advanced{" "}
+                <Link
+                  to="/services/ai-machine-learning"
+                  className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+                >
+                  AI & Python automations
+                </Link>
+                , and execute data-driven{" "}
+                <Link
+                  to="/services/seo"
+                  className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+                >
+                  SEO
+                </Link>{" "}
+                and{" "}
+                <Link
+                  to="/services/digital-marketing"
+                  className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+                >
+                  marketing strategies
+                </Link>{" "}
+                that empower modern businesses to scale effortlessly.
               </motion.p>
             </div>
           </div>

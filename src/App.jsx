@@ -45,7 +45,9 @@ function App() {
             <Route path="/services/web-development" element={<WebDevelopment />} />
             <Route path="/services/app-development" element={<AppDevelopment />} />
             <Route path="/services/python-ml-ai" element={<AIMachineLearning />} />
+            <Route path="/services/ai-machine-learning" element={<AIMachineLearning />} />
             <Route path="/services/graphic-design" element={<GraphicDesigning />} />
+            <Route path="/services/graphic-designing" element={<GraphicDesigning />} />
             <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/services/seo" element={<SearchEngineOptimization />} />
             <Route path="/about" element={<AboutUs />} />
