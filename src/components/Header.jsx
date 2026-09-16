@@ -78,6 +78,7 @@ const Header = () => {
   const navLinksSec = [
     { name: "About", to: "/about" },
     { name: "Team", to: "/team" },
+    { name: "Blogs", to: "/blogs" },
     { name: "Contact Us", to: "/contact" },
   ];
 

@@ -24,6 +24,8 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CookiesPolicy = lazy(() => import("./pages/CookiesPolicy"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
 const RefundAndCancellationPolicy = lazy(() => import("./pages/RefundAndCancellationPolicy"));
+const Blogs = lazy(() => import("./pages/Blogs"));
+const BlogDetail = lazy(() => import("./pages/BlogDetail"));
 
 function App() {
   return (
@@ -36,6 +38,10 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:slug" element={<BlogDetail />} />
+            <Route path="/blog" element={<Blogs />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/services/web-development" element={<WebDevelopment />} />
             <Route path="/services/app-development" element={<AppDevelopment />} />
             <Route path="/services/python-ml-ai" element={<AIMachineLearning />} />

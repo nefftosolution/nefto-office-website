@@ -1,4 +1,4 @@
-﻿import fs from 'fs';
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -26,6 +26,7 @@ const routes = [
   { path: '/services/graphic-design', title: 'Graphic Design Services in Pakistan | Logo & Branding', h1: 'Graphic Design Services for Creative, Recognisable Brands Worldwide' },
   { path: '/services/digital-marketing', title: 'Digital Marketing Agency in Pakistan | NEFFTO IT Solution', h1: 'Digital Marketing Agency Helping Brands Grow Leads, Sales and Reach Worldwide' },
   { path: '/casestudies', title: 'Case Studies | NEFFTO', h1: 'Our Work' },
+  { path: '/blogs', title: 'Tech, AI & Web Development Blog | Neffto Solution', h1: 'Explore Our Tech Journal' },
   { path: '/404.html', title: 'Page Not Found | NEFFTO', h1: '404 - Page Not Found' }
 ];
 
