@@ -193,8 +193,13 @@ const Blogs = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base sm:text-lg text-white/70 leading-relaxed font-sans"
           >
-            Discover tutorials, architectural case studies, and digital marketing
-            insights curated by the engineering specialists at Neffto Solution.
+            Discover tutorials, architectural case studies, and {" "}
+            <Link to="/services/digital-marketing" className="text-accent-blue decoration-accent-blue underline underline-offset-4">
+              digital marketing
+            </Link>{" "}
+            insights curated by the engineering specialists at <Link to="/" className="text-accent-blue decoration-accent-blue underline underline-offset-4">
+              Neffto IT Solution
+            </Link>.
           </motion.p>
         </div>
 
@@ -207,7 +212,7 @@ const Blogs = () => {
             className="mb-12 space-y-6"
           >
             {/* Search Box & Sort */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto">
+            <div className="flex flex-row items-center justify-between gap-4 max-w-4xl mx-auto">
               <div className="relative flex-1 w-full">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40" />
                 <input
@@ -215,7 +220,7 @@ const Blogs = () => {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search articles by title, topic, or keyword..."
-                  className="w-full pl-11 pr-10 py-3 rounded-2xl bg-secondary-navy/40 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 backdrop-blur-md transition text-xs sm:text-sm"
+                  className="w-full px-2 sm:px-11 py-3 rounded bg-secondary-navy/40 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 backdrop-blur-md transition text-xs sm:text-sm"
                 />
                 {searchQuery && (
                   <button
@@ -232,7 +237,7 @@ const Blogs = () => {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-3 py-2.5 rounded-xl bg-secondary-navy/40 border border-white/10 text-xs text-white focus:outline-none focus:border-primary"
+                  className="px-3 py-2.5 bg-secondary-navy/40 border border-white/10 text-xs text-white focus:outline-none focus:border-primary rounded"
                 >
                   <option value="newest">Newest First</option>
                   <option value="oldest">Oldest First</option>
@@ -249,7 +254,7 @@ const Blogs = () => {
                   <button
                     key={cat}
                     onClick={() => setSelectedCategory(cat)}
-                    className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all duration-200 border flex items-center gap-1.5 ${
+                    className={`px-3.5 py-1.5 rounded text-xs font-semibold transition-all duration-200 border flex items-center gap-1.5 ${
                       active
                         ? "bg-primary text-white border-primary shadow-lg shadow-primary/25 scale-105"
                         : "bg-secondary-navy/40 text-white/70 border-white/10 hover:border-primary/40 hover:text-white"

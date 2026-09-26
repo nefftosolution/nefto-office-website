@@ -61,7 +61,7 @@ const AgencyServices = () => {
     <div className="relative max-w-7xl mx-auto sm:px-6 px-4 sm:py-16 py-10 z-10">
       <div className="grid lg:grid-cols-2 gap-16 items-start">
         {/* LEFT SIDE */}
-        <div className="lg:sticky lg:top-32 self-start space-y-8">
+        <div className="lg:sticky lg:top-32 self-start sm:space-y-8 space-y-4">
           <motion.span
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +70,7 @@ const AgencyServices = () => {
             Why NEFFTO?
           </motion.span>
 
-          <h2 className="text-3xl md:text-5xl font-black text-white leading-[0.95] tracking-tighter uppercase">
+          <h2 className="text-xl sm:text-3xl md:text-5xl font-black text-white leading-[0.95] tracking-tighter uppercase">
             We Create Powerful Digital Experiences For{" "}
             <span className="text-primary">Modern Brands</span>
           </h2>
@@ -93,14 +93,14 @@ const AgencyServices = () => {
               </Link>
               ,{" "}
               <Link
-                to="/services/ai-machine-learning"
+                to="/services/python-ml-ai"
                 className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
               >
                 AI solutions
               </Link>
               , branding,{" "}
               <Link
-                to="/services/graphic-designing"
+                to="/services/graphic-design"
                 className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
               >
                 creative design
@@ -128,7 +128,7 @@ const AgencyServices = () => {
               </Link>
               , a scalable online store,{" "}
               <Link
-                to="/services/ai-machine-learning"
+                to="/services/python-ml-ai"
                 className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
               >
                 AI-powered tools
@@ -160,7 +160,7 @@ const AgencyServices = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="relative group overflow-hidden p-10 
+                className="relative group overflow-hidden sm:p-10 p-4 
               glass rounded-2xl
               border border-white/10 
               hover:scale-[1.02] hover:border-white/20 

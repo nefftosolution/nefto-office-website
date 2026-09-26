@@ -213,7 +213,7 @@ const Services = () => {
               </h2>
 
               <p className="text-zinc-300 sm:text-lg text-sm font-light max-w-lg mx-auto">
-                Currently accepting high-impact projects for 2024. Let’s build
+                Currently accepting high impact projects for {new Date().getFullYear()}. Let’s build
                 something that moves the needle.
               </p>
 

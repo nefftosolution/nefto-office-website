@@ -434,7 +434,7 @@ const DigitalMarketing = () => {
                 </Link>
                 , design{" "}
                 <Link
-                  to="/services/graphic-designing"
+                  to="/services/graphic-design"
                   className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
                 >
                   graphics

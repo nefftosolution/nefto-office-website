@@ -179,7 +179,7 @@ const WebDevelopment = () => {
 
   return (
     <>
-                  <SEO
+      <SEO
         title="Web Development Company in Pakistan | NEFFTO IT Solution"
         description="NEFFTO is a web development company in Pakistan offering custom website development, full stack and Shopify development in Bahawalpur. Get a free quote."
         canonical="https://nefftosolution.com/services/web-development"
@@ -344,13 +344,7 @@ const WebDevelopment = () => {
                 <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
                   Shopify is one of the most popular platforms for selling
                   online across Bahawalpur, but a generic theme can make your
-                  store look like thousands of others. Our{" "}
-                  <a
-                    href="#shopify"
-                    className="text-secondary font-bold hover:underline decoration-secondary/50 underline-offset-4"
-                  >
-                    Shopify custom theme development
-                  </a>{" "}
+                  store look like thousands of others. Our shopify custom theme development 
                   service gives your store a distinct identity and a shopping
                   experience built around your products. We create custom
                   sections, product page layouts, collection filters, and

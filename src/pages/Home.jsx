@@ -139,12 +139,12 @@ const Home = () => {
         <div className="absolute top-[-20%] left-[-10%] w-180 h-180 bg-[#042558] blur-[140px]" />
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-7xl sm:px-6 px-4">
-          <div className="w-full max-w-3xl lg:max-w-2xl xl:max-w-3xl">
-            <h1 className="font-sans text-white text-2xl md:text-4xl lg:text-5xl font-black leading-tight flex flex-col justify-start">
-              Digital Solutions for{" "}
-              <span className="highlight">Modern Businesses</span>
+          <div className="w-full max-w-xl lg:max-w-3xl">
+            <h1 className="font-sans text-white text-2xl sm:text-4xl lg:text-5xl font-black leading-tight sm:flex sm:flex-col sm:justify-start">
+              Transforming Ideas Into {" "}
+              <span className="highlight">Smart Digital Solutions</span>
             </h1>
-            <p className="mt-4 text-gray-300 text-sm lg:max-w-xl max-w-sm font-sans">
+            <p className="mt-4 text-gray-300 text-xs sm:text-[16px] sm:max-w-xl max-w-sm font-sans text-justify">
               From stunning web experiences and high-end graphics to custom tool
               development and advanced machine learning models, we provide the
               full-stack solutions your business needs to scale in the digital
@@ -249,7 +249,7 @@ const Home = () => {
         <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
         {/* Light Overlay for text readability */}
-        <div className="max-w-7xl mx-auto sm:px-6 px-4 flex flex-wrap items-center justify-between gap-12 relative z-10">
+        <div className="max-w-7xl mx-auto sm:px-6 px-4 grid grid-cols-2 md:grid-cols-4 gap-12 relative z-10">
           <Counter value="20+" label="Systems Architected" light={false} />
           <Counter value="98%" label="Success Rate" light={false} />
           <Counter value="10+" label="Global Partners" light={false} />
@@ -279,7 +279,7 @@ const Home = () => {
               <span className="text-primary">High Success Rates</span>
             </h2>
 
-            <p className="text-gray-300 text-sm leading-relaxed mb-12">
+            <p className="text-gray-300 text-xs sm:text-sm text-justify leading-relaxed mb-12">
               NEFFTO is a results-driven digital agency dedicated to helping
               businesses build a strong online presence through innovative
               technology, creative strategies, and high-performance digital
@@ -312,7 +312,7 @@ const Home = () => {
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-300 leading-relaxed text-sm">
+                    <p className="text-gray-300 leading-relaxed sm:text-sm text-xs">
                       {item.desc}
                     </p>
                   </div>
@@ -335,12 +335,12 @@ const Home = () => {
 
               {/* FLOATING STATS */}
               <div className="absolute top-px left-px bg-white/10 backdrop-blur-xl border border-black/10 px-4 py-2">
-                <h3 className="text-2xl font-bold text-surface">99%</h3>
+                <h3 className="text-2xl font-bold text-surface">98%</h3>
                 <p className="text-surface text-xs">Client Satisfaction</p>
               </div>
 
               <div className="absolute bottom-px right-px bg-white/10 backdrop-blur-xl border border-white/10 px-4 py-2">
-                <h3 className="text-2xl font-bold text-white">500+</h3>
+                <h3 className="text-2xl font-bold text-white">50+</h3>
                 <p className="text-white text-xs">Projects Delivered</p>
               </div>
             </div>

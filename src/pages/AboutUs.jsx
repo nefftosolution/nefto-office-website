@@ -116,7 +116,7 @@ const AboutUs = () => {
                 </Link>
                 , develop advanced{" "}
                 <Link
-                  to="/services/ai-machine-learning"
+                  to="/services/python-ml-ai"
                   className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
                 >
                   AI & Python automations
@@ -238,7 +238,7 @@ const AboutUs = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
+                  transition={{ delay: idx * 0 }}
                   className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2"
                 >
                   <div className="p-4 bg-primary/10 rounded-xl w-fit mb-6 group-hover:bg-primary/20 transition-colors">
@@ -279,7 +279,7 @@ const AboutUs = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
+                  transition={{ delay: idx * 0 }}
                   className="relative p-6 rounded-2xl bg-white/5 border border-white/10"
                 >
                   <span className="text-4xl font-black text-primary/30 mb-4 block">

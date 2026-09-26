@@ -1,16 +1,23 @@
 <IfModule mod_rewrite.c>
+
   RewriteEngine On
   RewriteBase /
 
+  # Force HTTPS + non-www
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\.nefftosolution\.com$ [NC]
+  RewriteRule ^ https://nefftosolution.com%{REQUEST_URI} [R=301,L]
+
   # Redirect retired services
   RewriteRule ^services/seo-optimization$ /services/seo [R=301,L]
-
-  # Error pages
-  ErrorDocument 404 /404.html
 
   # Serve .html version if it exists
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
   RewriteRule ^(.*)$ /$1.html [L]
+
 </IfModule>
+
+# Error page
+ErrorDocument 404 /404.html

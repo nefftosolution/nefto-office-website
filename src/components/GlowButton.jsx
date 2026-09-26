@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const GlowButton = ({ name, to, href, className = "", onClick, hover, layerHover }) => {
   const baseClasses = `
     group relative inline-flex items-center justify-center 
-    px-4 py-3 text-[13px] font-bold uppercase tracking-[0.08em] 
+    sm:px-4 px-2 sm:py-3 py-2 sm:text-[13px] text-xs sm:font-bold font-medium uppercase tracking-[0.08em] 
     overflow-hidden transition-transform duration-300 border border-white
     ${className} ${hover}
   `;

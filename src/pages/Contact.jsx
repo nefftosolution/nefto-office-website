@@ -3,6 +3,7 @@ import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send, MessageSquare, FileText, Edit, Palette, Lightbulb, Bug, CheckCircle2, AlertCircle } from "lucide-react";
 import ContactBg from "../assets/Contact-bg.webp";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -137,7 +138,7 @@ const Contact = () => {
                 <div>
                   <p className="text-xs text-slate-400 uppercase font-bold tracking-wider">Location</p>
                   <p className="text-sm sm:text-base font-semibold text-slate-200">
-                    Global Remote Team / Bahawalpur, Pakistan
+                    Faisal Colony, Bahawalpur, Pakistan
                   </p>
                 </div>
               </div>
@@ -238,7 +239,7 @@ const Contact = () => {
               We're Here to <span className="text-cyan-400">Listen</span>
             </h2>
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-              Welcome to <strong className="text-slate-200">Neffto Solution</strong>. We’re always eager to hear from you. Whether you want to share feedback, ask questions, or discuss a new project, we are here to support your growth.
+              Welcome to <strong className="text-accent-blue decoration-accent-blue underline underline-offset-4"><Link to="/">Neffto IT Solution</Link></strong>. We’re always eager to hear from you. Whether you want to share feedback, ask questions, or discuss a new project, we are here to support your growth.
             </p>
           </div>
 
@@ -271,7 +272,7 @@ const Contact = () => {
           {/* Bottom Info Card */}
           <div className="max-w-4xl mx-auto bg-slate-900/60 p-8 sm:p-10 rounded-3xl border border-slate-800 text-center space-y-8 backdrop-blur-sm">
             <p className="text-slate-300 text-base sm:text-lg">
-              We welcome all your comments and inquiries as they help us make <strong className="text-white">Neffto Solution</strong> a better platform.
+              We welcome all your comments and inquiries as they help us make <strong className="text-accent-blue decoration-accent-blue underline underline-offset-4"><Link to="/">Neffto IT Solution</Link></strong> a better platform.
             </p>
             
             <div className="grid sm:grid-cols-3 gap-6 py-6 border-y border-slate-800/80">
@@ -289,18 +290,12 @@ const Contact = () => {
               </div>
               <div className="space-y-1">
                 <span className="text-xs uppercase tracking-widest text-cyan-400 font-bold">Visit Us</span>
-                <p className="text-base font-bold text-slate-200">Faisal Colony, Bahawalpur</p>
+                <p className="text-base font-bold text-slate-200">Faisal Colony, Bahawalpur, Pakistan</p>
               </div>
             </div>
 
             <p className="text-xs text-slate-500 italic leading-relaxed">
               We look forward to assisting you! Thank you for being a part of our community.
-              <span className="mt-2 block">
-                Our contact us page is generated with the help of{" "}
-                <a href="https://raptorkit.com/contact-us-page-generator/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:underline font-normal">
-                  Contact Us Generator
-                </a>.
-              </span>
             </p>
           </div>
 

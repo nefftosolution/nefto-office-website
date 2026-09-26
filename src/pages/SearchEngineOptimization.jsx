@@ -326,7 +326,7 @@ const SearchEngineOptimization = () => {
                   <p className="text-zinc-300 text-sm font-sans leading-relaxed">
                      Online stores face unique SEO challenges, such as duplicate product pages, thin descriptions, and slow loading category pages. Our e-commerce SEO service fixes these issues and optimises your product and collection pages so they appear when shoppers search for what you sell. For{" "}
                      <Link
-                       to="/services/web-development#shopify"
+                       to="/services/web-development"
                        className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
                      >
                        Shopify stores
@@ -418,7 +418,7 @@ const SearchEngineOptimization = () => {
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
                 Want your content to look as good as it ranks? See our{" "}
                 <Link
-                  to="/services/graphic-designing"
+                  to="/services/graphic-design"
                   className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
                 >
                   Graphic Designing

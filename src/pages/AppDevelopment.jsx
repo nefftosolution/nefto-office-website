@@ -189,7 +189,7 @@ const AppDevelopment = () => {
 
   return (
     <>
-                        <SEO
+      <SEO
         title="Mobile App Development Company in Pakistan | NEFFTO"
         description="Android, iOS and cross-platform app development services in Bahawalpur and Pakistan. NEFFTO builds custom mobile apps that users love. Get a free quote."
         canonical="https://nefftosolution.com/services/app-development"
@@ -298,7 +298,7 @@ const AppDevelopment = () => {
                   <h3 className="text-lg font-black uppercase tracking-tight text-white mb-4">
                     {service.title === "App UI/UX Design" ? (
                       <Link
-                        to="/services/graphic-designing"
+                        to="/services/graphic-design"
                         className="hover:text-secondary underline decoration-secondary/50 underline-offset-4 transition-colors"
                       >
                         {service.title}
@@ -369,7 +369,7 @@ const AppDevelopment = () => {
               <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed text-center max-w-3xl mx-auto italic">
                 We can also connect your app with Bahawalpur and Bahawalpur payment gateways, maps, in-app chat, and AI features built in. Want AI features in your app, like a chatbot or recommendations? Explore our{" "}
                 <Link
-                  to="/services/ai-machine-learning"
+                  to="/services/python-ml-ai"
                   className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
                 >
                   AI & Machine Learning

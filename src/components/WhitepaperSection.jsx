@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Download, Mail, CheckCircle, ArrowRight } from "lucide-react";
 import EmailBg from "../assets/email-bg.webp";
 import EmailBookImg from "../assets/email-book.png";
+import { Link } from "react-router-dom";
 
 const WhitepaperSection = () => {
   const [email, setEmail] = useState("");
@@ -80,11 +81,32 @@ const WhitepaperSection = () => {
                       STAY AHEAD IN {new Date().getFullYear().toString()}
                     </h2>
 
-                    <p className="max-w-md text-sm font-light leading-relaxed text-zinc-300 sm:text-md">
+                    <p className="max-w-md sm:text-[16px] text-xs font-light leading-relaxed text-zinc-300">
                       Get the latest insights on{" "}
-                      <span className="font-medium italic text-white underline decoration-primary underline-offset-4">
-                        web development, app development, AI solutions, digital
-                        marketing, Graphic Designing and SEO
+                      <span className="font-medium italic text-white">
+                        <Link className="underline decoration-primary underline-offset-4" to="/services/web-development">
+                          web development
+                        </Link>
+                        ,{" "}
+                        <Link className="underline decoration-primary underline-offset-4" to="/services/app-development">
+                          app development
+                        </Link>
+                        ,{" "}
+                        <Link className="underline decoration-primary underline-offset-4" to="/services/python-ml-ai">
+                          AI solutions
+                        </Link>
+                        ,{" "}
+                        <Link className="underline decoration-primary underline-offset-4" to="/services/digital-marketing">
+                          digital marketing
+                        </Link>
+                        ,{" "}
+                        <Link className="underline decoration-primary underline-offset-4" to="/services/graphic-design">
+                          Graphic Designing
+                        </Link>
+                        , and{" "}
+                        <Link className="underline decoration-primary underline-offset-4" to="/services/seo">
+                          SEO
+                        </Link>
                       </span>{" "}
                       to help your business grow faster.
                     </p>

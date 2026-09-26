@@ -9,6 +9,7 @@ import CoFounder from "../assets/Ameerhamza.webp";
 import TeamGrid from "../components/TeamGrid";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const MainTeamCard = ({
   imageSrc,
@@ -232,11 +233,6 @@ const Team = () => {
           <div className="absolute inset-0 bg-black/60" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 sm:space-y-8 space-y-4 z-10 text-white">
-            {/* small label */}
-            <div className="flex justify-center items-center gap-3 text-[10px] uppercase tracking-[0.4em] text-off-white font-bold">
-              <span className="sm:w-10 w-4 h-px bg-off-white" />
-              Join The Network
-            </div>
 
             {/* heading */}
             <motion.div
@@ -251,8 +247,11 @@ const Team = () => {
 
             {/* description */}
             <p className="text-zinc-200 text-sm sm:text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
-              We’re assembling a high-performance engineering team focused on
-              AI, distributed systems, and next-generation products. If you
+              We’re assembling a high-performance engineering team focused on {" "}
+              <Link to="/services/python-ml-ai" className="text-white decoration-accent-blue underline underline-offset-4">
+                AI
+              </Link>
+              , distributed systems, and next-generation products. If you
               think in systems and build with precision, you’ll fit right in.
             </p>
 

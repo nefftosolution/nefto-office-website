@@ -11,7 +11,7 @@ const Counter = ({ value, label, light = false }) => {
       let start = 0;
       const end = parseInt(value.replace(/\D/g, ""));
       if (start === end) return;
-      let totalMilis = 2000;
+      let totalMilis = 200;
       let incrementTime = totalMilis / end;
       let timer = setInterval(() => {
         start += 1;

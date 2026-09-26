@@ -210,7 +210,7 @@ const Footer = () => {
           <p className="text-center text-xs sm:text-sm text-white">
             &copy; {currentYear}{" "}
             <Link to={"/"} className="text-primary underline">
-              NEFFTO
+              NEFFTO IT Solution
             </Link>
             . All rights reserved.
           </p>
