@@ -211,7 +211,7 @@ const BlogDetail = () => {
 
       {/* Dynamic Scroll Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary origin-left z-[9999]"
+        className="fixed top-0 left-0 right-0 h-1 bg-linear-to-r from-primary via-secondary to-primary origin-left z-9999"
         style={{ scaleX }}
       />
 
@@ -227,8 +227,8 @@ const BlogDetail = () => {
       />
 
       {/* Decorative Glow Backgrounds */}
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-secondary-navy/40 blur-[150px] -z-10 pointer-events-none" />
-      <div className="absolute top-[600px] right-0 w-[400px] h-[400px] bg-primary/10 blur-[140px] -z-10 pointer-events-none" />
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-200 h-100 bg-secondary-navy/40 blur-[150px] -z-10 pointer-events-none" />
+      <div className="absolute top-150 right-0 w-100 h-100 bg-primary/10 blur-[140px] -z-10 pointer-events-none" />
 
       {isCustomPage ? (
         <div className="w-full">
@@ -361,7 +361,7 @@ const BlogDetail = () => {
               Blogs
             </Link>
             <span>/</span>
-            <span className="text-white/80 line-clamp-1 max-w-[280px] sm:max-w-md">
+            <span className="text-white/80 line-clamp-1 max-w-70 sm:max-w-md">
               {blog.title}
             </span>
           </motion.div>
@@ -479,7 +479,7 @@ const BlogDetail = () => {
               <img
                 src={blog.coverImage}
                 alt={blog.title}
-                className="w-full max-h-[500px] object-cover"
+                className="w-full max-h-125 object-cover"
               />
             </div>
           )}
@@ -505,7 +505,7 @@ const BlogDetail = () => {
               [&_.callout-box]:p-5 [&_.callout-box]:rounded-2xl [&_.callout-box]:my-6 [&_.callout-box]:border
               [&_.callout-info]:bg-blue-950/40 [&_.callout-info]:border-blue-500/30 [&_.callout-info]:text-blue-100
               [&_.callout-tip]:bg-emerald-950/40 [&_.callout-tip]:border-emerald-500/30 [&_.callout-tip]:text-emerald-100
-              [&_.callout-cta]:bg-gradient-to-r [&_.callout-cta]:from-[#042558]/80 [&_.callout-cta]:to-[#020e24]/90 [&_.callout-cta]:border-[#5482b4]/40 [&_.callout-cta]:p-6 [&_.callout-cta]:rounded-3xl
+              [&_.callout-cta]:bg-linear-to-r [&_.callout-cta]:from-[#042558]/80 [&_.callout-cta]:to-[#020e24]/90 [&_.callout-cta]:border-[#5482b4]/40 [&_.callout-cta]:p-6 [&_.callout-cta]:rounded-3xl
               [&_.cta-btn]:inline-flex [&_.cta-btn]:items-center [&_.cta-btn]:gap-2 [&_.cta-btn]:px-5 [&_.cta-btn]:py-2.5 [&_.cta-btn]:rounded-xl [&_.cta-btn]:bg-secondary [&_.cta-btn]:text-main-bg [&_.cta-btn]:font-bold [&_.cta-btn]:no-underline hover:[&_.cta-btn]:bg-white [&_.cta-btn]:transition-all
               [&_.metrics-grid]:grid [&_.metrics-grid]:grid-cols-1 [&_.metrics-grid]:sm:grid-cols-3 [&_.metrics-grid]:gap-4 [&_.metrics-grid]:my-6
               [&_.metric-card]:p-5 [&_.metric-card]:rounded-2xl [&_.metric-card]:bg-white/5 [&_.metric-card]:border [&_.metric-card]:border-white/10 [&_.metric-card]:text-center"
