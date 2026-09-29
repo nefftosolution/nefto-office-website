@@ -17,6 +17,7 @@ import BlogBg from "../assets/blog-bg.jpg";
 import Counter from "../components/Counter";
 import ServicesImage from "../assets/Explore-Services.png";
 import PerformanceImg from "../assets/performance-img.jpeg";
+import { Link } from "react-router-dom";
 const servicesData = [
   {
     slug: "web-development",
@@ -130,10 +131,46 @@ const Home = () => {
         ogDescription="Neffto Solution is a software house in Bahawalpur building websites, AI tools and SEO campaigns for businesses across Pakistan. Get a free quote today."
         ogUrl="https://nefftosolution.com/"
         keywords="software house in Bahawalpur, software company Bahawalpur, web development Pakistan, AI services Pakistan, SEO services Pakistan"
-      
-        schema={JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://nefftosolution.com/#organization","name":"Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan","url":"https://nefftosolution.com/","logo":{"@type":"ImageObject","url":"https://nefftosolution.com/logo.png"},"sameAs":["https://www.facebook.com/nefftosolution","https://www.linkedin.com/company/neffto-solution","https://www.instagram.com/nefftosolution"],"contactPoint":{"@type":"ContactPoint","telephone":"+92-300-0000000","contactType":"customer service","areaServed":"PK","availableLanguage":"en"}},{"@type":"WebSite","@id":"https://nefftosolution.com/#website","url":"https://nefftosolution.com/","name":"Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan","publisher":{"@id":"https://nefftosolution.com/#organization"}}]})}
+        schema={JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://nefftosolution.com/#organization",
+              name: "Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan",
+              url: "https://nefftosolution.com/",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://nefftosolution.com/logo.png",
+              },
+              sameAs: [
+                "https://www.facebook.com/nefftosolution",
+                "https://www.linkedin.com/company/neffto-solution",
+                "https://www.instagram.com/nefftosolution",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+92-300-0000000",
+                contactType: "customer service",
+                areaServed: "PK",
+                availableLanguage: "en",
+              },
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://nefftosolution.com/#website",
+              url: "https://nefftosolution.com/",
+              name: "Neffto Solution - Best IT Company & Software Agency in Bahawalpur, Pakistan",
+              publisher: { "@id": "https://nefftosolution.com/#organization" },
+            },
+          ],
+        })}
       />
-      <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="relative overflow-hidden w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center pt-35 pb-25 md:pt-45 md:pb-35"
+      <section
+        title="Neffto Solution Software Agency Background"
+        role="img"
+        aria-label="Neffto Solution Software Agency Background"
+        className="relative overflow-hidden w-full bg-cover bg-center before:absolute before:inset-0 before:content-[''] before:bg-[linear-gradient(to_right,#071524_35%,rgba(7,21,36,0.85)_55%,rgba(7,21,36,0.3)_75%,transparent_100%)] before:pointer-events-none flex items-center pt-35 pb-25 md:pt-45 md:pb-35"
         style={{ backgroundImage: `url(${HeroBg})` }}
       >
         <div className="absolute top-[-20%] left-[-10%] w-180 h-180 bg-[#042558] blur-[140px]" />
@@ -141,7 +178,7 @@ const Home = () => {
         <div className="relative z-10 mx-auto w-full max-w-7xl sm:px-6 px-4">
           <div className="w-full max-w-xl lg:max-w-3xl">
             <h1 className="font-sans text-white text-2xl sm:text-4xl lg:text-5xl font-black leading-tight sm:flex sm:flex-col sm:justify-start">
-              Transforming Ideas Into {" "}
+              Transforming Ideas Into{" "}
               <span className="highlight">Smart Digital Solutions</span>
             </h1>
             <p className="mt-4 text-gray-300 text-xs sm:text-[16px] sm:max-w-xl max-w-sm font-sans text-justify">
@@ -242,10 +279,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section
-        style={fixedBgStyle}
-        className="relative py-10 overflow-hidden"
-      >
+      <section style={fixedBgStyle} className="relative py-10 overflow-hidden">
         <div className="absolute top-[-20%] left-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-150 h-150 bg-[#042558] blur-[140px]" />
         {/* Light Overlay for text readability */}
@@ -256,7 +290,11 @@ const Home = () => {
           <Counter value="500+" label="Active Users" light={false} />
         </div>
       </section>
-      <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className=" bg-cover bg-center relative"
+      <section
+        title="Neffto Solution Software Agency Background"
+        role="img"
+        aria-label="Neffto Solution Software Agency Background"
+        className=" bg-cover bg-center relative"
         style={{
           backgroundImage: `url(${FeaturedProjectImg})`,
         }}
@@ -283,17 +321,53 @@ const Home = () => {
               NEFFTO is a results-driven digital agency dedicated to helping
               businesses build a strong online presence through innovative
               technology, creative strategies, and high-performance digital
-              solutions. We specialize in web development, e-commerce solutions,
-              AI & machine learning, digital marketing, custom tool development,
-              graphic design, video editing, and professional WordPress websites
-              tailored to modern business needs. Our team focuses on delivering
-              visually engaging, scalable, and conversion-focused solutions that
-              not only enhance brand identity but also improve customer
-              experience, generate leads, and drive long-term business growth.
-              From startups to established companies, NEFFTO combines
-              creativity, strategy, and advanced technologies to transform ideas
-              into impactful digital experiences with measurable success and
-              outstanding client satisfaction.
+              solutions. We specialize in{" "}
+              <Link
+                to="/services/web-development"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                web development
+              ,
+                e-commerce solutions
+              </Link>
+              , {" "}
+              <Link
+                to="/services/app-development"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                app development
+              </Link>
+              , {" "}
+              <Link
+                to="/services/python-ml-ai"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                AI & machine learning
+              </Link>
+              ,{" "}
+              <Link
+                to="/services/digital-marketing"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                digital marketing
+              </Link>
+              , 
+                custom tool development, {" "}
+              <Link
+                to="/services/graphic-design"
+                className="text-secondary hover:text-white underline decoration-secondary/40 underline-offset-4 transition-colors font-medium"
+              >
+                graphic design
+              </Link>
+              , video editing, and professional websites tailored to modern
+              business needs. Our team focuses on delivering visually engaging,
+              scalable, and conversion-focused solutions that not only enhance
+              brand identity but also improve customer experience, generate
+              leads, and drive long-term business growth. From startups to
+              established companies, NEFFTO combines creativity, strategy, and
+              advanced technologies to transform ideas into impactful digital
+              experiences with measurable success and outstanding client
+              satisfaction.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-20 items-start">
@@ -308,9 +382,12 @@ const Home = () => {
 
                   {/* CONTENT */}
                   <div>
-                    <h3 className="sm:text-xl text-md font-semibold text-white mb-1 group-hover:text-primary transition-all duration-300">
+                    <Link
+                      to={item.slug ? `/services/${item.slug}` : "#"}
+                      className="sm:text-xl text-md font-semibold text-white mb-1 group-hover:text-primary transition-all duration-300"
+                    >
                       {item.title}
-                    </h3>
+                    </Link>
 
                     <p className="text-gray-300 leading-relaxed sm:text-sm text-xs">
                       {item.desc}
@@ -323,11 +400,14 @@ const Home = () => {
             <div className="relative">
               {/* MAIN IMAGE */}
               <div className="relative overflow-hidden border border-black/10">
-                <img src={PerformanceImg}
+                <img
+                  src={PerformanceImg}
                   alt="Website performance report showing improved load speed and Core Web Vitals scores"
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-120 object-cover" title="Website performance report showing improved load speed and Core Web Vitals scores | Neffto Solution Software Agency" />
+                  className="w-full h-120 object-cover"
+                  title="Website performance report showing improved load speed and Core Web Vitals scores | Neffto Solution Software Agency"
+                />
 
                 {/* OVERLAY */}
                 <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent"></div>

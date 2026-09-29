@@ -170,7 +170,7 @@ const AIMachineLearning = () => {
 
   return (
     <>
-                        <SEO
+      <SEO
         title="AI Development Company in Pakistan | AI & ML | NEFFTO"
         description="Custom AI solutions, AI chatbot development, machine learning services and AI business automation from NEFFTO, an AI development company in Pakistan."
         canonical="https://nefftosolution.com/services/python-ml-ai"
@@ -303,7 +303,7 @@ const AIMachineLearning = () => {
               <div className="md:col-span-8">
                 <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">AI Chatbot Development for 24/7 Customer Support</h2>
                 <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                  Customers expect fast answers, often outside normal business hours, regardless of where they live. Our <strong className="text-secondary font-bold">AI chatbot development</strong> service creates intelligent assistants that understand natural questions, respond in a friendly and accurate way, and hand complex issues over to your human team when needed.
+                  Customers expect fast answers, often outside normal business hours, regardless of where they live. Our AI chatbot development service creates intelligent assistants that understand natural questions, respond in a friendly and accurate way, and hand complex issues over to your human team when needed.
                 </p>
                 <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
                   Chatbots can be deployed on your{" "}
@@ -335,7 +335,7 @@ const AIMachineLearning = () => {
               <div className="md:col-span-8">
                 <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Machine Learning Services That Turn Data Into Decisions</h2>
                 <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                  Most businesses sit on valuable data in spreadsheets, sales records, and customer systems, but rarely use it to its full potential. Our <strong className="text-secondary font-bold">machine learning services</strong> help you unlock that value, from forecasting monthly sales to predicting which customers are likely to leave and identifying unusual transactions that may signal fraud.
+                  Most businesses sit on valuable data in spreadsheets, sales records, and customer systems, but rarely use it to its full potential. Our machine learning services help you unlock that value, from forecasting monthly sales to predicting which customers are likely to leave and identifying unusual transactions that may signal fraud.
                 </p>
               </div>
             </div>
@@ -344,21 +344,21 @@ const AIMachineLearning = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl col-span-1 md:col-span-3">
                   <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tighter text-white mb-4">Business Automation with AI</h2>
                   <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                     Repetitive tasks drain time and energy from your team. With <strong className="text-secondary font-bold">business automation with AI</strong>, we can automate processes such as reading invoices, extracting information from documents, sorting and replying to emails, generating reports, and updating records across systems. Automation reduces human error, speeds up operations, and lets your employees spend their time on work that truly needs a human touch, such as building relationships and solving problems.
+                     Repetitive tasks drain time and energy from your team. With business automation with AI, we can automate processes such as reading invoices, extracting information from documents, sorting and replying to emails, generating reports, and updating records across systems. Automation reduces human error, speeds up operations, and lets your employees spend their time on work that truly needs a human touch, such as building relationships and solving problems.
                   </p>
                </div>
                
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl md:col-span-1">
                   <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-white mb-4">AI Integration Services for Your Existing Systems</h2>
                   <p className="text-zinc-300 text-sm font-sans leading-relaxed">
-                     You don't always need to build AI from scratch. Our <strong className="text-secondary font-bold">AI integration services</strong> connect powerful existing AI models with the tools you already use, such as your website, e-commerce store, CRM, or internal software. We handle the technical setup, API connections, prompt design, data security, and testing.
+                     You don't always need to build AI from scratch. Our AI integration services connect powerful existing AI models with the tools you already use, such as your website, e-commerce store, CRM, or internal software. We handle the technical setup, API connections, prompt design, data security, and testing.
                   </p>
                </div>
                
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl md:col-span-1">
                   <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-white mb-4">Custom AI Solutions Built Around Your Goals</h2>
                   <p className="text-zinc-300 text-sm font-sans leading-relaxed">
-                     Every business is unique, and so are its challenges. Our <strong className="text-secondary font-bold">custom AI solutions</strong> are designed for your specific industry, whether you work in retail, healthcare, education, real estate, logistics, or finance, anywhere in Bahawalpur. We work with Python, TensorFlow, PyTorch, scikit-learn, and leading AI platforms.
+                     Every business is unique, and so are its challenges. Our custom AI solutions are designed for your specific industry, whether you work in retail, healthcare, education, real estate, logistics, or finance, anywhere in Bahawalpur. We work with Python, TensorFlow, PyTorch, scikit-learn, and leading AI platforms.
                   </p>
                </div>
                

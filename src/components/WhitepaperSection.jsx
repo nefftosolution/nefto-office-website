@@ -47,7 +47,11 @@ const WhitepaperSection = () => {
       {/* HUMAN DESIGN ELEMENT: The "Silk" Aura Gradient */}
       <div className="pointer-events-none absolute inset-0">
         {/* Deep Indigo Base */}
-        <div title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="absolute inset-0 bg-cover bg-fixed bg-no-repeat"
+        <div
+          title="Neffto Solution Software Agency Background"
+          role="img"
+          aria-label="Neffto Solution Software Agency Background"
+          className="absolute inset-0 bg-cover bg-fixed bg-no-repeat"
           style={{
             backgroundImage: `url(${EmailBg})`,
           }}
@@ -84,30 +88,9 @@ const WhitepaperSection = () => {
                     <p className="max-w-md sm:text-[16px] text-xs font-light leading-relaxed text-zinc-300">
                       Get the latest insights on{" "}
                       <span className="font-medium italic text-white">
-                        <Link className="underline decoration-primary underline-offset-4" to="/services/web-development">
-                          web development
-                        </Link>
-                        ,{" "}
-                        <Link className="underline decoration-primary underline-offset-4" to="/services/app-development">
-                          app development
-                        </Link>
-                        ,{" "}
-                        <Link className="underline decoration-primary underline-offset-4" to="/services/python-ml-ai">
-                          AI solutions
-                        </Link>
-                        ,{" "}
-                        <Link className="underline decoration-primary underline-offset-4" to="/services/digital-marketing">
-                          digital marketing
-                        </Link>
-                        ,{" "}
-                        <Link className="underline decoration-primary underline-offset-4" to="/services/graphic-design">
-                          Graphic Designing
-                        </Link>
-                        , and{" "}
-                        <Link className="underline decoration-primary underline-offset-4" to="/services/seo">
-                          SEO
-                        </Link>
-                      </span>{" "}
+                        web development, app development, AI solutions, digital
+                        marketing, Graphic Designing, and SEO
+                      </span> {" "}
                       to help your business grow faster.
                     </p>
                   </div>
@@ -155,9 +138,7 @@ const WhitepaperSection = () => {
                     Thank You!
                   </h3>
 
-                  <p className="text-sm text-zinc-400">
-                    We emailed you soon!
-                  </p>
+                  <p className="text-sm text-zinc-400">We emailed you soon!</p>
 
                   <div className="flex items-center gap-6 border-t border-white/10 pt-6">
                     <a

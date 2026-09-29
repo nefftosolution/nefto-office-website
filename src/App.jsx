@@ -11,6 +11,7 @@ const Home = lazy(() => import("./pages/Home"));
 const Services = lazy(() => import("./pages/Services"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Team = lazy(() => import("./pages/Team"));
+const DepartmentPage = lazy(() => import("./pages/DepartmentPage"));
 const WebDevelopment = lazy(() => import("./pages/WebDevelopment"));
 const AppDevelopment = lazy(() => import("./pages/AppDevelopment"));
 const AIMachineLearning = lazy(() => import("./pages/AIMachineLearning"));
@@ -43,6 +44,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/team/department/:slug" element={<DepartmentPage />} />
             <Route path="/contact" element={<Contact />} />
 
             {/* Services */}

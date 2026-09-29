@@ -1,12 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import SEO from "../components/SEO";
-import { motion } from "framer-motion";
-import { ArrowUpRight, Cpu, Zap, Globe } from "lucide-react";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import {
+  ArrowUpRight,
+  Cpu,
+  Zap,
+  Globe,
+  Code2,
+  BrainCircuit,
+  Megaphone,
+  Palette,
+  Smartphone,
+  Search,
+  Users,
+} from "lucide-react";
 import GlowButton from "../components/GlowButton";
 import CEO from "../assets/CEO.jpeg";
 import CTO from "../assets/cto.png";
 import CoFounder from "../assets/Ameerhamza.webp";
-import TeamGrid from "../components/TeamGrid";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -22,11 +34,14 @@ const MainTeamCard = ({
       {/* Image Container */}
       <div className="relative h-100 w-full overflow-hidden">
         {imageSrc ? (
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src={imageSrc}
             alt={`${name} - ${title} at Neffto Solution executive team`}
             style={{ objectPosition: imagePosition }}
-            className="h-full w-full object-cover" title="Expert Software Developers & Designers Team - Neffto Solution" />
+            className="h-full w-full object-cover"
+            title="Expert Software Developers & Designers Team - Neffto Solution"
+          />
         ) : null}
 
         {/* Multi-stage Gradient Overlay for Perfect Text Contrast */}
@@ -46,6 +61,393 @@ const MainTeamCard = ({
           </h3>
         </div>
       </div>
+    </div>
+  );
+};
+
+/* =========================
+   DEPARTMENT DATA
+========================= */
+
+const departmentData = [
+  {
+    id: 1,
+    slug: "full-stack-web",
+    category: "DEPARTMENT 01",
+    title: "WEB DEVELOPMENT",
+    description:
+      "Building modern, scalable, secure, and high-performance web applications from frontend to backend.",
+    icon: Code2,
+    head: "Ahad Dahir",
+  },
+  {
+    id: 2,
+    slug: "app-development",
+    category: "DEPARTMENT 02",
+    title: "APP DEVELOPMENT",
+    description:
+      "Creating modern cross-platform mobile applications with smooth experiences and scalable architecture.",
+    icon: Smartphone,
+    head: "Wahaj Sajid",
+  },
+  {
+    id: 3,
+    slug: "python-machine-learning",
+    category: "DEPARTMENT 03",
+    title: "PYTHON & MACHINE LEARNING",
+    description:
+      "Developing intelligent AI systems, machine learning models, automation solutions, and data-driven applications.",
+    icon: BrainCircuit,
+    head: "Ruhul Hussain",
+  },
+  {
+    id: 4,
+    slug: "graphic-design",
+    category: "DEPARTMENT 04",
+    title: "GRAPHIC DESIGN",
+    description:
+      "Creating strong visual identities, creative designs, marketing materials, and engaging digital experiences.",
+    icon: Palette,
+    head: "Muhammad Fassih-ud-Din Abbasi",
+  },
+  {
+    id: 5,
+    slug: "digital-marketing",
+    category: "DEPARTMENT 05",
+    title: "DIGITAL MARKETING",
+    description:
+      "Driving brand growth through strategic marketing, social media campaigns, and online engagement.",
+    icon: Megaphone,
+    head: "Ameer Hamza",
+  },
+  {
+    id: 6,
+    slug: "search-engine-optimization",
+    category: "DEPARTMENT 06",
+    title: "SEARCH ENGINE OPTIMIZATION (SEO)",
+    description:
+      "Growing online visibility through technical SEO, content strategy, search optimization, and business development.",
+    icon: Search,
+    head: "Saira",
+  },
+  {
+    id: 7,
+    slug: "ai-automation",
+    category: "DEPARTMENT 07",
+    title: "AI & AUTOMATION",
+    description:
+      "Developing intelligent automation solutions and AI-powered systems to streamline processes and enhance efficiency.",
+    icon: BrainCircuit,
+    head: "Muhammad Hamza",
+  },
+  {
+    id: 8,
+    slug: "ghl-automation",
+    category: "DEPARTMENT 08",
+    title: "GHL AUTOMATION",
+    description:
+      "Implementing advanced automation workflows and systems using GoHighLevel (GHL) to optimize business processes.",
+    icon: Zap,
+    head: "Muhammad Mubeen",
+  },
+  {
+    id: 9,
+    slug: "client-hunting",
+    category: "DEPARTMENT 09",
+    title: "CLIENT HUNTING",
+    description:
+      "Our client acquisition team focuses on identifying potential clients, building relationships, and generating business opportunities for growth.",
+    icon: Users,
+    head: "Zeeshan Zahid",
+  }
+];
+
+/* =========================
+   DEPARTMENT CARD
+========================= */
+
+const DepartmentCard = ({ department, index }) => {
+  const navigate = useNavigate();
+
+  const Icon = department.icon;
+
+  const handleClick = () => {
+    navigate(`/team/department/${department.slug}`);
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.8,
+        delay: index * 0.05,
+      }}
+      onClick={handleClick}
+      className={`
+        group relative h-112.5 w-[320px] sm:w-95 shrink-0
+        overflow-hidden rounded-[30px] lg:rounded-[40px]
+        bg-[#020617]/80
+        border border-white/10
+        backdrop-blur-xl
+        shadow-2xl cursor-pointer
+        ${index % 2 === 0 ? "lg:mt-20" : "lg:mb-20"}
+        mx-auto lg:mx-0
+      `}
+    >
+      {/* Background Glow */}
+
+      <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-primary/10 blur-3xl transition-all duration-700 group-hover:bg-primary/20 group-hover:scale-125" />
+
+      <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-blue-500/10 blur-3xl transition-all duration-700 group-hover:bg-blue-500/20 group-hover:scale-125" />
+
+      {/* Main Content */}
+
+      <div className="relative flex h-full flex-col justify-between p-7 lg:p-10">
+        {/* TOP */}
+
+        <div className="flex items-start justify-between">
+          {/* Department Number */}
+
+          <div className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-md">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
+              {department.category}
+            </span>
+          </div>
+
+          {/* Icon */}
+
+          <div
+            className="
+              flex h-14 w-14
+              items-center justify-center
+              rounded-2xl
+              border border-white/10
+              bg-white/5
+              text-primary
+              backdrop-blur-md
+              transition-all duration-500
+              group-hover:scale-110
+              group-hover:rotate-6
+              group-hover:border-primary/40
+              group-hover:bg-primary/10
+            "
+          >
+            <Icon
+              size={28}
+              strokeWidth={1.5}
+              className="transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+        </div>
+
+        {/* CENTER */}
+
+        <div className="relative">
+          <h3
+            className="
+              text-xl lg:text-3xl
+              font-black italic
+              tracking-tighter
+              text-white uppercase
+              leading-[0.9]
+            "
+          >
+            {department.title}
+          </h3>
+
+          {/* Description */}
+          <div
+            className="
+              mt-5
+              overflow-hidden
+              translate-y-3
+              transition-all
+              duration-500 max-h-32
+            "
+          >
+            <p
+              className="
+                border-l
+                border-primary
+                pl-3
+                text-sm
+                font-light
+                italic
+                leading-snug
+                text-zinc-400
+              "
+            >
+              {department.description}
+            </p>
+          </div>
+        </div>
+
+        {/* BOTTOM */}
+
+        <div className="flex items-end justify-between">
+          <div>
+            <p className="text-[9px] uppercase tracking-[0.2em] text-zinc-600">
+              Department Head
+            </p>
+
+            <p className="mt-1 text-sm font-semibold text-zinc-300">
+              {department.head}
+            </p>
+          </div>
+
+          {/* VIEW TEAM */}
+
+          <div
+            className="
+              flex h-11 w-11
+              items-center justify-center
+              rounded-full
+              border border-white/10
+              bg-white/5
+              text-white
+              transition-all duration-500
+              group-hover:border-primary
+              group-hover:bg-primary
+              group-hover:text-black
+            "
+          >
+            <ArrowUpRight
+              size={19}
+              strokeWidth={1.8}
+              className="
+                transition-transform
+                duration-500
+                group-hover:rotate-45
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+/* =========================
+   MAIN TEAM GRID
+========================= */
+
+const TeamGrid = () => {
+  const targetRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useSpring(
+    useTransform(scrollYProgress, [0.1, 0.9], ["0%", "-72%"]),
+    {
+      stiffness: 50,
+      damping: 20,
+    },
+  );
+
+  return (
+    <div className="relative" ref={targetRef}>
+      {/* =========================
+          DESKTOP
+      ========================= */}
+
+      <section className="hidden lg:block h-[430vh]">
+        <div className="sticky top-10 flex h-screen items-center overflow-hidden">
+          <motion.div
+            style={{ x }}
+            className="flex gap-16 px-[5vw] items-center"
+          >
+            {/* HEADER */}
+
+            <div className="flex w-110 shrink-0 flex-col justify-center">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="h-px w-8 bg-primary" />
+
+                <span className="text-primary font-bold tracking-widest text-sm uppercase">
+                  Our Departments
+                </span>
+              </div>
+
+              <h2 className="text-6xl font-black italic text-white leading-[0.8] tracking-tighter uppercase">
+                EXPLORE THE
+                <br />
+                <span className="text-transparent stroke-text-white">
+                  DEPARTMENTS.
+                </span>
+              </h2>
+
+              <p className="mt-8 text-zinc-400 text-base font-light italic leading-relaxed max-w-sm">
+                Meet the specialized teams behind our digital solutions. Explore
+                each department and discover the people building what's next.
+              </p>
+            </div>
+
+            {/* DEPARTMENT CARDS */}
+
+            {departmentData.map((department, index) => (
+              <DepartmentCard
+                key={department.id}
+                department={department}
+                index={index}
+              />
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* =========================
+          MOBILE / TABLET
+      ========================= */}
+
+      <section className="lg:hidden px-6 py-20">
+        <div className="mb-20 text-center">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="h-px w-8 bg-primary" />
+
+            <span className="text-primary font-bold tracking-widest text-xs uppercase">
+              Our Departments
+            </span>
+
+            <span className="h-px w-8 bg-primary" />
+          </div>
+
+          <h2 className="text-5xl sm:text-6xl font-black italic text-white uppercase leading-none tracking-tighter">
+            EXPLORE THE
+            <br />
+            <span className="text-transparent stroke-text-white">
+              DEPARTMENTS.
+            </span>
+          </h2>
+
+          <p className="text-zinc-500 italic mt-5 max-w-md mx-auto">
+            Explore our specialized departments and meet the teams behind every
+            digital solution.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-10">
+          {departmentData.map((department, index) => (
+            <DepartmentCard
+              key={department.id}
+              department={department}
+              index={index}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* =========================
+          STYLES
+      ========================= */}
+
+      <style>{`
+        .stroke-text-white {
+          -webkit-text-stroke: 1px white;
+        }
+      `}</style>
     </div>
   );
 };
@@ -101,8 +503,14 @@ const Team = () => {
         ogDescription="Meet the developers, AI engineers and marketers behind Neffto Solution in Bahawalpur. See exactly who builds your project. Talk to the team today."
         ogUrl="https://nefftosolution.com/team"
         keywords="software development team Pakistan, NEFFTO team, NEFFTO developers, web developers, software developers, AI specialists, designers, digital professionals"
-      
-        schema={JSON.stringify({"@context":"https://schema.org","@type":"AboutPage","name":"Expert Developers & Designers Team - Neffto Solution","description":"Meet the talented and passionate team behind Neffto Solution.","url":"https://nefftosolution.com/team"})}
+        schema={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          name: "Expert Developers & Designers Team - Neffto Solution",
+          description:
+            "Meet the talented and passionate team behind Neffto Solution.",
+          url: "https://nefftosolution.com/team",
+        })}
       />
       <main className="bg-main-bg text-white selection:bg-surface selection:text-white pt-20">
         <section
@@ -133,7 +541,8 @@ const Team = () => {
                 </span>
               </h1>
               <p className="text-zinc-400 md:text-nowrap text-base md:text-sm font-light max-w-md mt-6 italic mx-auto lg:mx-0">
-                "The innovators, creators, and dreamers architecting the digital <br />
+                "The innovators, creators, and dreamers architecting the digital{" "}
+                <br />
                 backbone of the next century."
               </p>
             </motion.div>
@@ -224,7 +633,11 @@ const Team = () => {
         </div>
 
         {/* SECTION 5 (ODD): JOIN THE PIPELINE */}
-        <section title="Neffto Solution Software Agency Background" role="img" aria-label="Neffto Solution Software Agency Background" className="relative sm:py-16 py-10 bg-fixed bg-cover bg-center text-center overflow-hidden"
+        <section
+          title="Neffto Solution Software Agency Background"
+          role="img"
+          aria-label="Neffto Solution Software Agency Background"
+          className="relative sm:py-16 py-10 bg-fixed bg-cover bg-center text-center overflow-hidden"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070')`,
           }}
@@ -233,7 +646,6 @@ const Team = () => {
           <div className="absolute inset-0 bg-black/60" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 sm:space-y-8 space-y-4 z-10 text-white">
-
             {/* heading */}
             <motion.div
               whileInView={{ scale: [0.9, 1], opacity: [0, 1] }}
@@ -247,12 +659,15 @@ const Team = () => {
 
             {/* description */}
             <p className="text-zinc-200 text-sm sm:text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
-              We’re assembling a high-performance engineering team focused on {" "}
-              <Link to="/services/python-ml-ai" className="text-white decoration-accent-blue underline underline-offset-4">
+              We’re assembling a high-performance engineering team focused on{" "}
+              <Link
+                to="/services/python-ml-ai"
+                className="text-white decoration-accent-blue underline underline-offset-4"
+              >
                 AI
               </Link>
-              , distributed systems, and next-generation products. If you
-              think in systems and build with precision, you’ll fit right in.
+              , distributed systems, and next-generation products. If you think
+              in systems and build with precision, you’ll fit right in.
             </p>
 
             {/* actions */}

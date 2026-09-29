@@ -95,10 +95,9 @@ const Header = () => {
 
   const navLinksFirst = [{ name: "Home", to: "/" }];
   const navLinksSec = [
-    { name: "About", to: "/about" },
-    { name: "Team", to: "/team" },
     { name: "Blogs", to: "/blogs" },
-    { name: "Contact Us", to: "/contact" },
+    { name: "Team", to: "/team" },
+    { name: "About Us", to: "/about" },
   ];
 
   const menuVariants = {
@@ -220,7 +219,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-4">
           <GlowButton
             to={"/contact"}
-            name={"Get Started"}
+            name={"Contact Us"}
             className="bg-white text-surface border-2 border-primary"
             hover="hover:text-white"
             layerHover="bg-primary"

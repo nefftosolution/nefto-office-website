@@ -229,12 +229,9 @@ const WebDevelopment = () => {
                   with your brand, wherever they happen to be searching from. If
                   it loads slowly, looks outdated on a phone, or makes it hard
                   to find what people need, that conversation ends in seconds.
-                  NEFFTO IT Solution is a{" "}
-                  <strong className="text-secondary font-bold">
-                    web development company
-                  </strong>{" "}
-                  that builds fast, secure, and conversion-focused websites for
-                  startups, local businesses, and growing brands in Bahawalpur.
+                  NEFFTO IT Solution is a web development company that builds
+                  fast, secure, and conversion-focused websites for startups,
+                  local businesses, and growing brands in Bahawalpur.
                   <br />
                   <br />
                   We work with clients across Bahawalpur, turning ideas into
@@ -311,15 +308,13 @@ const WebDevelopment = () => {
                 <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
                   Some projects need more than a good-looking front end. If
                   you're planning a booking system, customer portal, learning
-                  platform, or internal business tool, you need{" "}
-                  <strong className="text-secondary font-bold">
-                    full stack web development
-                  </strong>{" "}
-                  that connects every layer of the application. Our developers
-                  work with modern technologies such as React, Next.js, Node.js,
-                  Laravel, and PHP, along with reliable databases like MySQL and
-                  MongoDB, to build web applications that are fast, secure, and
-                  ready to scale as your business grows in Bahawalpur.
+                  platform, or internal business tool, you need full stack web
+                  development that connects every layer of the application. Our
+                  developers work with modern technologies such as React,
+                  Next.js, Node.js, Laravel, and PHP, along with reliable
+                  databases like MySQL and MongoDB, to build web applications
+                  that are fast, secure, and ready to scale as your business
+                  grows in Bahawalpur.
                 </p>
               </div>
               <div className="hidden md:flex justify-end relative">
@@ -330,7 +325,10 @@ const WebDevelopment = () => {
               </div>
             </div>
 
-            <div id="shopify" className="grid md:grid-cols-2 gap-12 items-center">
+            <div
+              id="shopify"
+              className="grid md:grid-cols-2 gap-12 items-center"
+            >
               <div className="hidden md:flex justify-start relative order-2 md:order-1">
                 <div className="absolute inset-0 bg-emerald-500/20 blur-[80px] rounded-full" />
                 <div className="w-48 h-48 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center animate-[bounce_4s_ease-in-out_infinite]">
@@ -344,10 +342,10 @@ const WebDevelopment = () => {
                 <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
                   Shopify is one of the most popular platforms for selling
                   online across Bahawalpur, but a generic theme can make your
-                  store look like thousands of others. Our shopify custom theme development 
-                  service gives your store a distinct identity and a shopping
-                  experience built around your products. We create custom
-                  sections, product page layouts, collection filters, and
+                  store look like thousands of others. Our shopify custom theme
+                  development service gives your store a distinct identity and a
+                  shopping experience built around your products. We create
+                  custom sections, product page layouts, collection filters, and
                   checkout-friendly designs that help turn browsers into buyers.
                 </p>
               </div>
@@ -363,11 +361,8 @@ const WebDevelopment = () => {
                   smartphone, regardless of where they live in Bahawalpur.
                   Google also uses mobile-first indexing, which means the mobile
                   version of your site directly affects your search rankings in
-                  Bahawalpur. That's why{" "}
-                  <strong className="text-secondary font-bold">
-                    responsive website design
-                  </strong>{" "}
-                  is at the core of every project we deliver.
+                  Bahawalpur. That's why responsive website design is at the
+                  core of every project we deliver.
                 </p>
               </div>
               <div className="hidden md:flex justify-end relative">
@@ -402,7 +397,8 @@ const WebDevelopment = () => {
                     className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
                   >
                     dedicated SEO services
-                  </Link>.
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -493,48 +489,48 @@ const WebDevelopment = () => {
           <div className="absolute inset-0 bg-primary-navy z-0" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
             <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">
-              Start Your Web Development Project Today
-            </h2>
-            <p className="text-zinc-300 text-sm font-sans mb-6 leading-relaxed">
-              Ready to build a website that works as hard as you do, wherever
-              your customers are in Bahawalpur? Whether you need a fresh
-              business website, a custom web application, or a high-converting
-              Shopify store, NEFFTO IT Solution is here to help. Contact our web
-              development company team today, share your idea, and get a free
-              quote for your project.
-            </p>
-            <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed italic">
-              Need help promoting your new site? See our{" "}
-              <Link
-                to="/services/digital-marketing"
-                className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
-              >
-                Digital Marketing
-              </Link>{" "}
-              and{" "}
-              <Link
-                to="/services/seo"
-                className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
-              >
-                SEO
-              </Link>{" "}
-              services. You can also explore our{" "}
-              <Link
-                to="/blogs"
-                className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
-              >
-                latest blog insights
-              </Link>{" "}
-              for web development best practices.
-            </p>
-            <GlowButton
-              name="Get a Free Quote"
-              to="/contact"
-              className="bg-surface text-white border-2 border-surface"
-              hover="hover:text-surface"
-              layerHover="bg-white"
-            />
+              <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">
+                Start Your Web Development Project Today
+              </h2>
+              <p className="text-zinc-300 text-sm font-sans mb-6 leading-relaxed">
+                Ready to build a website that works as hard as you do, wherever
+                your customers are in Bahawalpur? Whether you need a fresh
+                business website, a custom web application, or a high-converting
+                Shopify store, NEFFTO IT Solution is here to help. Contact our
+                web development company team today, share your idea, and get a
+                free quote for your project.
+              </p>
+              <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed italic">
+                Need help promoting your new site? See our{" "}
+                <Link
+                  to="/services/digital-marketing"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  Digital Marketing
+                </Link>{" "}
+                and{" "}
+                <Link
+                  to="/services/seo"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  SEO
+                </Link>{" "}
+                services. You can also explore our{" "}
+                <Link
+                  to="/blogs"
+                  className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium not-italic"
+                >
+                  latest blog insights
+                </Link>{" "}
+                for web development best practices.
+              </p>
+              <GlowButton
+                name="Get a Free Quote"
+                to="/contact"
+                className="bg-surface text-white border-2 border-surface"
+                hover="hover:text-surface"
+                layerHover="bg-white"
+              />
             </div>
           </div>
         </section>

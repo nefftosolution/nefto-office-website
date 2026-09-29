@@ -171,7 +171,7 @@ const SearchEngineOptimization = () => {
 
   return (
     <>
-                        <SEO
+      <SEO
         title="SEO Services in Pakistan | SEO Company in Bahawalpur"
         description="Rank higher on Google with NEFFTO's SEO services in Pakistan: local SEO, on-page and technical SEO, keyword research and affordable SEO packages."
         canonical="https://nefftosolution.com/services/seo"
@@ -208,7 +208,7 @@ const SearchEngineOptimization = () => {
               </motion.div>
               
               <motion.p variants={fadeUp} className="text-sm sm:text-base md:text-lg text-zinc-300 font-sans mb-10 leading-relaxed bg-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
-                When customers need a product or service, the first thing most of them do is search on Google, no matter where they live. If your business doesn't appear on the first page, those customers will find your competitors instead. NEFFTO IT Solution provides professional <strong className="text-secondary font-bold">SEO services</strong> that help businesses climb search rankings, attract qualified organic traffic, and generate consistent leads without paying for every click.
+                When customers need a product or service, the first thing most of them do is search on Google, no matter where they live. If your business doesn't appear on the first page, those customers will find your competitors instead. NEFFTO IT Solution provides professional SEO services that help businesses climb search rankings, attract qualified organic traffic, and generate consistent leads without paying for every click.
               </motion.p>
 
               <motion.div variants={fadeUp}>
@@ -285,7 +285,7 @@ const SearchEngineOptimization = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl">
                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">On-Page and Technical SEO</h2>
                  <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                   Strong rankings start with a solid foundation. Our <strong className="text-secondary font-bold">on-page and technical SEO</strong> work makes sure search engines can crawl, understand, and trust your website, wherever it is hosted or targeted. We work alongside our{" "}
+                   Strong rankings start with a solid foundation. Our on-page and technical SEO work makes sure search engines can crawl, understand, and trust your website, wherever it is hosted or targeted. We work alongside our{" "}
                    <Link
                      to="/services/web-development"
                      className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
@@ -300,7 +300,7 @@ const SearchEngineOptimization = () => {
                   <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl grow">
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-6">Local SEO Services to Win Customers Near You</h2>
                     <p className="text-sm sm:text-base text-zinc-300 font-sans leading-relaxed">
-                      If your business serves a specific city or region, anywhere in Bahawalpur, <strong className="text-secondary font-bold">local SEO services</strong> are essential. When someone searches for a service "near me", Google shows a map pack of local businesses above most other results. We optimise your Google Business Profile, build consistent local citations, encourage genuine customer reviews, and create location-focused content.
+                      If your business serves a specific city or region, anywhere in Bahawalpur, local SEO services are essential. When someone searches for a service "near me", Google shows a map pack of local businesses above most other results. We optimise your Google Business Profile, build consistent local citations, encourage genuine customer reviews, and create location-focused content.
                     </p>
                   </div>
                </div>
@@ -309,7 +309,7 @@ const SearchEngineOptimization = () => {
             <div className="max-w-4xl mx-auto text-center bg-indigo-950/20 border border-secondary/20 p-10 rounded-3xl">
               <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6">Keyword Research and SEO Content</h2>
               <p className="text-sm sm:text-base text-zinc-300 font-sans mb-6 leading-relaxed">
-                Effective SEO begins with understanding exactly what your customers are searching for, in their own language and market. Our <strong className="text-secondary font-bold">keyword research</strong> looks at search volume, competition, and buying intent, and then we build a content plan around the terms most likely to bring you paying customers.
+                Effective SEO begins with understanding exactly what your customers are searching for, in their own language and market. Our keyword research looks at search volume, competition, and buying intent, and then we build a content plan around the terms most likely to bring you paying customers.
               </p>
             </div>
 
@@ -317,7 +317,7 @@ const SearchEngineOptimization = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl md:col-span-1">
                   <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-white mb-4">Affordable SEO Packages for Every Business</h2>
                   <p className="text-zinc-300 text-sm font-sans leading-relaxed">
-                     SEO shouldn't be out of reach for small and growing businesses anywhere. We offer <strong className="text-secondary font-bold">affordable SEO packages</strong> designed for different goals and budgets, from local businesses targeting their own city to e-commerce stores competing across Bahawalpur.
+                     SEO shouldn't be out of reach for small and growing businesses anywhere. We offer affordable SEO packages designed for different goals and budgets, from local businesses targeting their own city to e-commerce stores competing across Bahawalpur.
                   </p>
                </div>
                
@@ -338,7 +338,7 @@ const SearchEngineOptimization = () => {
                <div className="bg-white/5 glass backdrop-blur-md hover:bg-white/10 border border-white/5 p-8 rounded-3xl md:col-span-1">
                   <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-white mb-4">Transparent Reporting You Can Understand</h2>
                   <p className="text-zinc-300 text-sm font-sans leading-relaxed">
-                     SEO shouldn't feel like a mystery. Every month you'll receive a clear report showing keyword rankings, organic traffic, leads, and the work completed, along with our plan for the next month. As your <strong className="text-secondary font-bold">SEO company in Bahawalpur</strong>, we're always available to explain results and answer your questions in plain language.
+                     SEO shouldn't feel like a mystery. Every month you'll receive a clear report showing keyword rankings, organic traffic, leads, and the work completed, along with our plan for the next month. As your SEO company in Bahawalpur, we're always available to explain results and answer your questions in plain language.
                   </p>
                </div>
             </div>
@@ -440,7 +440,7 @@ const SearchEngineOptimization = () => {
             <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-white mb-8">Get Found on Google Today</h2>
             <p className="text-zinc-300 text-sm font-sans mb-10 leading-relaxed">
-              Every day your website isn't ranking, potential customers are going to your competitors, wherever they are. Let NEFFTO IT Solution's <strong className="text-secondary font-bold">SEO services</strong> put your business in front of the people who are already searching for you. Browse our{" "}
+              Every day your website isn't ranking, potential customers are going to your competitors, wherever they are. Let NEFFTO IT Solution's SEO services put your business in front of the people who are already searching for you. Browse our{" "}
               <Link
                 to="/blogs"
                 className="text-secondary underline decoration-secondary/50 underline-offset-4 hover:text-white transition-colors font-medium"
